@@ -1,10 +1,19 @@
+import React from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
+import AppRoutes from './routes/AppRoutes';
+import Header from './components/Header';
 
-function App() {
+const App = () => {
   return (
-    <h1 className="text-3xl bg-green-500   font-bold underline">
-      Hello world!
-    </h1>
+    <div className='bg-neutral-900'>
+    <Router>
+      <Header />
+      <AppRoutes />
+    </Router>
+    </div>
+
   );
-}
+};
 
 export default App;
+

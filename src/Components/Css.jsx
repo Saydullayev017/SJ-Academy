@@ -1,11 +1,11 @@
 import React from 'react'
 
-function Algorithms() {
+function Css() {
   return (
     <div className='container mx-auto flex flex-row h-screen pt-20'>
     {/* Сайдбар */}
     <div className='sidebar text-white w-1/4 p-4 h-full'>
-      <h1>Algorithms</h1>
+      <h1>CSS</h1>
       <ul>
         <li>Пункт 1</li>
         <li>Пункт 2</li>
@@ -34,4 +34,4 @@ function Algorithms() {
   )
 }
 
-export default Algorithms
+export default Css
