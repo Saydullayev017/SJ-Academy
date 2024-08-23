@@ -9,12 +9,17 @@ import Lesson2 from '../components/HtmlComponents/Lesson2';
 import Lesson3 from '../components/HtmlComponents/Lesson3';
 import Lesson4 from '../components/HtmlComponents/Lesson4';
 import Lesson5 from '../components/HtmlComponents/Lesson5';
+import { HtmlDocumentFirst,HtmlDocumentSecond } from '../data/HtmlDocument';
 const AppRoutes = () => {
   return (
     <Routes>
       <Route path="/" element={<Html />}>
-        <Route index element={<Lesson1 />}/>
-        <Route path='/les2' element={<Lesson2 />} />
+        <Route index element={HtmlDocumentFirst.map(doc => (
+          <Lesson1 key={doc.id} title={doc.title} content={doc.content} />
+        ))}/>
+        <Route path='/les2' element={HtmlDocumentSecond.map(doc => (
+          <Lesson2 key={doc.id} title={doc.title} content={doc.content} />
+        ))}/>
         <Route path='/les3' element={<Lesson3 />}/>
         <Route path='/les4' element={<Lesson4 />}/>
         <Route path='/les5' element={<Lesson5 />}/>

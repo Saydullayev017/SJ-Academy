@@ -1,8 +1,11 @@
 import React from 'react'
 
-function Lesson1() {
+function Lesson1({ title, content }) {
   return (
-    <div>Lesson1</div>
+    <div className="text-display">
+    <h2>{title}</h2>
+    <p>{content}</p>
+</div>
   )
 }
 
