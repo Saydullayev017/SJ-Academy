@@ -1,12 +1,12 @@
 import React from 'react'
 
-function Lesson1({ title, content }) {
+function LessonSecond({ title, content }) {
   return (
     <div className="text-display">
     <h2>{title}</h2>
     <p>{content}</p>
-</div>
+    </div>
   )
 }
 
-export default Lesson1
+export default LessonSecond;

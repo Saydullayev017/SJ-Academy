@@ -22,25 +22,53 @@ const Html = () => {
             <li className='pt-3'>
               <Link to="/">Lesson1</Link>
             </li>
+
             <li className='pt-3'>
               <Link to="/les2">Lesson2</Link>
             </li>
+            
             <li className='pt-3'>
               <Link to="/les3">Lesson3</Link>
             </li>
+            
             <li className='pt-3'>
               <Link to="/les4">Lesson4</Link>
             </li>
+            
             <li className='pt-3'>
               <Link to="/les5">Lesson5</Link>
             </li>
+            
+            <li className='pt-3'>
+              <Link to="/les6">Lesson6</Link>
+            </li>
+
+            <li className='pt-3'>
+              <Link to="/les7">Lesson7</Link>
+            </li>
+
+            <li className='pt-3'>
+              <Link to="/les8">Lesson8</Link>
+            </li>
+
+            <li className='pt-3'>
+              <Link to="/les9">Lesson9</Link>
+            </li>
+
+            <li className='pt-3'>
+              <Link to="/les10">Lesson10</Link>
+            </li>
+
+            <li className='pt-3'>
+              <Link to="/les11">Lesson11</Link>
+            </li>
+
           </ul>
         </nav>
       </div>
 
       {/* Main content */}
       <div className='content text-white w-full md:w-3/4 p-4 h-full overflow-y-auto'>
-        <h1>Основной контент</h1>
         <Outlet />
       </div>
 
