@@ -1,36 +1,86 @@
-import React from 'react'
+import React, { useState } from 'react';
+import { Outlet, Link } from 'react-router-dom';
+
 
 function JavaScript() {
+    // State to manage sidebar visibility
+    const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
+    // Function to toggle sidebar visibility
+    const toggleSidebar = () => {
+      setIsSidebarOpen(!isSidebarOpen);
+    };
+  
   return (
-    <div className='container mx-auto flex flex-row h-screen pt-20'>
-    {/* Сайдбар */}
-    <div className='sidebar text-white w-1/4 p-4 h-full'>
-      <h1>JavaScript</h1>
-      <ul>
-        <li>Пункт 1</li>
-        <li>Пункт 2</li>
-        <li>Пункт 3</li>
-      </ul>
-    </div>
-    
-    {/* Основной контент */}
-    <div className='content text-white w-3/4 p-4 h-full overflow-y-auto'>
-      <h1>Основной контент</h1>
-      <p>Здесь находится информация о вашем проекте.</p>
-      {/* Добавим много текста для демонстрации прокрутки */}
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-      <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-      <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse, at veritatis illo culpa pariatur repellat, quam in molestiae, qui eligendi deleniti doloremque! Molestias adipisci sequi ex est, excepturi dolores odio nisi tenetur, aspernatur nulla aliquid, placeat sed debitis accusantium cumque ipsa! A pariatur ut sequi earum. Dolorum saepe asperiores, ducimus accusantium explicabo iusto mollitia commodi consequatur enim ex fugiat neque possimus maxime voluptatem non veritatis repellat amet error temporibus. Culpa natus dolorem soluta maiores officiis sequi ut commodi mollitia consequuntur quas ducimus labore, cupiditate suscipit perferendis aut expedita voluptatum, libero fugiat minima, ad nam error porro similique? Repellendus modi nulla, doloribus id officia velit nihil sed quaerat in recusandae ea quos enim dolorum labore possimus quia facilis aliquid incidunt necessitatibus numquam assumenda rerum saepe omnis! Delectus at esse iste soluta magni necessitatibus cupiditate veniam magnam nulla architecto, sequi unde consectetur atque possimus, in adipisci odio a ullam cumque? Quasi atque impedit libero pariatur maiores porro corporis facilis eligendi error dicta sapiente beatae modi explicabo perspiciatis nesciunt, enim necessitatibus repellat cum. Aperiam perspiciatis minus ex aspernatur obcaecati aliquam officia, sequi modi. Aperiam nisi sapiente, ratione quod incidunt explicabo doloribus ducimus temporibus a iste nemo provident dolorum illum obcaecati eos ipsa quaerat delectus atque adipisci eius aut architecto! Praesentium quos, officiis error assumenda dicta aliquam facilis excepturi sunt minima aspernatur, sit sapiente, obcaecati itaque. Asperiores, unde tempora! Distinctio hic et reiciendis iure repudiandae fugiat laudantium beatae libero? Pariatur corporis aspernatur optio in quo velit quod, quaerat minima beatae neque dignissimos aut at adipisci nihil fugit eligendi natus, ratione ex, unde assumenda a inventore! Aspernatur aliquam expedita quam hic autem laborum perspiciatis cupiditate id ipsa quas. Tempore vero pariatur dolore commodi ab voluptatibus exercitationem nam magni perspiciatis sit inventore enim consectetur quas sint eum, itaque eveniet! Ex animi voluptatibus libero fugiat nemo sunt, voluptates quasi ab commodi incidunt dicta tempora explicabo et laborum, doloremque tempore quam suscipit numquam quaerat praesentium reiciendis illo blanditiis. Aut magnam dolorum consectetur at blanditiis voluptates atque dolorem delectus odit repellendus ea, id excepturi velit et repellat, fugit quam minima eligendi! Molestiae veniam sint sequi nesciunt adipisci unde totam labore incidunt vitae. Ex tempore delectus laboriosam itaque ad dolor, reiciendis eius at quo molestiae veniam et eos sed esse sint consequatur soluta nulla minus eaque aspernatur, perspiciatis odio necessitatibus. Odit mollitia distinctio dolore, animi vel quidem adipisci, fugiat consectetur aliquid perferendis eius aliquam! Et assumenda accusamus quod atque voluptatibus nobis dolores quo recusandae inventore natus delectus eos velit, earum, pariatur ipsa, minus sint molestiae quibusdam incidunt adipisci modi! Quisquam porro repudiandae doloribus, voluptatibus quod labore dignissimos nobis illum cum? Quia voluptate nesciunt natus repellendus vitae nobis odio illum omnis quisquam. Sit, quaerat. Facilis doloremque nostrum nisi velit distinctio quae obcaecati eligendi eius animi temporibus ut error, mollitia ducimus necessitatibus repellendus blanditiis exercitationem quia inventore veritatis expedita eos quaerat qui? Id officia quas cupiditate nobis doloremque repellendus impedit quam ab voluptatibus totam distinctio, minus inventore error? Saepe sapiente iure animi nostrum deserunt. Dignissimos possimus odio aliquam vero ea officiis distinctio nostrum quisquam tenetur minima consectetur labore tempora rem voluptate, nam hic suscipit vitae magnam. Dolores molestiae ut distinctio porro aliquam error, est voluptate qui saepe repellat beatae sed debitis numquam, rem iste. Vero inventore mollitia aut, facere minus laboriosam voluptates a! Reprehenderit alias nesciunt eum consectetur culpa, harum animi magnam, id illum, corporis esse repellendus odit facilis ipsam iusto aliquid itaque dolorem veniam tempora iure officiis error repudiandae. Nostrum amet quam enim optio ea distinctio incidunt harum natus nesciunt, cumque architecto soluta molestias dolorum nisi temporibus inventore a velit dicta! Iusto nesciunt a excepturi aperiam assumenda nihil illo, magni porro ut, delectus dicta asperiores consequatur? Illo error sit molestias perferendis aut dolores, delectus earum quod hic veritatis repellendus facilis qui nesciunt aspernatur soluta fuga praesentium commodi sequi voluptate ullam debitis ipsum incidunt itaque. Corrupti ipsa libero nulla eaque qui aut, reprehenderit eligendi minima sint nostrum ad modi necessitatibus adipisci quod rem illo, non beatae consequuntur fugiat cum provident. Unde aliquid fuga aut possimus ullam quae reiciendis, libero eos molestias, minima, blanditiis odio non consequuntur dolor. Iure incidunt, aliquam, natus quae enim quas nisi debitis provident ipsum omnis minus nam qui ea aut. Rem, cupiditate sunt maxime commodi et similique quod id est suscipit reiciendis. Dolore veniam dolorem voluptatem architecto at, quidem perferendis odio placeat, voluptates tempora hic quae laudantium nam accusamus voluptas natus, fuga ab doloribus. Eius suscipit illum recusandae inventore? Maxime totam dolor quidem fugiat velit nulla facere fugit odio deleniti reprehenderit. Suscipit veniam odit facilis repudiandae vitae voluptatum? Deleniti assumenda ea repellat aliquid maxime facere nobis, quidem libero nam modi ratione quos, cumque delectus optio placeat minima eum repellendus inventore? Asperiores mollitia eligendi animi ex saepe illo libero officia. Exercitationem, eos quia! Beatae aliquam facilis nostrum ab eum quidem officiis ducimus, impedit quos incidunt placeat earum vel omnis itaque voluptatum, soluta eius natus minus. Ipsum accusamus minus, dicta quisquam animi earum? Voluptatibus ut consectetur soluta numquam sequi aut vitae, dolore et, quis deleniti hic quod nemo iure? Quos corrupti doloribus iusto iste asperiores quidem, magnam vero tenetur facilis nemo aliquid natus praesentium maiores harum. Voluptatibus, nam culpa dolores fuga ut, commodi cumque omnis maxime sunt ab numquam placeat quaerat sint minima veniam laboriosam reiciendis. Natus, magni. Laudantium quaerat repellat praesentium neque dolor quia, deleniti, officiis mollitia nulla sunt non totam numquam. Fugiat dicta, reiciendis aliquam quibusdam vero ut repudiandae atque accusamus deleniti, sed illo illum error et perspiciatis quia neque dolor, ab impedit maiores cum vel aspernatur. Voluptatibus nam excepturi assumenda inventore, architecto iste veritatis eligendi possimus aliquid rerum illo accusamus tempora pariatur suscipit libero aut atque nihil. Incidunt laboriosam soluta mollitia a assumenda voluptatem non, delectus voluptatibus voluptas dolorum rerum reprehenderit ducimus animi totam harum illum beatae corporis deleniti error. Cum unde libero animi doloribus doloremque voluptas sunt perferendis placeat quos quidem! Odio obcaecati alias minima asperiores recusandae sed assumenda autem voluptatem blanditiis nulla aliquam, commodi officia. Neque alias suscipit magnam error illo temporibus assumenda. Dolorem aliquid assumenda nisi cum eos. Hic harum reiciendis eaque quas aspernatur? Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-    </div>
-  </div>
+    <main className='container mx-auto flex h-screen pt-20'>
+      {/* Sidebar */}
+      <div className={`sidebar text-white w-1/4 p-4 h-full transition-transform duration-300 
+        ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full'} 
+        md:translate-x-0 md:w-1/4 md:block fixed md:relative bg-neutral-900`}>
+        <h1>HTML</h1>
+        <nav>
+          <ul>
+            <li className='pt-3'>
+              <Link to="/">Lesson1</Link>
+            </li>
+
+            <li className='pt-3'>
+              <Link to="/les2">Lesson2</Link>
+            </li>
+            
+            <li className='pt-3'>
+              <Link to="/les3">Lesson3</Link>
+            </li>
+            
+            <li className='pt-3'>
+              <Link to="/les4">Lesson4</Link>
+            </li>
+            
+            <li className='pt-3'>
+              <Link to="/les5">Lesson5</Link>
+            </li>
+            
+            <li className='pt-3'>
+              <Link to="/les6">Lesson6</Link>
+            </li>
+
+            <li className='pt-3'>
+              <Link to="/les7">Lesson7</Link>
+            </li>
+
+            <li className='pt-3'>
+              <Link to="/les8">Lesson8</Link>
+            </li>
+
+            <li className='pt-3'>
+              <Link to="/les9">Lesson9</Link>
+            </li>
+
+            <li className='pt-3'>
+              <Link to="/les10">Lesson10</Link>
+            </li>
+
+            <li className='pt-3'>
+              <Link to="/les11">Lesson11</Link>
+            </li>
+
+          </ul>
+        </nav>
+      </div>
+
+      {/* Main content */}
+      <div className='content text-white w-full md:w-3/4 p-4 h-full overflow-y-auto'>
+        <Outlet />
+      </div>
+
+      {/* Toggle Button */}
+      <button 
+        className='fixed bottom-4 right-4 w-10 h-10 rounded-full bg-blue-500 text-white flex items-center justify-center md:hidden' 
+        onClick={toggleSidebar}
+      >
+        {isSidebarOpen ? '✖' : '☰'}
+      </button>
+    </main>
   )
 }
 
