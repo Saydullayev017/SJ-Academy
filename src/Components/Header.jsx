@@ -11,7 +11,7 @@ const Header = () => {
   return (
     <header className={`container mx-auto fixed top-0 left-0 right-0 text-white p-4 z-10 ${isOpen ? 'bg-neutral-900' : 'bg-neutral-900'}`}>
       <div className="container mx-auto flex justify-between items-center">
-        <h1 className="text-xl md:text-2xl font-mono">SJ-Cadamy</h1>
+        <h1 className="text-xl md:text-2xl font-mono">SJ</h1>
 
         <div className="md:hidden">
           <button onClick={toggleMenu} className="focus:outline-none">

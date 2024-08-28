@@ -43,7 +43,7 @@ const ContentRenderer = ({ content }) => {
                     case 'text':
                         return <p key={index} className="text-base md:text-lg">{item.value}</p>; // Увеличение текста на md
                     case 'header':
-                        return <h2 key={index} className="text-xl md:text-2xl font-bold">{item.value}</h2>; // Увеличение заголовка на md
+                        return <div key={index} className="text-xl md:text-xl font-bold">{item.value}</div>; // Увеличение заголовка на md
                     case 'code':
                         return (
                             <div key={index} className="flex flex-col p-4 bg-neutral-900 border border-gray-300 rounded overflow-auto">

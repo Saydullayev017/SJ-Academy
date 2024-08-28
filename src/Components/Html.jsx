@@ -13,7 +13,7 @@ const Html = () => {
   return (
     <main className='container mx-auto flex h-screen pt-20'>
       {/* Sidebar */}
-      <div className={`sidebar text-white w-1/4 p-4 h-full transition-transform duration-300 
+      <div className={`sideba text-white w-1/4 p-4 h-full transition-transform duration-300 
         ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full'} 
         md:translate-x-0 md:w-1/4 md:block fixed md:relative bg-neutral-900`}>
         <h1>HTML</h1>
@@ -24,15 +24,15 @@ const Html = () => {
             </li>
 
             <li className='pt-3'>
-              <Link to="/les2">Lesson2</Link>
+              <Link to="/les2">Структура HTML-документа</Link>
             </li>
             
             <li className='pt-3'>
-              <Link to="/les3">Lesson3</Link>
+              <Link to="/les3">Базовые теги HTML</Link>
             </li>
             
             <li className='pt-3'>
-              <Link to="/les4">Lesson4</Link>
+              <Link to="/les4">Атрибуты тегов HTML</Link>
             </li>
             
             <li className='pt-3'>
@@ -65,6 +65,7 @@ const Html = () => {
 
           </ul>
         </nav>
+        <div class="absolute right-0 top-1/2 transform -translate-y-1/2 h-[759px] w-0.5 bg-neutral-700"></div>
       </div>
 
       {/* Main content */}
