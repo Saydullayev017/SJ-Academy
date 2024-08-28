@@ -1,12 +1,13 @@
-import React from 'react'
+import React from 'react';
+import ContentRenderer from './ContentRenderer';
 
-function LessonFirst({ title, content }) {
+function Lesson1({ title, content }) {
   return (
     <div className="text-display">
       <h2>{title}</h2>
-      <p>{content}</p>
+      <ContentRenderer content={content} />
     </div>
   )
 }
 
-export default LessonFirst
+export default Lesson1
