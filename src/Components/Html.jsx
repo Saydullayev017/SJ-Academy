@@ -20,7 +20,7 @@ const Html = () => {
         <nav>
           <ul>
             <li className='pt-3'>
-              <Link to="/">Lesson1</Link>
+              <Link to="/">Вступления</Link>
             </li>
 
             <li className='pt-3'>
@@ -36,23 +36,23 @@ const Html = () => {
             </li>
             
             <li className='pt-3'>
-              <Link to="/les5">Lesson5</Link>
+              <Link to="/les5">Семантическая верстка</Link>
             </li>
             
             <li className='pt-3'>
-              <Link to="/les6">Lesson6</Link>
+              <Link to="/les6">Теги для создания форм </Link>
             </li>
 
             <li className='pt-3'>
-              <Link to="/les7">Lesson7</Link>
+              <Link to="/les7">Теги для создания таблиц в HTML</Link>
             </li>
 
             <li className='pt-3'>
-              <Link to="/les8">Lesson8</Link>
+              <Link to="/les8">Вставка видео и аудио</Link>
             </li>
 
             <li className='pt-3'>
-              <Link to="/les9">Lesson9</Link>
+              <Link to="/les9">Фреймы в HTML</Link>
             </li>
 
             <li className='pt-3'>

@@ -41,7 +41,7 @@ const ContentRenderer = ({ content }) => {
             {content.map((item, index) => {
                 switch (item.type) {
                     case 'text':
-                        return <p key={index} className="text-base md:text-lg">{item.value}</p>; // Увеличение текста на md
+                        return <p key={index} className="text-gray-500 text-base md:text-lg">{item.value}</p>; // Увеличение текста на md
                     case 'header':
                         return <div key={index} className="text-xl md:text-xl font-bold">{item.value}</div>; // Увеличение заголовка на md
                     case 'code':
