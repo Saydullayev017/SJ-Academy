@@ -4,6 +4,7 @@ export const HtmlDocumentFirst = [
     {
         id: 1,
         // title: "Что такое HTML?",
+        path: "/",
         content: [
             { type: 'header', value: 'Что такое HTML ?' },
 
@@ -12,7 +13,9 @@ export const HtmlDocumentFirst = [
     },
     {
         id: 2,
-        // title: "Что такое HTML?",
+        path: "/",
+
+        // title: "Зачем нужен HTML?",
         content: [
             { type: 'header', value: 'Зачем нужен HTML?' },
 
@@ -27,6 +30,8 @@ export const HtmlDocumentFirst = [
     {
         id: 3,
         // title: "Что такое HTML?",
+        path: "/",
+
         content: [
             { type: 'header', value: 'Темы, которые мы рассмотрим' },
 
@@ -48,16 +53,23 @@ export const HtmlDocumentFirst = [
 export const HtmlDocumentSecond = [
     {
         id: 1,
-        title: "Структура HTML-документа",
+        // title: "",
+        path: "/les2",
         content: [
+            { type: 'header', value: 'Структура HTML-документа' },
+
             { type: 'text', value: 'Первая строка HTML-документа должна содержать объявление типа документа (DOCTYPE). Это сообщает браузеру, какую версию HTML использует документ. Для HTML5 объявление выглядит так:' },
             { type: 'code', value: '<!DOCTYPE html>' },
         ],
     },
     {
         id: 2,
-        title: "Открывающий тег <html>",
+        // title: "",
+        path: "/les2",
+
         content: [
+            { type: 'header', value: 'Открывающий тег <html>' },
+
             { type: 'text', value: 'После объявления DOCTYPE следует открывающий тег <html>, который обозначает начало HTML-документа. Весь код документа будет находиться внутри этого тега.' },
             { type: 'code', value: `    
     <!DOCTYPE html> 
@@ -69,8 +81,12 @@ export const HtmlDocumentSecond = [
     },
     {
         id: 3,
-        title: "Раздел <head>",
+        path: "/les2",
+
+        // title: "",
         content: [
+            { type: 'header', value: 'Открывающий тег <html>' },
+
             { type: 'text', value: 'Внутри тега <html> находится раздел <head>, который содержит служебную информацию о документе, такую как заголовок, кодировку, подключаемые файлы стилей и скриптов.' },
             { type: 'code', value: `
 <!DOCTYPE html>
@@ -88,8 +104,12 @@ export const HtmlDocumentSecond = [
     },
     {
         id: 4,
-        title: "Раздел <body>",
+        // title: "Раздел <body>",
+        path: "/les2",
+
         content: [
+            { type: 'header', value: 'Раздел <body>' },
+            
             { type: 'text', value: 'После <head> идет раздел <body>, который содержит все видимое содержимое страницы: текст, изображения, ссылки, формы и т.д.' },
             { type: 'code', value: `
 <!DOCTYPE html>
@@ -118,8 +138,12 @@ export const HtmlDocumentSecond = [
 export const HtmlDocumenеТhird = [
     {
         id: 1,
-        title: "Базовые теги HTML",
+        path: "/les3",
+
+        // title: "",
         content: [
+            { type: 'header', value: 'Базовые теги HTML' },
+
             { type: 'text', value: 'В этом разделе мы рассмотрим основные теги HTML, которые используются для создания структуры и содержания веб-страниц. Мы обсудим заголовки, абзацы, списки, ссылки и изображения.' },
             { type: 'header', value: 'Заголовки' },
             { type: 'text', value: 'Заголовки используются для обозначения иерархии информации на странице. В HTML есть шесть уровней заголовков, от <h1> до <h6>. <h1> — это самый важный заголовок, а <h6> — самый менее важный.'},
@@ -136,6 +160,9 @@ export const HtmlDocumenеТhird = [
     },
     {
         id: 2,
+        path: "/les3",
+
+
         // title: "",
         content: [
             { type: 'header', value: 'Абзацы' },
@@ -149,6 +176,9 @@ export const HtmlDocumenеТhird = [
     },
     {
         id: 3,
+        path: "/les3",
+
+
         // title: "Урок 2",
         content: [
             { type: 'header', value: 'Списки' },
@@ -177,6 +207,9 @@ export const HtmlDocumenеТhird = [
     },
     {
         id: 4,
+        path: "/les3",
+
+
         // title: "Урок 2",
         content: [
             { type: 'header', value: 'Ссылки' },
@@ -190,6 +223,9 @@ export const HtmlDocumenеТhird = [
     },
     {
         id: 5,
+        path: "/les3",
+
+
         // title: "Урок 2",
         content: [
             { type: 'header', value: 'Изображения' },
@@ -202,6 +238,8 @@ export const HtmlDocumenеТhird = [
     {
         id: 6,
         // title: "Урок 2",
+        path: "/les3",
+
         content: [
             { type: 'header', value: 'Пример использования базовых тегов' },
             { type: 'text', value: 'Вот пример HTML-документа, который использует все рассмотренные базовые теги:' },
@@ -249,6 +287,8 @@ export const HtmlDocumentFourth = [
     {
         id: 1,
         // title: "Что такое HTML?",
+        path: "/les4",
+
         content: [
             { type: 'header', value: 'Атрибуты тегов HTML' },
             { type: 'text', value: 'Атрибуты в HTML — это специальные свойства, которые добавляются к тегам для управления их поведением и отображением. Они предоставляют дополнительную информацию о элементах и могут изменять их функциональность. Давайте рассмотрим основные аспекты атрибутов.' },
@@ -256,6 +296,8 @@ export const HtmlDocumentFourth = [
     },
     {
         id: 2,
+        path: "/les4",
+
         // title: "",
         content: [
             { type: 'header', value: '1. Синтаксис атрибутов' },
@@ -268,6 +310,8 @@ export const HtmlDocumentFourth = [
     },
     {
         id: 3,
+        path: "/les4",
+
         // title: "",
         content: [
             { type: 'header', value: '2. Виды атрибутов' },
@@ -279,6 +323,8 @@ export const HtmlDocumentFourth = [
     }, 
     {
         id: 4,
+        path: "/les4",
+
         // title: "Примеры атрибутов",
         content: [
             { type: 'header', value: 'Глобальные атрибуты' },
@@ -312,6 +358,8 @@ export const HtmlDocumentFourth = [
     }, 
     {
         id: 5,
+        path: "/les4",
+
         // title: "Основные возможности HTML",
         content: [
             { type: 'header', value: '4. Применение нескольких атрибутов' },
@@ -322,6 +370,8 @@ export const HtmlDocumentFourth = [
     }, 
     {
         id: 6,
+        path: "/les4",
+
         // title: "Основные возможности HTML",
         content: [
             { type: 'header', value: 'Заключение' },
@@ -336,6 +386,8 @@ export const HtmlDocumentFourth = [
 export const HtmlDocumentFifth = [
     {
         id: 1,
+        path: "/les5",
+
         // title: "",
         content: [
             { type: 'header', value: 'Семантическая верстка' },
@@ -354,6 +406,8 @@ export const HtmlDocumentFifth = [
     },
     {
         id: 2,
+        path: "/les5",
+
         // title: "Что такое HTML?",
         content: [
             { type: 'header', value: '2. Основные семантические теги HTML' },
@@ -422,6 +476,8 @@ export const HtmlDocumentFifth = [
     },
     {
         id: 3,
+        path: "/les5",
+
         // title: "Что такое HTML?",
         content: [
             { type: 'header', value: '3. Примеры семантической верстки' },
@@ -467,6 +523,8 @@ export const HtmlDocumentFifth = [
     },
     {
         id: 4,
+        path: "/les5",
+
         // title: "Что такое HTML?",
         content: [
             { type: 'header', value: 'Заключение' },
@@ -480,6 +538,8 @@ export const HtmlDocumentFifth = [
 export const HtmlDocumentSixth = [
     {
         id: 1,
+        path: "/les6",
+
         // title: "Что такое HTML?",
         content: [
             { type: 'header', value: 'Теги для создания форм в HTML' },
@@ -501,6 +561,8 @@ export const HtmlDocumentSixth = [
     },
     {
         id: 2,
+        path: "/les6",
+
         // title: "Основные возможности HTML",
         content: [
             { type: 'header', value: '2. Тег <input>' },
@@ -524,6 +586,8 @@ export const HtmlDocumentSixth = [
 
     {
         id: 3,
+        path: "/les6",
+
         // title: "Что такое HTML?",
         content: [
             { type: 'header', value: '3. Тег <textarea>' },
@@ -537,6 +601,8 @@ export const HtmlDocumentSixth = [
 
     {
         id: 4,
+        path: "/les6",
+
         // title: "Что такое HTML?",
         content: [
             { type: 'header', value: '4. Тег <select>' },
@@ -556,6 +622,8 @@ export const HtmlDocumentSixth = [
 
     {
         id: 5,
+        path: "/les6",
+
         // title: "Что такое HTML?",
         content: [
             { type: 'header', value: 'Тег <button>' },
@@ -569,6 +637,8 @@ export const HtmlDocumentSixth = [
 
     {
         id: 6,
+        path: "/les6",
+
         // title: "Что такое HTML?",
         content: [
             { type: 'header', value: '6. Пример полной формы' },
@@ -614,6 +684,8 @@ export const HtmlDocumentSixth = [
 
     {
         id: 7,
+        path: "/les6",
+
         // title: "Что такое HTML?",
         content: [
             { type: 'header', value: 'Заключение' },
@@ -627,6 +699,8 @@ export const HtmlDocumentSixth = [
 export const HtmlDocumentSeventh = [
     {
         id: 1,
+        path: "/les7",
+
         // title: "Что такое HTML?",
         content: [
             { type: 'header', value: 'Теги для создания таблиц в HTML' },
@@ -636,6 +710,8 @@ export const HtmlDocumentSeventh = [
     },
     {
         id: 2,
+        path: "/les7",
+
         // title: "Основные возможности HTML",
         content: [
             { type: 'header', value: '1. Тег <table>' },
@@ -651,6 +727,8 @@ export const HtmlDocumentSeventh = [
     },
     {
         id: 3,
+        path: "/les7",
+
         // title: "Основные возможности HTML",
         content: [
             { type: 'header', value: '2. Тег <tr>' },
@@ -666,6 +744,8 @@ export const HtmlDocumentSeventh = [
     }, 
     {
         id: 4,
+        path: "/les7",
+
         // title: "Основные возможности HTML",
         content: [
             { type: 'header', value: '3. Тег <th>' },
@@ -681,6 +761,8 @@ export const HtmlDocumentSeventh = [
     }, 
     {
         id: 5,
+        path: "/les7",
+
         // title: "Основные возможности HTML",
         content: [
             { type: 'header', value: '4. Тег <td>' },
@@ -696,6 +778,8 @@ export const HtmlDocumentSeventh = [
     }, 
     {
         id: 6,
+        path: "/les7",
+
         // title: "Основные возможности HTML",
         content: [
             { type: 'header', value: '5. Пример таблицы' },
@@ -730,6 +814,8 @@ export const HtmlDocumentSeventh = [
     }, 
     {
         id: 7,
+        path: "/les7",
+
         // title: "Основные возможности HTML",
         content: [
             { type: 'header', value: '6. Дополнительные атрибуты' },
@@ -763,6 +849,8 @@ export const HtmlDocumentSeventh = [
     }, 
     {
         id: 8,
+        path: "/les7",
+
         // title: "Основные возможности HTML",
         content: [
             { type: 'header', value: 'Заключение' },
@@ -776,6 +864,8 @@ export const HtmlDocumentSeventh = [
 export const HtmlDocumentEighth = [
     {
         id: 1,
+        path: "/les8",
+
         // title: "Что такое HTML?",
         content: [
             { type: 'header', value: 'Вставка видео и аудио в HTML' },
@@ -784,6 +874,8 @@ export const HtmlDocumentEighth = [
     },
     {
         id: 2,
+        path: "/les8",
+
         // title: "Основные возможности HTML",
         content: [
             { type: 'header', value: '1. Тег <video>' },
@@ -807,6 +899,8 @@ export const HtmlDocumentEighth = [
 
     {
         id: 3,
+        path: "/les8",
+
         // title: "Что такое HTML?",
         content: [
             { type: 'header', value: '2. Тег <source>' },
@@ -825,6 +919,8 @@ export const HtmlDocumentEighth = [
 
     {
         id: 4,
+        path: "/les8",
+
         // title: "Что такое HTML?",
         content: [
             { type: 'header', value: '3. Тег <audio>' },
@@ -843,6 +939,8 @@ export const HtmlDocumentEighth = [
 
     {
         id: 5,
+        path: "/les8",
+
         // title: "Что такое HTML?",
         content: [
             { type: 'header', value: '4. Пример использования <video> и <audio>' },
@@ -866,6 +964,8 @@ export const HtmlDocumentEighth = [
 
     {
         id: 6,
+        path: "/les8",
+
         // title: "Что такое HTML?",
         content: [
             { type: 'header', value: '5. Субтитры и аудиодорожки' },
@@ -882,6 +982,8 @@ export const HtmlDocumentEighth = [
     },
     {
         id: 7,
+        path: "/les8",
+
         // title: "Что такое HTML?",
         content: [
             { type: 'header', value: 'Заключение' },
@@ -897,6 +999,8 @@ export const HtmlDocumentEighth = [
 export const HtmlDocumentNinth = [
     {
         id: 1,
+        path: "/les9",
+
         // title: "Что такое HTML?",
         content: [
             { type: 'header', value: 'Фреймы в HTML' },
@@ -906,6 +1010,8 @@ export const HtmlDocumentNinth = [
     },
     {
         id: 2,
+        path: "/les9",
+
         // title: "Основные возможности HTML",
         content: [
             { type: 'header', value: '1. Вставка сторонних сайтов с помощью тега <iframe>' },
@@ -917,6 +1023,8 @@ export const HtmlDocumentNinth = [
     },
     {
         id: 3,
+        path: "/les9",
+
         // title: "Что такое HTML?",
         content: [
             { type: 'header', value: '2. Атрибуты фреймовЗ' },
@@ -939,6 +1047,8 @@ export const HtmlDocumentNinth = [
     },
     {
         id: 4,
+        path: "/les9",
+
         // title: "Что такое HTML?",
         content: [
             { type: 'header', value: '3. Безопасность при использовании фреймов' },
@@ -973,6 +1083,8 @@ export const HtmlDocumentNinth = [
     },
     {
         id: 5,
+        path: "/les9",
+
         // title: "Что такое HTML?",
         content: [
             { type: 'header', value: 'Заключение' },
@@ -988,6 +1100,8 @@ export const HtmlDocumentNinth = [
 export const HtmlDocumentTenth = [
     {
         id: 1,
+        path: "/les10",
+
         title: "Что такое HTML?",
         content: [
             { type: 'text', value: '' },
@@ -997,6 +1111,8 @@ export const HtmlDocumentTenth = [
     },
     {
         id: 2,
+        path: "/les10",
+
         title: "Основные возможности HTML",
         content: [
             { type: 'text', value: 'Содержимое урока 2...' },
