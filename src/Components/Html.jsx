@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Outlet, NavLink, useNavigate } from 'react-router-dom';
 import SearchResults from './SearchResults';
 import { 
@@ -22,6 +22,20 @@ const Html = () => {
     const [showResults, setShowResults] = useState(false);
     const navigate = useNavigate();
 
+    useEffect(() => {
+        const handleOutsideClick = (event) => {
+            if (isSidebarOpen && !event.target.closest('.sidebar') && !event.target.closest('.toggle-button')) {
+                setIsSidebarOpen(false);
+            }
+        };
+
+        document.addEventListener('pointerdown', handleOutsideClick);
+
+        return () => {
+            document.removeEventListener('pointerdown', handleOutsideClick);
+        };
+    }, [isSidebarOpen]);
+
     const handleSearch = (term) => {
         setSearchTerm(term);
         const filteredResults = [...HtmlDocumentFirst, ...HtmlDocumentSecond, ...HtmlDocumenеТhird, ...HtmlDocumentFourth, ...HtmlDocumentFifth, ...HtmlDocumentSixth, ...HtmlDocumentSeventh, ...HtmlDocumentEighth, ...HtmlDocumentNinth, ...HtmlDocumentTenth, ...HtmlDocumentEleventh].filter(doc => 
@@ -39,7 +53,7 @@ const Html = () => {
     };
 
     const toggleSidebar = () => {
-        setIsSidebarOpen(!isSidebarOpen);
+        setIsSidebarOpen((prev) => !prev);
     };
 
     return (
@@ -170,7 +184,7 @@ const Html = () => {
 
             {/* Toggle Button */}
             <button 
-                className='fixed bottom-4 right-4 w-10 h-10 rounded-full bg-blue-500 text-white flex items-center justify-center md:hidden z-30'
+                className='toggle-button fixed bottom-4 right-4 w-10 h-10 rounded-full bg-blue-500 text-white flex items-center justify-center md:hidden z-30'
                 onClick={toggleSidebar}
             >
                 {isSidebarOpen ? '✖' : '☰'}
