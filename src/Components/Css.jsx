@@ -83,7 +83,7 @@ function Css() {
                           to="./" 
                           className={({ isActive }) => (isActive ? 'text-blue-400 font-bold' : 'text-white')}
                       >
-                          Вступления
+                          Синтаксис CSS
                       </NavLink>
                   </li>
                   <li className='pt-3'>
@@ -91,7 +91,7 @@ function Css() {
                           to="./css2" 
                           className={({ isActive }) => (isActive ? 'text-blue-400 font-bold' : 'text-white')}
                       >
-                          Структура HTML-документа
+                          Блочная модель
                       </NavLink>
                   </li>
                   <li className='pt-3'>
@@ -99,7 +99,7 @@ function Css() {
                           to="./css3" 
                           className={({ isActive }) => (isActive ? 'text-blue-400 font-bold' : 'text-white')}
                       >
-                          Базовые теги HTML
+                          Контент Позиционирование
                       </NavLink>
                   </li>
                   <li className='pt-3'>
@@ -107,7 +107,7 @@ function Css() {
                           to="./css4" 
                           className={({ isActive }) => (isActive ? 'text-blue-400 font-bold' : 'text-white')}
                       >
-                          Атрибуты тегов HTML
+                          Типы элементов в CSS
                       </NavLink>
                   </li>
                   <li className='pt-3'>
