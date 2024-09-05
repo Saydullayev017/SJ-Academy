@@ -42,6 +42,17 @@ import Css8 from "../Components/CssComponents/LessonEighth";
 import Css9 from "../Components/CssComponents/LessonNinth";
 import Css10 from "../Components/CssComponents/LessonTenth";
 import Css11 from "../Components/CssComponents/LessonEleventh";
+import Css12 from "../Components/CssComponents/LessonTwelfth"
+import Css13 from "../Components/CssComponents/LessonThirteenth"
+import Css14 from "../Components/CssComponents/LessonFourteenth"
+import Css15 from "../Components/CssComponents/LessonFifteenth"
+import Css16 from "../Components/CssComponents/LessonSixteenth"
+import Css17 from "../Components/CssComponents/LessonSeventeenth"
+import Css18 from "../Components/CssComponents/LessonEighteenth"
+import Css19 from "../Components/CssComponents/LessomNineteenth"
+import Css20 from "../Components/CssComponents/LessonTwentieth"
+
+
 
 import { 
   CssDocumentFirst,
@@ -185,8 +196,32 @@ const AppRoutes = () => {
     <Css11 key={doc.id} title={doc.title} content={doc.content} />
   ))} />
 
-<Route path="css3" element={CssDocumentТhird.map((doc) => (
-    <Css3 key={doc.id} title={doc.title} content={doc.content} />
+<Route path="css12" element={CssDocumentТhird.map((doc) => (
+    <Css12 key={doc.id} title={doc.title} content={doc.content} />
+  ))} />
+  <Route path="css13" element={CssDocumentТhird.map((doc) => (
+    <Css13 key={doc.id} title={doc.title} content={doc.content} />
+  ))} />
+  <Route path="css14" element={CssDocumentТhird.map((doc) => (
+    <Css14 key={doc.id} title={doc.title} content={doc.content} />
+  ))} />
+  <Route path="css15" element={CssDocumentТhird.map((doc) => (
+    <Css15 key={doc.id} title={doc.title} content={doc.content} />
+  ))} />
+  <Route path="css16" element={CssDocumentТhird.map((doc) => (
+    <Css16 key={doc.id} title={doc.title} content={doc.content} />
+  ))} />
+  <Route path="css17" element={CssDocumentТhird.map((doc) => (
+    <Css17 key={doc.id} title={doc.title} content={doc.content} />
+  ))} />
+  <Route path="css18" element={CssDocumentТhird.map((doc) => (
+    <Css18 key={doc.id} title={doc.title} content={doc.content} />
+  ))} />
+  <Route path="css19" element={CssDocumentТhird.map((doc) => (
+    <Css19 key={doc.id} title={doc.title} content={doc.content} />
+  ))} />
+  <Route path="css20" element={CssDocumentТhird.map((doc) => (
+    <Css20 key={doc.id} title={doc.title} content={doc.content} />
   ))} />
 </Route>
 

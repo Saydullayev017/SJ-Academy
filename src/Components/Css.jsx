@@ -75,7 +75,6 @@ function Css() {
           ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full'} 
           md:translate-x-0 md:w-1/4 md:block fixed md:relative bg-neutral-900 z-20`}>
 
-          <h1>Css</h1>
           <nav>
               <ul>
                   <li className='pt-3'>
@@ -83,7 +82,7 @@ function Css() {
                           to="./" 
                           className={({ isActive }) => (isActive ? 'text-blue-400 font-bold' : 'text-white')}
                       >
-                          Синтаксис CSS
+                          Синтаксис
                       </NavLink>
                   </li>
                   <li className='pt-3'>
@@ -107,7 +106,7 @@ function Css() {
                           to="./css4" 
                           className={({ isActive }) => (isActive ? 'text-blue-400 font-bold' : 'text-white')}
                       >
-                          Типы элементов в CSS
+                          Типы элементов
                       </NavLink>
                   </li>
                   <li className='pt-3'>
@@ -115,7 +114,7 @@ function Css() {
                           to="./css5" 
                           className={({ isActive }) => (isActive ? 'text-blue-400 font-bold' : 'text-white')}
                       >
-                          Семантическая верстка
+                          Способы задания цветов
                       </NavLink>
                   </li>
                   <li className='pt-3'>
@@ -123,7 +122,7 @@ function Css() {
                           to="./css6" 
                           className={({ isActive }) => (isActive ? 'text-blue-400 font-bold' : 'text-white')}
                       >
-                          Теги для создания форм
+                          Свойства шрифтов 
                       </NavLink>
                   </li>
                   <li className='pt-3'>
@@ -131,7 +130,7 @@ function Css() {
                           to="./css7" 
                           className={({ isActive }) => (isActive ? 'text-blue-400 font-bold' : 'text-white')}
                       >
-                          Теги для создания таблиц в HTML
+                          Свойства текста 
                       </NavLink>
                   </li>
                   <li className='pt-3'>
@@ -139,7 +138,7 @@ function Css() {
                           to="./css8" 
                           className={({ isActive }) => (isActive ? 'text-blue-400 font-bold' : 'text-white')}
                       >
-                          Вставка видео и аудио
+                        Фон
                       </NavLink>
                   </li>
                   <li className='pt-3'>
@@ -147,7 +146,7 @@ function Css() {
                           to="./css9" 
                           className={({ isActive }) => (isActive ? 'text-blue-400 font-bold' : 'text-white')}
                       >
-                          Фреймы в HTML
+                          Блочная верстка
                       </NavLink>
                   </li>
                   <li className='pt-3'>
@@ -155,7 +154,7 @@ function Css() {
                           to="./css10" 
                           className={({ isActive }) => (isActive ? 'text-blue-400 font-bold' : 'text-white')}
                       >
-                          Lesson10
+                          Flexbox
                       </NavLink>
                   </li>
                   <li className='pt-3'>
@@ -163,7 +162,79 @@ function Css() {
                           to="./css11" 
                           className={({ isActive }) => (isActive ? 'text-blue-400 font-bold' : 'text-white')}
                       >
-                          Lesson11
+                           Grid Layout
+                      </NavLink>
+                  </li>
+                  <li className='pt-3'>
+                      <NavLink 
+                          to="./css12" 
+                          className={({ isActive }) => (isActive ? 'text-blue-400 font-bold' : 'text-white')}
+                      >
+                          Lesson12
+                      </NavLink>
+                  </li>
+                  <li className='pt-3'>
+                      <NavLink 
+                          to="./css13" 
+                          className={({ isActive }) => (isActive ? 'text-blue-400 font-bold' : 'text-white')}
+                      >
+                          Lesson13
+                      </NavLink>
+                  </li>
+                  <li className='pt-3'>
+                      <NavLink 
+                          to="./css14" 
+                          className={({ isActive }) => (isActive ? 'text-blue-400 font-bold' : 'text-white')}
+                      >
+                          Lesson14
+                      </NavLink>
+                  </li>
+                  <li className='pt-3'>
+                      <NavLink 
+                          to="./css15" 
+                          className={({ isActive }) => (isActive ? 'text-blue-400 font-bold' : 'text-white')}
+                      >
+                          Lesson15
+                      </NavLink>
+                  </li>
+                  <li className='pt-3'>
+                      <NavLink 
+                          to="./css16" 
+                          className={({ isActive }) => (isActive ? 'text-blue-400 font-bold' : 'text-white')}
+                      >
+                          Lesson16
+                      </NavLink>
+                  </li>
+                  <li className='pt-3'>
+                      <NavLink 
+                          to="./css17" 
+                          className={({ isActive }) => (isActive ? 'text-blue-400 font-bold' : 'text-white')}
+                      >
+                          Lesson17
+                      </NavLink>
+                  </li>
+                  <li className='pt-3'>
+                      <NavLink 
+                          to="./css18" 
+                          className={({ isActive }) => (isActive ? 'text-blue-400 font-bold' : 'text-white')}
+                      >
+                          Lesson18
+                      </NavLink>
+                  </li>
+                  <li className='pt-3'>
+                      <NavLink 
+                          to="./css19" 
+                          className={({ isActive }) => (isActive ? 'text-blue-400 font-bold' : 'text-white')}
+                      >
+                          Lesson19
+                      </NavLink>
+                  </li>
+                  <li className='pt-3'>
+                      <NavLink 
+                          to="./css20" 
+                          className={({ isActive }) => (isActive ? 'text-blue-400 font-bold' : 'text-white')}
+                      >
+                          Lesson20
                       </NavLink>
                   </li>
               </ul>
