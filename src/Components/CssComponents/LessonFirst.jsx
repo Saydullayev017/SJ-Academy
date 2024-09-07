@@ -1,7 +1,7 @@
 import React from 'react';
 import ContentRenderer from './ContentRenderer';
 
-function Lesson1Css({ title, content }) {
+function Css1({ title, content }) {
     return (
         <div className="text-display">
             <h2 className="text-2xl font-bold">{title}</h2>
@@ -10,4 +10,4 @@ function Lesson1Css({ title, content }) {
     );
 }
 
-export default Lesson1Css;
+export default Css1;

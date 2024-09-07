@@ -1,6 +1,6 @@
 import React from 'react'
 import ContentRenderer from './ContentRenderer'
-function LessonТhirdCss({ title, content }) {
+function Css3({ title, content }) {
   return (
     <div className="text-display">
       <h2>{title}</h2>
@@ -9,4 +9,4 @@ function LessonТhirdCss({ title, content }) {
   )
 }
 
-export default LessonТhirdCss
+export default Css3

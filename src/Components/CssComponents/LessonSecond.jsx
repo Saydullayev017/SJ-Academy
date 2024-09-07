@@ -1,6 +1,6 @@
 import React from 'react'
 import ContentRenderer from './ContentRenderer';
-function LessonSecondCss({ title, content }) {
+function Css2({ title, content }) {
   return (
     <div className="text-display">
       <h2>{title}</h2>
@@ -9,4 +9,4 @@ function LessonSecondCss({ title, content }) {
   )
 }
 
-export default LessonSecondCss;
+export default Css2;

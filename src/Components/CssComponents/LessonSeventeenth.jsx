@@ -1,9 +1,14 @@
 import React from 'react'
 
-function LessonSeventeenth() {
+
+import ContentRenderer from './ContentRenderer'
+function Css17({ title, content }) {
   return (
-    <div>LessonSeventeenth</div>
+    <div className="text-display">
+      <h2>{title}</h2>
+      <ContentRenderer content={content} />
+    </div>
   )
 }
 
-export default LessonSeventeenth
+export default Css17

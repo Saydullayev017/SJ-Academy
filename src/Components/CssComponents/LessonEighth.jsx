@@ -1,6 +1,6 @@
 import React from 'react'
 import ContentRenderer from './ContentRenderer'
-function LessonEighthCss({ title, content }) {
+function Css8({ title, content }) {
     return (
       <div className="text-display">
       <h2>{title}</h2>
@@ -9,4 +9,4 @@ function LessonEighthCss({ title, content }) {
     )
   }
   
-export default LessonEighthCss
+export default Css8

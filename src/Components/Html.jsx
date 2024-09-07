@@ -11,8 +11,6 @@ import {
   HtmlDocumentSeventh,
   HtmlDocumentEighth,
   HtmlDocumentNinth,
-  HtmlDocumentTenth,
-  HtmlDocumentEleventh
 } from '../data/HtmlDocument';
 
 const Html = () => {
@@ -38,7 +36,7 @@ const Html = () => {
 
     const handleSearch = (term) => {
         setSearchTerm(term);
-        const filteredResults = [...HtmlDocumentFirst, ...HtmlDocumentSecond, ...HtmlDocumenеТhird, ...HtmlDocumentFourth, ...HtmlDocumentFifth, ...HtmlDocumentSixth, ...HtmlDocumentSeventh, ...HtmlDocumentEighth, ...HtmlDocumentNinth, ...HtmlDocumentTenth, ...HtmlDocumentEleventh].filter(doc => 
+        const filteredResults = [...HtmlDocumentFirst, ...HtmlDocumentSecond, ...HtmlDocumenеТhird, ...HtmlDocumentFourth, ...HtmlDocumentFifth, ...HtmlDocumentSixth, ...HtmlDocumentSeventh, ...HtmlDocumentEighth, ...HtmlDocumentNinth].filter(doc => 
             doc.title?.toLowerCase().includes(term.toLowerCase()) || 
             doc.content.some(item => item.value.toLowerCase().includes(term.toLowerCase()))
         );
@@ -63,7 +61,7 @@ const Html = () => {
                 ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full'} 
                 md:translate-x-0 md:w-1/4 md:block fixed md:relative bg-neutral-900 z-20`}>
 
-                <h1>HTML</h1>
+                <h1 className='border bg-neutral-900 text-center rounded '>HTML</h1>
                 <nav>
                     <ul>
                         <li className='pt-3'>
@@ -138,25 +136,9 @@ const Html = () => {
                                 Фреймы в HTML
                             </NavLink>
                         </li>
-                        <li className='pt-3'>
-                            <NavLink 
-                                to="/les10" 
-                                className={({ isActive }) => (isActive ? 'text-blue-400 font-bold' : 'text-white')}
-                            >
-                                Lesson10
-                            </NavLink>
-                        </li>
-                        <li className='pt-3'>
-                            <NavLink 
-                                to="/les11" 
-                                className={({ isActive }) => (isActive ? 'text-blue-400 font-bold' : 'text-white')}
-                            >
-                                Lesson11
-                            </NavLink>
-                        </li>
                     </ul>
                 </nav>
-                <div className="absolute right-0 top-1/2 transform -translate-y-1/2 h-[759px] w-0.5 bg-neutral-700"></div>
+                {/* <div className="absolute right-0 top-1/2 transform -translate-y-1/2 h-[759px] w-0.5 bg-neutral-700"></div> */}
             </div>
 
             {/* Main content */}

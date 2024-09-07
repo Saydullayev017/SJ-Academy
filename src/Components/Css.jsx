@@ -74,13 +74,14 @@ function Css() {
       <div className={`sidebar text-white p-4 h-full transition-transform duration-300 
           ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full'} 
           md:translate-x-0 md:w-1/4 md:block fixed md:relative bg-neutral-900 z-20`}>
+                <h1 className='border bg-neutral-900 text-center rounded '>CSS</h1>
 
           <nav>
               <ul>
                   <li className='pt-3'>
                       <NavLink 
                           to="./" 
-                          className={({ isActive }) => (isActive ? 'text-blue-400 font-bold' : 'text-white')}
+                          // className={({ isActive }) => (isActive ? 'text-blue-400 font-bold' : 'text-white')}
                       >
                           Синтаксис
                       </NavLink>
@@ -170,7 +171,7 @@ function Css() {
                           to="./css12" 
                           className={({ isActive }) => (isActive ? 'text-blue-400 font-bold' : 'text-white')}
                       >
-                          Lesson12
+                          Медиа-запросы
                       </NavLink>
                   </li>
                   <li className='pt-3'>
@@ -178,7 +179,7 @@ function Css() {
                           to="./css13" 
                           className={({ isActive }) => (isActive ? 'text-blue-400 font-bold' : 'text-white')}
                       >
-                          Lesson13
+                          Относительные единицы
                       </NavLink>
                   </li>
                   <li className='pt-3'>
@@ -186,7 +187,7 @@ function Css() {
                           to="./css14" 
                           className={({ isActive }) => (isActive ? 'text-blue-400 font-bold' : 'text-white')}
                       >
-                          Lesson14
+                          Анимации
                       </NavLink>
                   </li>
                   <li className='pt-3'>
@@ -194,7 +195,7 @@ function Css() {
                           to="./css15" 
                           className={({ isActive }) => (isActive ? 'text-blue-400 font-bold' : 'text-white')}
                       >
-                          Lesson15
+                          Тени и Градиенты
                       </NavLink>
                   </li>
                   <li className='pt-3'>
@@ -202,7 +203,7 @@ function Css() {
                           to="./css16" 
                           className={({ isActive }) => (isActive ? 'text-blue-400 font-bold' : 'text-white')}
                       >
-                          Lesson16
+                          БЭМ
                       </NavLink>
                   </li>
                   <li className='pt-3'>
@@ -210,36 +211,12 @@ function Css() {
                           to="./css17" 
                           className={({ isActive }) => (isActive ? 'text-blue-400 font-bold' : 'text-white')}
                       >
-                          Lesson17
-                      </NavLink>
-                  </li>
-                  <li className='pt-3'>
-                      <NavLink 
-                          to="./css18" 
-                          className={({ isActive }) => (isActive ? 'text-blue-400 font-bold' : 'text-white')}
-                      >
-                          Lesson18
-                      </NavLink>
-                  </li>
-                  <li className='pt-3'>
-                      <NavLink 
-                          to="./css19" 
-                          className={({ isActive }) => (isActive ? 'text-blue-400 font-bold' : 'text-white')}
-                      >
-                          Lesson19
-                      </NavLink>
-                  </li>
-                  <li className='pt-3'>
-                      <NavLink 
-                          to="./css20" 
-                          className={({ isActive }) => (isActive ? 'text-blue-400 font-bold' : 'text-white')}
-                      >
-                          Lesson20
+                          OOCSS
                       </NavLink>
                   </li>
               </ul>
           </nav>
-          <div className="absolute right-0 top-1/2 transform -translate-y-1/2 h-[759px] w-0.5 bg-neutral-700"></div>
+          {/* <div className="absolute right-0 top-1/2 transform -translate-y-1/2 h-[759px] w-0.5 bg-neutral-700"></div> */}
       </div>
 
       {/* Main content */}

@@ -14,8 +14,7 @@ import Lesson6 from "../Components/HtmlComponents/LessonSixth";
 import Lesson7 from "../Components/HtmlComponents/LessonSeventh";
 import Lesson8 from "../Components/HtmlComponents/LessonEighth";
 import Lesson9 from "../Components/HtmlComponents/LessonNinth";
-import Lesson10 from "../Components/HtmlComponents/LessonTenth";
-import Lesson11 from "../Components/HtmlComponents/LessonEleventh";
+
 
 import {
   HtmlDocumentFirst,
@@ -27,11 +26,8 @@ import {
   HtmlDocumentSeventh,
   HtmlDocumentEighth,
   HtmlDocumentNinth,
-  HtmlDocumentTenth,
-  HtmlDocumentEleventh,
 } from "../data/HtmlDocument";
 
-import Css1 from "../Components/CssComponents/LessonFirst";
 import Css2 from "../Components/CssComponents/LessonSecond";
 import Css3 from "../Components/CssComponents/LessonТhird";
 import Css4 from "../Components/CssComponents/LessonFourth";
@@ -42,16 +38,13 @@ import Css8 from "../Components/CssComponents/LessonEighth";
 import Css9 from "../Components/CssComponents/LessonNinth";
 import Css10 from "../Components/CssComponents/LessonTenth";
 import Css11 from "../Components/CssComponents/LessonEleventh";
-import Css12 from "../Components/CssComponents/LessonTwelfth"
-import Css13 from "../Components/CssComponents/LessonThirteenth"
-import Css14 from "../Components/CssComponents/LessonFourteenth"
-import Css15 from "../Components/CssComponents/LessonFifteenth"
-import Css16 from "../Components/CssComponents/LessonSixteenth"
-import Css17 from "../Components/CssComponents/LessonSeventeenth"
-import Css18 from "../Components/CssComponents/LessonEighteenth"
-import Css19 from "../Components/CssComponents/LessomNineteenth"
-import Css20 from "../Components/CssComponents/LessonTwentieth"
-
+import Css12 from "../Components/CssComponents/LessonTwelfth";
+import Css13 from "../Components/CssComponents/LessonThirteenth";
+import Css14 from "../Components/CssComponents/LessonFourteenth";
+import Css15 from "../Components/CssComponents/LessonFifteenth";
+import Css16 from "../Components/CssComponents/LessonSixteenth";
+import Css17 from "../Components/CssComponents/LessonSeventeenth";
+import Css1 from "../Components/CssComponents/LessonFirst";
 
 
 import { 
@@ -65,8 +58,15 @@ import {
   CssDocumentEighth,
   CssDocumentNinth,
   CssDocumentTenth,
-  CssDocumentEleventh
+  CssDocumentEleventh,
+  CssDocumentTwelfth,
+  CssDocumentThirteenth,
+  CssDocumentFourteenth,
+  CssDocumentFifteenth,
+  CssDocumentSixteenth,
+  CssDocumentSeventeenth,
 } from '../data/CssDocument'; 
+
 const AppRoutes = () => {
   return (
     <Routes>
@@ -135,19 +135,6 @@ const AppRoutes = () => {
           ))}
         />
 
-        <Route
-          path="/les10"
-          element={HtmlDocumentTenth.map((doc) => (
-            <Lesson10 key={doc.id} title={doc.title} content={doc.content} />
-          ))}
-        />
-
-        <Route
-          path="/les11"
-          element={HtmlDocumentEleventh.map((doc) => (
-            <Lesson11 key={doc.id} title={doc.title} content={doc.content} />
-          ))}
-        />
       </Route>
 
 {/* ------------------------------------------------------- */}
@@ -195,33 +182,23 @@ const AppRoutes = () => {
 <Route path="css11" element={CssDocumentEleventh.map((doc) => (
     <Css11 key={doc.id} title={doc.title} content={doc.content} />
   ))} />
-
-<Route path="css12" element={CssDocumentТhird.map((doc) => (
+<Route path="css12" element={CssDocumentTwelfth.map((doc) => (
     <Css12 key={doc.id} title={doc.title} content={doc.content} />
   ))} />
-  <Route path="css13" element={CssDocumentТhird.map((doc) => (
+  <Route path="css13" element={CssDocumentThirteenth.map((doc) => (
     <Css13 key={doc.id} title={doc.title} content={doc.content} />
   ))} />
-  <Route path="css14" element={CssDocumentТhird.map((doc) => (
+  <Route path="css14" element={CssDocumentFourteenth.map((doc) => (
     <Css14 key={doc.id} title={doc.title} content={doc.content} />
   ))} />
-  <Route path="css15" element={CssDocumentТhird.map((doc) => (
+  <Route path="css15" element={CssDocumentFifteenth.map((doc) => (
     <Css15 key={doc.id} title={doc.title} content={doc.content} />
   ))} />
-  <Route path="css16" element={CssDocumentТhird.map((doc) => (
+  <Route path="css16" element={CssDocumentSixteenth.map((doc) => (
     <Css16 key={doc.id} title={doc.title} content={doc.content} />
   ))} />
-  <Route path="css17" element={CssDocumentТhird.map((doc) => (
+  <Route path="css17" element={CssDocumentSeventeenth.map((doc) => (
     <Css17 key={doc.id} title={doc.title} content={doc.content} />
-  ))} />
-  <Route path="css18" element={CssDocumentТhird.map((doc) => (
-    <Css18 key={doc.id} title={doc.title} content={doc.content} />
-  ))} />
-  <Route path="css19" element={CssDocumentТhird.map((doc) => (
-    <Css19 key={doc.id} title={doc.title} content={doc.content} />
-  ))} />
-  <Route path="css20" element={CssDocumentТhird.map((doc) => (
-    <Css20 key={doc.id} title={doc.title} content={doc.content} />
   ))} />
 </Route>
 

@@ -4,7 +4,7 @@ export const CssDocumentFirst = [
     {
         id: 1,
         // title: "Что такое HTML?",
-        path: "/",
+        path: "css1",
         content: [
             { type: 'header', value: 'Синтаксис CSS' },
             { type: 'text', value: 'CSS (Cascading Style Sheets) — это язык стилей, который используется для описания внешнего вида документа, написанного на HTML. Основные компоненты CSS включают селекторы, свойства и значения.' },
@@ -111,8 +111,7 @@ export const CssDocumentFirst = [
 export const CssDocumentSecond = [
     {
         id: 1,
-        // title: "Что такое HTML?",
-        path: "/Css2",
+        path: "/css2",
         content: [
             { type: 'header', value: 'Блочная модель' },
             { type: 'text', value: 'Блочная модель CSS определяет прямоугольную область, занимаемую каждым HTML-элементом. Она состоит из четырех основных компонентов: содержимое (content), внутренние отступы (padding), граница (border) и внешние отступы (margin).' },
@@ -199,8 +198,7 @@ export const CssDocumentSecond = [
 export const CssDocumentТhird = [
     {
         id: 1,
-        // title: "Что такое HTML?",
-        path: "/",
+        path: "/css3",
         content: [
             { type: 'header', value: 'Позиционирование в CSS' },
             { type: 'text', value: 'Позиционирование элементов в CSS позволяет управлять их расположением на странице. Свойство position определяет, как элемент будет позиционироваться в документе. Вот основные значения этого свойства:' },
@@ -312,7 +310,7 @@ export const CssDocumentFourth = [
     {
         id: 1,
         // title: "Что такое HTML?",
-        path: "/",
+        path: "/css4",
         content: [
             { type: 'header', value: '1. Block (блочные элементы)' },
             { type: 'text', value: 'Блочные элементы всегда начинаются с новой строки и занимают всю доступную ширину родительского контейнера. Они создают новый блок в потоке документа и могут содержать другие блочные и строчные элементы. Блочные элементы автоматически добавляют отступы (margin) сверху и снизу.' },
@@ -388,7 +386,7 @@ export const CssDocumentFifth = [
     {
         id: 1,
         // title: "Что такое HTML?",
-        path: "/",
+        path: "/css5",
         content: [
             { type: 'header', value: '1. Названия цветов' },
             { type: 'text', value: '`CSS` поддерживает более 140 предопределенных названий цветов. Примеры включают:' },
@@ -481,7 +479,7 @@ export const CssDocumentSixth = [
     {
         id: 1,
         // title: "Что такое HTML?",
-        path: "/",
+        path: "/css6",
         content: [
             { type: 'header', value: '1. font-family' },
             { type: 'text', value: 'Свойство font-family определяет шрифт, который будет использоваться для текста. Вы можете указать конкретный шрифт или использовать общее название группы шрифтов. Рекомендуется указывать запасные шрифты, чтобы браузер мог выбрать альтернативу, если указанный шрифт недоступен.' },
@@ -594,7 +592,7 @@ export const CssDocumentSeventh = [
     {
         id: 1,
         // title: "Что такое HTML?",
-        path: "/",
+        path: "/css7",
         content: [
             { type: 'header', value: '1. color' },
             { type: 'text', value: 'Свойство color задает цвет текста. Вы можете использовать названия цветов, HEX-коды, RGB, RGBA, HSL или HSLA.' },
@@ -730,7 +728,7 @@ export const CssDocumentEighth = [
     {
         id: 1,
         // title: "Что такое HTML?",
-        path: "/",
+        path: "/css8",
         content: [
             { type: 'header', value: '1. background-color' },
             { type: 'text', value: 'Свойство background-color задает цвет фона элемента. Вы можете использовать названия цветов, HEX-коды, RGB, RGBA, HSL или HSLA.' },
@@ -828,7 +826,7 @@ export const CssDocumentNinth = [
     {
         id: 1,
         // title: "Что такое HTML?",
-        path: "/",
+        path: "/css9",
         content: [
             { type: 'header', value: '1. Свойство float' },
             { type: 'text', value: 'Свойство float позволяет элементам "плавать" влево или вправо, позволяя окружающим элементам обтекать их. Это свойство изначально было разработано для обтекания текста вокруг изображений, но впоследствии стало популярным для создания многоколонных макетов.' },
@@ -903,7 +901,7 @@ export const CssDocumentTenth = [
     {
         id: 1,
         // title: "Что такое HTML?",
-        path: "/",
+        path: "/css10",
         content: [
             { type: 'header', value: 'Flexbox' },
             { type: 'text', value: 'Давайте рассмотрим Flexbox — мощный инструмент для создания адаптивных макетов в CSS. Мы обсудим основные свойства Flexbox: flex-direction, flex-wrap, justify-content и align-items.' },
@@ -1018,10 +1016,566 @@ export const CssDocumentEleventh = [
     {
         id: 1,
         // title: "Что такое HTML?",
-        path: "/",
+        path: "/css11",
         content: [
-            { type: 'header', value: '' },
-            { type: 'text', value: '' },
+            { type: 'header', value: 'Grid' },
+            { type: 'text', value: 'Давайте рассмотрим CSS Grid Layout и его основные свойства: grid-template-columns, grid-template-rows и grid-gap. Grid Layout позволяет создавать сложные макеты с помощью сетки, что делает его мощным инструментом для веб-дизайна.' },
+        
+            { type: 'header', value: 'CSS Grid Layout' },
+            { type: 'text', value: 'Grid Layout позволяет организовать элементы в виде сетки, используя строки и столбцы. Это упрощает создание адаптивных и сложных макетов.' },
+            { type: 'header', value: '1. grid-template-columns' },
+            { type: 'text', value: 'Свойство grid-template-columns определяет количество и ширину столбцов в сетке. Вы можете задавать фиксированные размеры (в пикселях, процентах и т.д.), относительные размеры (в fr, что означает "доля свободного пространства") или использовать автоматические размеры.' },
+            { type: 'code', value: `
+            .container {
+                        display: grid;
+                        grid-template-columns: 100px 200px; /* Два столбца: первый 100px, второй 200px */
+            }
+            
+            ` },
+            { type: 'text', value: 'Вы также можете использовать repeat() для упрощения записи:' },
+            { type: 'code', value: `
+            .container {
+                        display: grid;
+                        grid-template-columns: repeat(3, 1fr); /* Три равные колонки */
+            }
+            
+            ` },
+            { type: 'header', value: '2. grid-template-rows' },
+            { type: 'text', value: 'Свойство grid-template-rows аналогично grid-template-columns, но определяет количество и высоту строк в сетке.' },
+
+            { type: 'code', value: `
+            .container {
+                        display: grid;
+                        grid-template-rows: 50px 100px; /* Две строки: первая 50px, вторая 100px */
+            }
+            
+            ` },
+            { type: 'text', value: 'Также можно использовать repeat():' },
+
+            { type: 'code', value: `
+            .container {
+                        display: grid;
+                        grid-template-rows: repeat(2, 1fr); /* Две равные строки */
+            }
+            
+            ` },
+            { type: 'header', value: '3. grid-gap' },
+            { type: 'text', value: 'Свойство grid-gap (или gap) задает расстояние между строками и столбцами в сетке. Вы можете указать одно значение для обоих направлений или два значения для строк и столбцов отдельно.' },
+            { type: 'code', value: `
+            .container {
+                        display: grid;
+                        grid-template-columns: repeat(3, 1fr);
+                        grid-gap: 10px; /* Отступ 10px между строками и столбцами */
+            }
+            
+            ` },
+            { type: 'text', value: 'Если вы хотите задать разные отступы для строк и столбцов:' },
+            { type: 'code', value: `
+            .container {
+                        display: grid;
+                        grid-template-columns: repeat(3, 1fr);
+                        grid-gap: 10px 20px; /* 10px между строками и 20px между столбцами */
+            }
+            
+            ` },
+            { type: 'text', value: 'Вот пример, который демонстрирует использование всех этих свойств в CSS Grid Layout:' },
+            { type: 'code', value: `
+            <!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout Пример</title>
+    <style>
+            .container {
+                        display: grid;
+                        grid-template-columns: repeat(3, 1fr); /* Три равные колонки */
+                        grid-template-rows: 100px 200px; /* Две строки: первая 100px, вторая 200px */
+                        grid-gap: 15px; /* Отступ 15px между строками и столбцами */
+            }
+
+            .item {
+                        background-color: #4CAF50;
+                        color: white;
+                        padding: 20px;
+                        text-align: center;
+            }
+    </style>
+</head>
+<body>
+            <div class="container">
+                        <div class="item">Элемент 1</div>
+                        <div class="item">Элемент 2</div>
+                        <div class="item">Элемент 3</div>
+                        <div class="item">Элемент 4</div>
+                        <div class="item">Элемент 5</div>
+                        <div class="item">Элемент 6</div>
+            </div>
+</body>
+</html>
+
+            ` },
+            { type: 'header', value: 'Заключение' },
+            { type: 'text', value: 'CSS Grid Layout — это мощный инструмент для создания адаптивных и сложных макетов. Понимание свойств grid-template-columns, grid-template-rows и grid-gap поможет вам эффективно организовывать элементы на веб-странице.' },
+        ],
+    },
+];
+
+
+
+export const CssDocumentTwelfth = [
+    {
+        id: 1,
+        path: "/css12",
+        content: [
+            { type: 'header', value: 'Медиа-запросы' },
+            { type: 'text', value: 'Медиа-запросы — это техника, используемая в CSS для применения различных стилей в зависимости от характеристик устройства, на котором отображается веб-страница, таких как ширина экрана, высота, разрешение и т.д. Это позволяет адаптировать макет и стили под разные устройства (мобильные телефоны, планшеты, настольные компьютеры).' },
+        
+            { type: 'header', value: 'Синтаксис медиа-запросов' },
+            { type: 'text', value: 'Основной синтаксис медиа-запроса выглядит следующим образом:' },
+            { type: 'code', value: `
+            @media медиа-тип и/или условие {
+                        /* CSS-правила */
+            }
+            
+            ` },
+            { type: 'text', value: 'Пример использования:' },
+            { type: 'code', value: `
+            @media screen and (max-width: 600px) {
+                    body {
+                                background-color: lightblue; /* Фон станет светло-голубым на экранах шириной до 600px */
+                    }
+            }
+            ` },
+            { type: 'header', value: 'Параметры min-width и max-width' },
+            { type: 'text', value: 'min-width: этот параметр используется для определения минимальной ширины экрана, при которой будут применяться стили. Если ширина экрана больше или равна указанному значению, стили внутри медиа-запроса будут применены.' },
+            { type: 'text', value: 'max-width: этот параметр используется для определения максимальной ширины экрана, при которой будут применяться стили. Если ширина экрана меньше или равна указанному значению, стили внутри медиа-запроса будут применены.' },
+            { type: 'header', value: '1. Использование min-width' },
+            { type: 'code', value: `
+            @media screen and (min-width: 768px) {
+                    body {
+                                font-size: 18px; /* Увеличение размера шрифта на экранах шириной от 768px */
+                    }
+            }
+            ` },
+            { type: 'header', value: '2. Использование max-width' },
+            { type: 'code', value: `
+            @media screen and (max-width: 480px) {
+                    body {
+                                font-size: 14px; /* Уменьшение размера шрифта на экранах шириной до 480px */
+                    }
+            }
+            ` },
+            { type: 'header', value: '3. Комбинирование min-width и max-width' },
+            { type: 'text', value: 'Вы также можете комбинировать оба параметра для создания диапазонов:' },
+            { type: 'code', value: `
+            @media screen and (min-width: 481px) and (max-width: 767px) {
+                    body {
+                                font-size: 16px; /* Размер шрифта для экранов между 481px и 767px */
+                    }
+            }
+            
+            ` },
+            { type: 'header', value: 'Пример кода' },
+            { type: 'code', value: `
+            <!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Медиа-запросы Пример</title>
+    <style>
+            body {
+                    font-size: 16px; /* Размер шрифта по умолчанию */
+                    background-color: white;
+                    color: black;
+                    margin: 0;
+                    padding: 20px;
+            }
+
+            @media screen and (max-width: 480px) {
+                    body {
+                            font-size: 14px; /* Уменьшение размера шрифта для мобильных устройств */
+                            background-color: lightyellow; /* Изменение фона */
+                    }
+            }
+
+            @media screen and (min-width: 481px) and (max-width: 767px) {
+                    body {
+                            font-size: 16px; /* Размер шрифта для планшетов */
+                            background-color: lightgreen; /* Изменение фона */
+                    }
+            }
+
+            @media screen and (min-width: 768px) {
+                    body {
+                              font-size: 18px; /* Увеличение размера шрифта для настольных компьютеров */
+                               background-color: lightblue; /* Изменение фона */
+                    }
+            }
+    </style>
+</head>
+<body>
+            <h1>Пример медиа-запросов</h1>
+            <p>Измените размер окна браузера, чтобы увидеть изменения в стилях.</p>
+</body>
+</html>
+
+            ` },
+            { type: 'header', value: 'Заключение' },
+            { type: 'text', value: 'Медиа-запросы являются важным инструментом для создания адаптивного дизайна, позволяя вам изменять стили в зависимости от характеристик устройства. Понимание использования min-width и max-width поможет вам создавать более отзывчивые и удобные интерфейсы' },
+        ],
+    },
+];
+export const CssDocumentThirteenth = [
+    {
+        id: 1,
+        // title: "Что такое HTML?",
+        path: "/css13",
+        content: [
+            { type: 'header', value: 'Относительные единицы' },
+            { type: 'text', value: 'Давайте рассмотрим относительные единицы измерения в CSS: %, em, rem, vw и vh. Эти единицы позволяют создавать адаптивные и отзывчивые веб-дизайны, так как они зависят от других значений в документе.' },
+        
+            { type: 'header', value: '1. Проценты (%)' },
+            { type: 'text', value: 'Проценты — это единица, которая задает размеры относительно родительского элемента. Например, если вы установите ширину элемента в 50%, он займет половину ширины своего родителя.' },
+            { type: 'code', value: `
+            .container {
+                        width: 80%; /* Ширина контейнера 80% от ширины родителя */
+            }
+            .box {
+                        width: 50%; /* Ширина блока 50% от ширины контейнера */
+            }
+            
+            ` },
+            { type: 'header', value: '2. em' },
+            { type: 'text', value: 'Единица em относительна к размеру шрифта родительского элемента. Если размер шрифта родителя составляет 16px, то 1em будет равен 16px. Это удобно для создания гибких и масштабируемых интерфейсов, так как элементы могут изменять свои размеры в зависимости от размера шрифта.' },
+
+            { type: 'code', value: `
+            p {
+                        font-size: 2em; /* Размер шрифта будет в 2 раза больше размера шрифта родителя */
+            }
+            
+            ` },
+            { type: 'header', value: '3. rem' },
+            { type: 'text', value: 'Единица rem (root em) основана на размере шрифта корневого элемента (обычно <html>). Это позволяет избежать каскадного эффекта, который может возникнуть с em, и использовать единицу, которая всегда будет относиться к одному и тому же значению.' },
+            { type: 'code', value: `
+            html {
+                        font-size: 16px; /* Размер шрифта корневого элемента */
+            }
+            h1 {
+                        font-size: 2rem; /* Размер шрифта заголовка будет 32px (2 * 16px) */
+            }
+            
+            ` },
+            { type: 'header', value: '4. vw (viewport width)' },
+            { type: 'text', value: 'Единица vw представляет собой 1% от ширины области просмотра (viewport). Это полезно для задания размеров, которые будут адаптироваться к ширине окна браузера.' },
+            { type: 'code', value: `
+            .container {
+                        width: 50vw; /* Ширина контейнера будет 50% от ширины окна браузера */
+            }
+            ` },
+            { type: 'header', value: '5. vh (viewport height)' },
+            { type: 'text', value: 'Единица vh представляет собой 1% от высоты области просмотра. Это позволяет задавать размеры, которые будут адаптироваться к высоте окна браузера.' },
+            { type: 'code', value: `
+            .full-height {
+                height: 100vh; /* Высота элемента будет равна 100% высоты окна браузера */
+            }
+            
+            ` },
+            { type: 'header', value: 'Заключение' },
+            { type: 'text', value: 'Относительные единицы в CSS позволяют создавать адаптивные и отзывчивые макеты, которые могут изменять свои размеры в зависимости от контекста. Понимание того, как и когда использовать %, em, rem, vw и vh, поможет вам создавать более гибкие и удобные интерфейсы.' },
+        ],
+    },
+];
+export const CssDocumentFourteenth = [
+    {
+        id: 1,
+        // title: "Что такое HTML?",
+        path: "/css14",
+        content: [
+            { type: 'header', value: '1. @keyframes' },
+            { type: 'text', value: 'С помощью правила @keyframes вы определяете анимацию, задавая ключевые кадры, которые определяют состояние анимации в определенные моменты времени. Каждый ключевой кадр задается с помощью процента (от 0% до 100%), где 0% — это начальное состояние, а 100% — конечное.' },
+            { type: 'code', value: `
+            @keyframes myAnimation {
+                    0% {
+                                opacity: 0; /* Начальная прозрачность */
+                                transform: translateY(-20px); /* Начальное смещение по оси Y */
+                    }
+                    100% {
+                                opacity: 1; /* Конечная прозрачность */
+                                transform: translateY(0); /* Конечное смещение по оси Y */
+                    }
+            }
+            
+            ` },
+            { type: 'header', value: '2. animation' },
+            { type: 'text', value: 'Свойство animation применяется к элементу, чтобы задать анимацию. Оно включает в себя имя анимации, продолжительность, временную функцию, задержку, количество повторений и направление.' },
+            { type: 'code', value: `
+            .box {
+                        width: 100px;
+                        height: 100px;
+                        background-color: blue;
+                        animation: myAnimation 1s ease-in-out forwards; /* Применение анимации */
+            }
+            
+            ` },
+            { type: 'header', value: 'Полный пример анимации' },
+            { type: 'code', value: `
+            <!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Анимация в CSS</title>
+    <style>
+            @keyframes myAnimation {
+                0% {
+                        opacity: 0;
+                        transform: translateY(-20px);
+                }
+                100% {
+                        opacity: 1;
+                        transform: translateY(0);
+                }
+            }
+
+            .box {
+                        width: 100px;
+                        height: 100px;
+                        background-color: blue;
+                       animation: myAnimation 1s ease-in-out forwards;
+            }
+    </style>
+</head>
+<body>
+            <div class="box"></div>
+</body>
+</html>
+
+            ` },
+            { type: 'header', value: '1. transform' },
+            { type: 'text', value: 'Свойство transform позволяет изменять размер, положение и ориентацию элемента. Оно может принимать несколько функций, таких как rotate, scale, translate и другие.' },
+            { type: 'header', value: '2. rotate' },
+            { type: 'text', value: 'Функция rotate поворачивает элемент на указанный угол. Угол задается в градусах (deg) или радианах (rad).' },
+            { type: 'code', value: `
+            .box {
+                        transform: rotate(45deg); /* Поворот на 45 градусов */
+            }
+            ` },
+            { type: 'header', value: '3. scale' },
+            { type: 'text', value: 'Функция scale изменяет размер элемента. Вы можете задать один или два параметра: первый для изменения ширины, второй для высоты.' },
+
+            { type: 'code', value: `
+            .box {
+                       transform: scale(1.5); /* Увеличение размера на 150% */
+            }
+            ` },
+            { type: 'header', value: '4. translate' },
+            { type: 'text', value: 'Функция translate перемещает элемент по оси X и Y. Параметры задаются в пикселях (px), процентах (%) и других единицах.' },
+            { type: 'code', value: `
+            .box {
+                        transform: translate(50px, 100px); /* Перемещение на 50px вправо и 100px вниз */
+            }
+            
+            ` },
+            { type: 'header', value: 'Полный пример трансформаций' },
+            { type: 'text', value: `
+            <!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Трансформации в CSS</title>
+    <style>
+            .box {
+                        width: 100px;
+                        height: 100px;
+                        background-color: red;
+                        transition: transform 0.5s; /* Плавный переход при трансформации */
+            }
+
+            .box:hover {
+                       transform: rotate(45deg) scale(1.5) translate(50px, 50px); /* Поворот, увеличение и перемещение при наведении */
+            }
+    </style>
+</head>
+<body>
+            <div class="box"></div>
+</body>
+</html>
+
+            ` },
+            { type: 'header', value: 'Заключение' },
+            { type: 'text', value: 'Анимации и трансформации в CSS позволяют создавать динамичные и интерактивные веб-страницы. Использование @keyframes и animation помогает задавать сложные анимации, а transform, rotate, scale и translate позволяют изменять элементы с помощью различных эффектов.' },
+        ],
+    },
+];
+export const CssDocumentFifteenth = [
+    {
+        id: 1,
+        // title: "Что такое HTML?",
+        path: "/css15",
+        content: [
+            { type: 'header', value: 'Тени в CSS' },
+            { type: 'header', value: '1. box-shadow' },
+            { type: 'text', value: 'Свойство box-shadow позволяет добавлять тень к элементу. Оно принимает несколько параметров: смещение по горизонтали, смещение по вертикали, радиус размытия, радиус распространения и цвет тени.' },
+            { type: 'code', value: `
+            .box {
+                        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5); /* Тень со смещением, размытием и цветом */
+            }
+            ` },
+            { type: 'header', value: '2. text-shadow' },
+            { type: 'text', value: 'Свойство text-shadow добавляет тень к тексту. Параметры аналогичны box-shadow.' },
+            { type: 'code', value: `
+            h1 {
+                        text-shadow: 2px 2px 5px #999; /* Тень для заголовка */
+            }            
+            ` },
+            { type: 'header', value: 'Градиенты в CSS' },
+            { type: 'header', value: '1. linear-gradient' },
+            { type: 'text', value: 'Функция linear-gradient создает линейный градиент. Вы можете указать угол градиента, а также цвета и их позиции.' },
+            { type: 'code', value: `
+            .box {
+                    background-image: linear-gradient(to right, blue, white); /* Горизонтальный градиент от синего к белому */
+            }            
+            ` },
+            { type: 'header', value: '2. radial-gradient' },
+            { type: 'text', value: 'Функция radial-gradient создает радиальный градиент. Вы можете задать форму, размер и позицию градиента.' },
+            { type: 'code', value: `
+            .box {
+                        background-image: radial-gradient(circle, yellow, orange, red); /* Радиальный градиент */
+            }            
+            ` },
+            { type: 'header', value: 'Полные примеры' },
+            { type: 'code', value: `
+            <!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тени и Градиенты в CSS</title>
+    <style>
+        .box {
+                    width: 200px;
+                    height: 200px;
+                    background-color: white;
+                    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5); /* Тень блока */
+                    margin: 50px;
+        }
+
+        h1 {
+                    text-align: center;
+                    text-shadow: 2px 2px 5px #999; /* Тень заголовка */
+        }
+
+        .gradient-box {
+                    background-image: linear-gradient(to right, blue, white); /* Линейный градиент */
+                    background-size: 200% 200%;
+                    animation: gradientAnimation 5s ease infinite; /* Анимация градиента */
+        }
+
+        @keyframes gradientAnimation {
+            0% {
+                        background-position: 0% 50%;
+            }
+            50% {
+                        background-position: 100% 50%;
+            }
+            100% {
+                        background-position: 0% 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+            <h1>Тени и Градиенты в CSS</h1>
+            <div class="box"></div>
+            <div class="box gradient-box"></div>
+</body>
+</html>
+
+            ` },
+            { type: 'header', value: 'Заключение' },
+            { type: 'text', value: 'Тени и градиенты в CSS позволяют добавлять глубину, реалистичность и визуальный интерес к элементам веб-страницы. Использование box-shadow и text-shadow помогает создавать эффекты тени, а linear-gradient и radial-gradient позволяют генерировать красивые градиентные фоны. ' },
+        ],
+    },
+];
+export const CssDocumentSixteenth = [
+    {
+        id: 1,
+        path: "/css16",
+        content: [
+            { type: 'header', value: 'БЭМ' },
+            { type: 'text', value: 'Методология БЭМ (Блок, Элемент, Модификатор) — это подход к веб-разработке, который помогает организовать код и улучшить его читаемость и повторное использование. Основные понятия БЭМ включают блоки, элементы и модификаторы.' },
+        
+            { type: 'header', value: 'Блок' },
+            { type: 'text', value: 'Блок — это независимый интерфейсный компонент, который может содержать другие блоки или элементы. Блоки должны быть самодостаточными и могут использоваться в любом месте веб-страницы. Например, блоком может быть кнопка, форма, меню или любой другой компонент интерфейса.' },
+            { type: 'code', value: `
+<div class="menu">
+            <a href="#" class="menu__item">Home</a>
+            <a href="#" class="menu__item">About</a>
+</div>
+            ` },
+            { type: 'header', value: 'Элемент' },
+            { type: 'text', value: 'Элемент — это составная часть блока, которая не может существовать отдельно от него. Элементы описывают внутренние компоненты блока и обозначаются двойным подчеркиванием в имени класса.' },
+            { type: 'code', value: `
+<div class="button">
+            <span class="button__text">Click me</span>
+</div>
+
+            ` },
+            { type: 'header', value: 'Модификатор' },
+            { type: 'text', value: 'Модификатор — это свойство блока или элемента, которое определяет его внешний вид, состояние или поведение. Модификаторы позволяют изменять стиль или функциональность блока или элемента. Они обозначаются одним нижним подчеркиванием.' },
+            { type: 'code', value: '<button class="button button--primary">Submit</button> '},
+            { type: 'text', value: 'В этом примере button--primary — это модификатор, который изменяет стиль кнопки.' },
+            { type: 'header', value: 'Применение БЭМ' },
+            { type: 'text', value: 'Методология БЭМ помогает разработчикам создавать более структурированный и понятный код, что упрощает его поддержку и расширение. БЭМ также способствует уменьшению конфликтов имен классов, так как каждое имя класса уникально и описывает его назначение.' },
+            { type: 'header', value: 'Заключение' },
+            { type: 'text', value: 'БЭМ — это мощный инструмент для организации кода веб-приложений, который позволяет создавать независимые и переиспользуемые компоненты интерфейса. Понимание концепций блока, элемента и модификатора поможет вам более эффективно разрабатывать и поддерживать веб-проекты.' },
+        ],
+    },
+];
+export const CssDocumentSeventeenth = [
+    {
+        id: 1,
+        // title: "Что такое HTML?",
+        path: "/css17",
+        content: [
+            { type: 'header', value: 'OOCSS' },
+            { type: 'text', value: 'Методология OOCSS (Объектно-Ориентированный CSS) фокусируется на разделении структуры и оформления, что позволяет создавать более гибкие и переиспользуемые стили. Основные идеи OOCSS включают:' },
+        
+            { type: 'header', value: 'Разделение структуры и оформления' },
+            { type: 'text', value: '1. Структура: Это основная разметка и функциональность элементов на странице. Она определяет, как элементы взаимодействуют друг с другом и как они располагаются в макете.' },
+            { type: 'text', value: '2. Оформление: Это визуальные стили, такие как цвета, шрифты, отступы и тени, которые применяются к элементам. Оформление должно быть независимым от структуры, что позволяет легко изменять внешний вид без необходимости вносить изменения в HTML.' },
+            { type: 'header', value: 'Преимущества OOCSS' },
+            { type: 'text', value: 'Повторное использование: Одна и та же структура может использоваться в различных контекстах, что уменьшает дублирование кода и упрощает его поддержку.' },
+            { type: 'text', value: 'Масштабируемость: Подход OOCSS позволяет легко добавлять новые стили и компоненты, не нарушая существующую структуру.' },
+            { type: 'text', value: 'Упрощение поддержки: Разделение стилей на структурные и визуальные упрощает понимание кода и его поддержку.' },
+
+            { type: 'header', value: 'Пример применения OOCSS' },
+            { type: 'text', value: 'В OOCSS классы создаются таким образом, чтобы их можно было легко переиспользовать. Например:' },
+
+            { type: 'code', value: `
+            /* Структурный класс */
+.box {
+            display: flex;
+            padding: 10px;
+            border: 1px solid #ccc;
+}
+
+/* Визуальный класс */
+.box--primary {
+            background-color: blue;
+            color: white;
+}
+
+            ` },
+            { type: 'code', value: `
+<div class="box box--primary">Это основная коробка с первичным стилем.</div>
+<div class="box">Это основная коробка без визуального стиля.</div>
+            ` },
+            { type: 'header', value: 'Заключение' },
+            { type: 'text', value: 'Методология OOCSS помогает разработчикам создавать более чистый, структурированный и поддерживаемый CSS-код. Разделение структуры и оформления является ключевым принципом, который способствует повторному использованию и упрощению поддержки стилей' },
         ],
     },
 ];
