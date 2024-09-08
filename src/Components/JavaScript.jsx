@@ -1,87 +1,186 @@
-import React, { useState } from 'react';
-import { Outlet, Link } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { Outlet, NavLink, useNavigate } from 'react-router-dom';
+import SearchResults from './SearchResults';
+import { 
+  JsDocumentFirst,
+  JsDocumentSecond,
+  JsDocumentТhird,
+  JsDocumentFourth,
+  JsDocumentFifth,
+  JsDocumentSixth,
+  JsDocumentSeventh,
+  JsDocumentEighth,
+  JsDocumentNinth,
+  JsDocumentTenth,
+  JsDocumentEleventh,
+  JsDocumentTwelfth,
+  JsDocumentThirteenth,
+  JsDocumentFourteenth,
+  JsDocumentFifteenth,
+  JsDocumentSixteenth,
+  JsDocumentSeventeenth
+} from '../data/JsDocument';
 
-
-function JavaScript() {
-    // State to manage sidebar visibility
+const Html = () => {
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+    const [searchTerm, setSearchTerm] = useState('');
+    const [results, setResults] = useState([]);
+    const [showResults, setShowResults] = useState(false);
+    const navigate = useNavigate();
 
-    // Function to toggle sidebar visibility
-    const toggleSidebar = () => {
-      setIsSidebarOpen(!isSidebarOpen);
+    useEffect(() => {
+        const handleOutsideClick = (event) => {
+            if (isSidebarOpen && !event.target.closest('.sidebar') && !event.target.closest('.toggle-button')) {
+                setIsSidebarOpen(false);
+            }
+        };
+
+        document.addEventListener('pointerdown', handleOutsideClick);
+
+        return () => {
+            document.removeEventListener('pointerdown', handleOutsideClick);
+        };
+    }, [isSidebarOpen]);
+
+    const handleSearch = (term) => {
+        setSearchTerm(term);
+        const filteredResults = [...JsDocumentFirst, ...JsDocumentSecond, ...JsDocumentТhird, ...JsDocumentFourth, ...JsDocumentFifth, ...JsDocumentSixth, ...JsDocumentSeventh, ...JsDocumentEighth, ...JsDocumentNinth, ...JsDocumentTenth, ...JsDocumentEleventh, ...JsDocumentTwelfth, ...JsDocumentThirteenth, ...JsDocumentFourteenth, ...JsDocumentFifteenth, ...JsDocumentSixteenth, ...JsDocumentSeventeenth].filter(doc => 
+            doc.title?.toLowerCase().includes(term.toLowerCase()) || 
+            doc.content.some(item => item.value.toLowerCase().includes(term.toLowerCase()))
+        );
+        setResults(filteredResults);
+        setShowResults(term.length > 0 && filteredResults.length > 0);
     };
-  
-  return (
-    <main className='container mx-auto flex h-screen pt-20'>
-      {/* Sidebar */}
-      <div className={`sidebar text-white w-1/4 p-4 h-full transition-transform duration-300 
-        ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full'} 
-        md:translate-x-0 md:w-1/4 md:block fixed md:relative bg-neutral-900`}>
-        <h1>HTML</h1>
-        <nav>
-          <ul>
-            <li className='pt-3'>
-              <Link to="/">Lesson1</Link>
-            </li>
 
-            <li className='pt-3'>
-              <Link to="/les2">Lesson2</Link>
-            </li>
-            
-            <li className='pt-3'>
-              <Link to="/les3">Lesson3</Link>
-            </li>
-            
-            <li className='pt-3'>
-              <Link to="/les4">Lesson4</Link>
-            </li>
-            
-            <li className='pt-3'>
-              <Link to="/les5">Lesson5</Link>
-            </li>
-            
-            <li className='pt-3'>
-              <Link to="/les6">Lesson6</Link>
-            </li>
+    const handleResultClick = (doc) => {
+        setSearchTerm('');
+        setShowResults(false);
+        navigate(doc.path);
+    };
 
-            <li className='pt-3'>
-              <Link to="/les7">Lesson7</Link>
-            </li>
+    const toggleSidebar = () => {
+        setIsSidebarOpen((prev) => !prev);
+    };
 
-            <li className='pt-3'>
-              <Link to="/les8">Lesson8</Link>
-            </li>
+    return (
+        <main className='container mx-auto flex h-screen pt-20'>
+            {/* Sidebar */}
+            <div className={`sidebar text-white p-4 h-full transition-transform duration-300 
+                ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full'} 
+                md:translate-x-0 md:w-1/4 md:block fixed md:relative bg-neutral-900 z-20`}>
 
-            <li className='pt-3'>
-              <Link to="/les9">Lesson9</Link>
-            </li>
+                <h1 className='border bg-neutral-900 text-center rounded '>HTML</h1>
+                <nav>
+                    <ul>
+                        <li className='pt-3'>
+                            <NavLink 
+                                to="/" 
+                                className={({ isActive }) => (isActive ? 'text-blue-400 font-bold' : 'text-white')}
+                            >
+                                Вступления
+                            </NavLink>
+                        </li>
+                        <li className='pt-3'>
+                            <NavLink 
+                                to="/les2" 
+                                className={({ isActive }) => (isActive ? 'text-blue-400 font-bold' : 'text-white')}
+                            >
+                                Структура HTML-документа
+                            </NavLink>
+                        </li>
+                        <li className='pt-3'>
+                            <NavLink 
+                                to="/les3" 
+                                className={({ isActive }) => (isActive ? 'text-blue-400 font-bold' : 'text-white')}
+                            >
+                                Базовые теги HTML
+                            </NavLink>
+                        </li>
+                        <li className='pt-3'>
+                            <NavLink 
+                                to="/les4" 
+                                className={({ isActive }) => (isActive ? 'text-blue-400 font-bold' : 'text-white')}
+                            >
+                                Атрибуты тегов HTML
+                            </NavLink>
+                        </li>
+                        <li className='pt-3'>
+                            <NavLink 
+                                to="/les5" 
+                                className={({ isActive }) => (isActive ? 'text-blue-400 font-bold' : 'text-white')}
+                            >
+                                Семантическая верстка
+                            </NavLink>
+                        </li>
+                        <li className='pt-3'>
+                            <NavLink 
+                                to="/les6" 
+                                className={({ isActive }) => (isActive ? 'text-blue-400 font-bold' : 'text-white')}
+                            >
+                                Теги для создания форм
+                            </NavLink>
+                        </li>
+                        <li className='pt-3'>
+                            <NavLink 
+                                to="/les7" 
+                                className={({ isActive }) => (isActive ? 'text-blue-400 font-bold' : 'text-white')}
+                            >
+                                Теги для создания таблиц в HTML
+                            </NavLink>
+                        </li>
+                        <li className='pt-3'>
+                            <NavLink 
+                                to="/les8" 
+                                className={({ isActive }) => (isActive ? 'text-blue-400 font-bold' : 'text-white')}
+                            >
+                                Вставка видео и аудио
+                            </NavLink>
+                        </li>
+                        <li className='pt-3'>
+                            <NavLink 
+                                to="/les9" 
+                                className={({ isActive }) => (isActive ? 'text-blue-400 font-bold' : 'text-white')}
+                            >
+                                Фреймы в HTML
+                            </NavLink>
+                        </li>
+                    </ul>
+                </nav>
+                {/* <div className="absolute right-0 top-1/2 transform -translate-y-1/2 h-[759px] w-0.5 bg-neutral-700"></div> */}
+            </div>
 
-            <li className='pt-3'>
-              <Link to="/les10">Lesson10</Link>
-            </li>
+            {/* Main content */}
+            <div className='content w-full md:w-3/4 p-4 h-full overflow-y-auto z-10 relative'>
+                {/* Search Field */}
+                <div className="relative w-full mb-4">
+                    <input
+                        type="text"
+                        value={searchTerm}
+                        placeholder="Поиск..."
+                        onChange={(e) => handleSearch(e.target.value)}
+                        className="p-2 border text-white bg-neutral-800 border-gray-600 rounded w-full"
+                        onFocus={() => setShowResults(true)}
+                    />
+                    {showResults && (
+                        <SearchResults 
+                            results={results} 
+                            onClose={() => setShowResults(false)} 
+                            onResultClick={handleResultClick} 
+                        />
+                    )}
+                </div>
+                <Outlet />
+            </div>
 
-            <li className='pt-3'>
-              <Link to="/les11">Lesson11</Link>
-            </li>
+            {/* Toggle Button */}
+            <button 
+                className='toggle-button fixed bottom-4 right-4 w-10 h-10 rounded-full bg-blue-500 text-white flex items-center justify-center md:hidden z-30'
+                onClick={toggleSidebar}
+            >
+                {isSidebarOpen ? '✖' : '☰'}
+            </button>
+        </main>
+    );
+};
 
-          </ul>
-        </nav>
-      </div>
-
-      {/* Main content */}
-      <div className='content text-white w-full md:w-3/4 p-4 h-full overflow-y-auto'>
-        <Outlet />
-      </div>
-
-      {/* Toggle Button */}
-      <button 
-        className='fixed bottom-4 right-4 w-10 h-10 rounded-full bg-blue-500 text-white flex items-center justify-center md:hidden' 
-        onClick={toggleSidebar}
-      >
-        {isSidebarOpen ? '✖' : '☰'}
-      </button>
-    </main>
-  )
-}
-
-export default JavaScript
+export default Html;

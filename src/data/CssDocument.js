@@ -107,7 +107,6 @@ export const CssDocumentFirst = [
     },
 
 ];
-
 export const CssDocumentSecond = [
     {
         id: 1,
@@ -194,7 +193,6 @@ export const CssDocumentSecond = [
     },
 
 ];
-
 export const CssDocumentТhird = [
     {
         id: 1,
@@ -304,8 +302,6 @@ export const CssDocumentТhird = [
     },
 
 ];
-
-
 export const CssDocumentFourth = [
     {
         id: 1,
@@ -380,8 +376,6 @@ export const CssDocumentFourth = [
     },
 
 ];
-
-
 export const CssDocumentFifth = [
     {
         id: 1,
@@ -473,8 +467,6 @@ export const CssDocumentFifth = [
         ],
     },
 ];
-
-
 export const CssDocumentSixth = [
     {
         id: 1,
@@ -586,8 +578,6 @@ export const CssDocumentSixth = [
 
 
 ];
-
-
 export const CssDocumentSeventh = [
     {
         id: 1,
@@ -722,8 +712,6 @@ export const CssDocumentSeventh = [
     },
 
 ];
-
-
 export const CssDocumentEighth = [
     {
         id: 1,
@@ -820,8 +808,6 @@ export const CssDocumentEighth = [
     },
 
 ];
-
-
 export const CssDocumentNinth = [
     {
         id: 1,
@@ -895,8 +881,6 @@ export const CssDocumentNinth = [
         ],
     },
 ];
-
-
 export const CssDocumentTenth = [
     {
         id: 1,
@@ -1010,8 +994,6 @@ export const CssDocumentTenth = [
     },
 
 ];
-
-
 export const CssDocumentEleventh = [
     {
         id: 1,
@@ -1120,9 +1102,6 @@ export const CssDocumentEleventh = [
         ],
     },
 ];
-
-
-
 export const CssDocumentTwelfth = [
     {
         id: 1,

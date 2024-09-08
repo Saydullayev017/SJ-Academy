@@ -67,6 +67,27 @@ import {
   CssDocumentSeventeenth,
 } from '../data/CssDocument'; 
 
+import { 
+  JsDocumentFirst,
+  JsDocumentSecond,
+  JsDocumentТhird,
+  JsDocumentFourth,
+  JsDocumentFifth,
+  JsDocumentSixth,
+  JsDocumentSeventh,
+  JsDocumentEighth,
+  JsDocumentNinth,
+  JsDocumentTenth,
+  JsDocumentEleventh,
+  JsDocumentTwelfth,
+  JsDocumentThirteenth,
+  JsDocumentFourteenth,
+  JsDocumentFifteenth,
+  JsDocumentSixteenth,
+  JsDocumentSeventeenth
+} from '../data/JsDocument';
+import Lessonjs1 from "../Components/JsComponents/Lessonjs1";
+
 const AppRoutes = () => {
   return (
     <Routes>
@@ -202,7 +223,11 @@ const AppRoutes = () => {
   ))} />
 </Route>
 
-      <Route path="/js" element={<JavaScript />} />
+<Route path="/js" element={<JavaScript />}>
+    <Route index element={JsDocumentFirst.map((doc) => (
+        <Lessonjs1 key={doc.id} title={doc.title} content={doc.content} />
+    ))} />
+</Route>
       <Route path="/algo" element={<Algorithms />} />
     </Routes>
   );
