@@ -1,8 +1,12 @@
 import React from 'react'
+import ContentRenderer from './ContentRenderer'
 
-function Lessonjs14() {
+function Lessonjs14({title, content}) {
   return (
-    <div>Lessonjs14</div>
+    <div className="text-display">
+    <h2 className="text-2xl font-bold">{title}</h2>
+    <ContentRenderer content={content} />
+</div>
   )
 }
 

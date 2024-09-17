@@ -4,7 +4,7 @@
 export const JsDocumentFirst = [
     {
         id: 1,
-        path: "/",
+        path: "js1",
         content: [
             { type: 'header', value: 'Что такое HTML ?' },
             { type: 'text', value: '' },
@@ -13,8 +13,8 @@ export const JsDocumentFirst = [
 ];
 export const JsDocumentSecond = [
     {
-        id: 1,
-        path: "/",
+        id: 2,
+        path: "js2",
         content: [
             { type: 'header', value: 'Что такое HTML ?' },
             { type: 'text', value: '' },
@@ -23,8 +23,8 @@ export const JsDocumentSecond = [
 ];
 export const JsDocumentТhird = [
     {
-        id: 1,
-        path: "/",
+        id: 3,
+        path: "js3",
         content: [
             { type: 'header', value: 'Что такое HTML ?' },
             { type: 'text', value: '' },
@@ -33,8 +33,8 @@ export const JsDocumentТhird = [
 ];
 export const JsDocumentFourth = [
     {
-        id: 1,
-        path: "/",
+        id: 4,
+        path: "js4",
         content: [
             { type: 'header', value: 'Что такое HTML ?' },
             { type: 'text', value: '' },
@@ -43,8 +43,8 @@ export const JsDocumentFourth = [
 ];
 export const JsDocumentFifth = [
     {
-        id: 1,
-        path: "/",
+        id: 5,
+        path: "js5",
         content: [
             { type: 'header', value: 'Что такое HTML ?' },
             { type: 'text', value: '' },
@@ -53,8 +53,8 @@ export const JsDocumentFifth = [
 ];
 export const JsDocumentSixth = [
     {
-        id: 1,
-        path: "/",
+        id: 6,
+        path: "js6",
         content: [
             { type: 'header', value: 'Что такое HTML ?' },
             { type: 'text', value: '' },
@@ -63,8 +63,8 @@ export const JsDocumentSixth = [
 ];
 export const JsDocumentSeventh = [
     {
-        id: 1,
-        path: "/",
+        id: 7,
+        path: "js7",
         content: [
             { type: 'header', value: 'Что такое HTML ?' },
             { type: 'text', value: '' },
@@ -73,8 +73,8 @@ export const JsDocumentSeventh = [
 ];
 export const JsDocumentEighth = [
     {
-        id: 1,
-        path: "/",
+        id: 8,
+        path: "js8",
         content: [
             { type: 'header', value: 'Что такое HTML ?' },
             { type: 'text', value: '' },
@@ -83,8 +83,8 @@ export const JsDocumentEighth = [
 ];
 export const JsDocumentNinth = [
     {
-        id: 1,
-        path: "/",
+        id: 9,
+        path: "js9",
         content: [
             { type: 'header', value: 'Что такое HTML ?' },
             { type: 'text', value: '' },
@@ -93,8 +93,8 @@ export const JsDocumentNinth = [
 ];
 export const JsDocumentTenth = [
     {
-        id: 1,
-        path: "/",
+        id: 10,
+        path: "js10",
         content: [
             { type: 'header', value: 'Что такое HTML ?' },
             { type: 'text', value: '' },
@@ -103,8 +103,8 @@ export const JsDocumentTenth = [
 ];
 export const JsDocumentEleventh = [
     {
-        id: 1,
-        path: "/",
+        id: 11,
+        path: "js11",
         content: [
             { type: 'header', value: 'Что такое HTML ?' },
             { type: 'text', value: '' },
@@ -113,8 +113,8 @@ export const JsDocumentEleventh = [
 ];
 export const JsDocumentTwelfth = [
     {
-        id: 1,
-        path: "/",
+        id: 12,
+        path: "js12",
         content: [
             { type: 'header', value: 'Что такое HTML ?' },
             { type: 'text', value: '' },
@@ -123,8 +123,8 @@ export const JsDocumentTwelfth = [
 ];
 export const JsDocumentThirteenth = [
     {
-        id: 1,
-        path: "/",
+        id: 13,
+        path: "js13",
         content: [
             { type: 'header', value: 'Что такое HTML ?' },
             { type: 'text', value: '' },
@@ -133,8 +133,8 @@ export const JsDocumentThirteenth = [
 ];
 export const JsDocumentFourteenth = [
     {
-        id: 1,
-        path: "/",
+        id: 14,
+        path: "js14",
         content: [
             { type: 'header', value: 'Что такое HTML ?' },
             { type: 'text', value: '' },
@@ -143,8 +143,8 @@ export const JsDocumentFourteenth = [
 ];
 export const JsDocumentFifteenth = [
     {
-        id: 1,
-        path: "/",
+        id: 15,
+        path: "js15",
         content: [
             { type: 'header', value: 'Что такое HTML ?' },
             { type: 'text', value: '' },
@@ -153,8 +153,8 @@ export const JsDocumentFifteenth = [
 ];
 export const JsDocumentSixteenth = [
     {
-        id: 1,
-        path: "/",
+        id: 16,
+        path: "js16",
         content: [
             { type: 'header', value: 'Что такое HTML ?' },
             { type: 'text', value: '' },
@@ -163,8 +163,8 @@ export const JsDocumentSixteenth = [
 ];
 export const JsDocumentSeventeenth = [
     {
-        id: 1,
-        path: "/",
+        id: 17,
+        path: "js17",
         content: [
             { type: 'header', value: 'Что такое HTML ?' },
             { type: 'text', value: '' },

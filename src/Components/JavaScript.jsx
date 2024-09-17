@@ -74,74 +74,138 @@ const Html = () => {
                     <ul>
                         <li className='pt-3'>
                             <NavLink 
-                                to="/" 
+                                to="./" 
                                 className={({ isActive }) => (isActive ? 'text-blue-400 font-bold' : 'text-white')}
                             >
-                                Вступления
+                                1
                             </NavLink>
                         </li>
                         <li className='pt-3'>
                             <NavLink 
-                                to="/les2" 
+                                to="./js2" 
                                 className={({ isActive }) => (isActive ? 'text-blue-400 font-bold' : 'text-white')}
                             >
-                                Структура HTML-документа
+                                2
                             </NavLink>
                         </li>
                         <li className='pt-3'>
                             <NavLink 
-                                to="/les3" 
+                                to="./js3" 
                                 className={({ isActive }) => (isActive ? 'text-blue-400 font-bold' : 'text-white')}
                             >
-                                Базовые теги HTML
+                                3
                             </NavLink>
                         </li>
                         <li className='pt-3'>
                             <NavLink 
-                                to="/les4" 
+                                to="./js4" 
                                 className={({ isActive }) => (isActive ? 'text-blue-400 font-bold' : 'text-white')}
                             >
-                                Атрибуты тегов HTML
+                                4
                             </NavLink>
                         </li>
                         <li className='pt-3'>
                             <NavLink 
-                                to="/les5" 
+                                to="./js5" 
                                 className={({ isActive }) => (isActive ? 'text-blue-400 font-bold' : 'text-white')}
                             >
-                                Семантическая верстка
+                                5
                             </NavLink>
                         </li>
                         <li className='pt-3'>
                             <NavLink 
-                                to="/les6" 
+                                to="./js6" 
                                 className={({ isActive }) => (isActive ? 'text-blue-400 font-bold' : 'text-white')}
                             >
-                                Теги для создания форм
+                                6
                             </NavLink>
                         </li>
                         <li className='pt-3'>
                             <NavLink 
-                                to="/les7" 
+                                to="./js7" 
                                 className={({ isActive }) => (isActive ? 'text-blue-400 font-bold' : 'text-white')}
                             >
-                                Теги для создания таблиц в HTML
+                                7
                             </NavLink>
                         </li>
                         <li className='pt-3'>
                             <NavLink 
-                                to="/les8" 
+                                to="./js8" 
                                 className={({ isActive }) => (isActive ? 'text-blue-400 font-bold' : 'text-white')}
                             >
-                                Вставка видео и аудио
+                                8
                             </NavLink>
                         </li>
                         <li className='pt-3'>
                             <NavLink 
-                                to="/les9" 
+                                to="./js9" 
                                 className={({ isActive }) => (isActive ? 'text-blue-400 font-bold' : 'text-white')}
                             >
-                                Фреймы в HTML
+                                9
+                            </NavLink>
+                        </li>
+                        <li className='pt-3'>
+                            <NavLink 
+                                to="./js10" 
+                                className={({ isActive }) => (isActive ? 'text-blue-400 font-bold' : 'text-white')}
+                            >
+                                10
+                            </NavLink>
+                        </li>
+                        <li className='pt-3'>
+                            <NavLink 
+                                to="./js11" 
+                                className={({ isActive }) => (isActive ? 'text-blue-400 font-bold' : 'text-white')}
+                            >
+                                11
+                            </NavLink>
+                        </li>
+                        <li className='pt-3'>
+                            <NavLink 
+                                to="./js12" 
+                                className={({ isActive }) => (isActive ? 'text-blue-400 font-bold' : 'text-white')}
+                            >
+                                12
+                            </NavLink>
+                        </li>
+                        <li className='pt-3'>
+                            <NavLink 
+                                to="./js13" 
+                                className={({ isActive }) => (isActive ? 'text-blue-400 font-bold' : 'text-white')}
+                            >
+                                13
+                            </NavLink>
+                        </li>
+                        <li className='pt-3'>
+                            <NavLink 
+                                to="./js14" 
+                                className={({ isActive }) => (isActive ? 'text-blue-400 font-bold' : 'text-white')}
+                            >
+                                14
+                            </NavLink>
+                        </li>
+                        <li className='pt-3'>
+                            <NavLink 
+                                to="./js15" 
+                                className={({ isActive }) => (isActive ? 'text-blue-400 font-bold' : 'text-white')}
+                            >
+                                15
+                            </NavLink>
+                        </li>
+                        <li className='pt-3'>
+                            <NavLink 
+                                to="./js16" 
+                                className={({ isActive }) => (isActive ? 'text-blue-400 font-bold' : 'text-white')}
+                            >
+                                16
+                            </NavLink>
+                        </li>
+                        <li className='pt-3'>
+                            <NavLink 
+                                to="./js17" 
+                                className={({ isActive }) => (isActive ? 'text-blue-400 font-bold' : 'text-white')}
+                            >
+                                17
                             </NavLink>
                         </li>
                     </ul>
