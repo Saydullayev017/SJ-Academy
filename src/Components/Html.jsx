@@ -144,7 +144,7 @@ const Html = () => {
             {/* Main content */}
             <div className='content w-full md:w-3/4 p-4 h-full overflow-y-auto z-10 relative'>
                 {/* Search Field */}
-                <div className="relative w-full mb-4">
+                {/* <div className="relative w-full mb-4">
                     <input
                         type="text"
                         value={searchTerm}
@@ -160,7 +160,7 @@ const Html = () => {
                             onResultClick={handleResultClick} 
                         />
                     )}
-                </div>
+                </div> */}
                 <Outlet />
             </div>
 

@@ -77,7 +77,7 @@ const Html = () => {
                                 to="./" 
                                 className={({ isActive }) => (isActive ? 'text-blue-400 font-bold' : 'text-white')}
                             >
-                                1
+                                переменные и типы данных
                             </NavLink>
                         </li>
                         <li className='pt-3'>
@@ -85,7 +85,7 @@ const Html = () => {
                                 to="./js2" 
                                 className={({ isActive }) => (isActive ? 'text-blue-400 font-bold' : 'text-white')}
                             >
-                                2
+                                Операторы
                             </NavLink>
                         </li>
                         <li className='pt-3'>
@@ -216,7 +216,7 @@ const Html = () => {
             {/* Main content */}
             <div className='content w-full md:w-3/4 p-4 h-full overflow-y-auto z-10 relative'>
                 {/* Search Field */}
-                <div className="relative w-full mb-4">
+                {/* <div className="relative w-full mb-4">
                     <input
                         type="text"
                         value={searchTerm}
@@ -232,7 +232,7 @@ const Html = () => {
                             onResultClick={handleResultClick} 
                         />
                     )}
-                </div>
+                </div> */}
                 <Outlet />
             </div>
 
