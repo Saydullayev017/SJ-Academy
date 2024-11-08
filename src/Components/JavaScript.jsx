@@ -1,32 +1,32 @@
 import React, { useState, useEffect } from 'react';
-import { Outlet, NavLink, useNavigate } from 'react-router-dom';
-import SearchResults from './SearchResults';
-import { 
-  JsDocumentFirst,
-  JsDocumentSecond,
-  JsDocumentТhird,
-  JsDocumentFourth,
-  JsDocumentFifth,
-  JsDocumentSixth,
-  JsDocumentSeventh,
-  JsDocumentEighth,
-  JsDocumentNinth,
-  JsDocumentTenth,
-  JsDocumentEleventh,
-  JsDocumentTwelfth,
-  JsDocumentThirteenth,
-  JsDocumentFourteenth,
-  JsDocumentFifteenth,
-  JsDocumentSixteenth,
-  JsDocumentSeventeenth
-} from '../data/JsDocument';
+import { Outlet, NavLink} from 'react-router-dom';
+// import SearchResults from './SearchResults';
+// import { 
+//   JsDocumentFirst,
+//   JsDocumentSecond,
+//   JsDocumentТhird,
+//   JsDocumentFourth,
+//   JsDocumentFifth,
+//   JsDocumentSixth,
+//   JsDocumentSeventh,
+//   JsDocumentEighth,
+//   JsDocumentNinth,
+//   JsDocumentTenth,
+//   JsDocumentEleventh,
+//   JsDocumentTwelfth,
+//   JsDocumentThirteenth,
+//   JsDocumentFourteenth,
+//   JsDocumentFifteenth,
+//   JsDocumentSixteenth,
+//   JsDocumentSeventeenth
+// } from '../data/JsDocument';
 
 const Html = () => {
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
-    const [searchTerm, setSearchTerm] = useState('');
-    const [results, setResults] = useState([]);
-    const [showResults, setShowResults] = useState(false);
-    const navigate = useNavigate();
+    // const [searchTerm, setSearchTerm] = useState('');
+    // const [results, setResults] = useState([]);
+    // const [showResults, setShowResults] = useState(false);
+    // const navigate = useNavigate();
 
     useEffect(() => {
         const handleOutsideClick = (event) => {
@@ -42,21 +42,21 @@ const Html = () => {
         };
     }, [isSidebarOpen]);
 
-    const handleSearch = (term) => {
-        setSearchTerm(term);
-        const filteredResults = [...JsDocumentFirst, ...JsDocumentSecond, ...JsDocumentТhird, ...JsDocumentFourth, ...JsDocumentFifth, ...JsDocumentSixth, ...JsDocumentSeventh, ...JsDocumentEighth, ...JsDocumentNinth, ...JsDocumentTenth, ...JsDocumentEleventh, ...JsDocumentTwelfth, ...JsDocumentThirteenth, ...JsDocumentFourteenth, ...JsDocumentFifteenth, ...JsDocumentSixteenth, ...JsDocumentSeventeenth].filter(doc => 
-            doc.title?.toLowerCase().includes(term.toLowerCase()) || 
-            doc.content.some(item => item.value.toLowerCase().includes(term.toLowerCase()))
-        );
-        setResults(filteredResults);
-        setShowResults(term.length > 0 && filteredResults.length > 0);
-    };
+    // const handleSearch = (term) => {
+    //     setSearchTerm(term);
+    //     const filteredResults = [...JsDocumentFirst, ...JsDocumentSecond, ...JsDocumentТhird, ...JsDocumentFourth, ...JsDocumentFifth, ...JsDocumentSixth, ...JsDocumentSeventh, ...JsDocumentEighth, ...JsDocumentNinth, ...JsDocumentTenth, ...JsDocumentEleventh, ...JsDocumentTwelfth, ...JsDocumentThirteenth, ...JsDocumentFourteenth, ...JsDocumentFifteenth, ...JsDocumentSixteenth, ...JsDocumentSeventeenth].filter(doc => 
+    //         doc.title?.toLowerCase().includes(term.toLowerCase()) || 
+    //         doc.content.some(item => item.value.toLowerCase().includes(term.toLowerCase()))
+    //     );
+    //     setResults(filteredResults);
+    //     setShowResults(term.length > 0 && filteredResults.length > 0);
+    // };
 
-    const handleResultClick = (doc) => {
-        setSearchTerm('');
-        setShowResults(false);
-        navigate(doc.path);
-    };
+    // const handleResultClick = (doc) => {
+    //     setSearchTerm('');
+    //     setShowResults(false);
+    //     navigate(doc.path);
+    // };
 
     const toggleSidebar = () => {
         setIsSidebarOpen((prev) => !prev);
