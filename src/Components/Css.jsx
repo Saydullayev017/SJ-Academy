@@ -1,26 +1,26 @@
 import React, { useState, useEffect } from 'react';
-import { Outlet, NavLink, useNavigate } from 'react-router-dom';
-import SearchResults from './SearchResults';
-import { 
-  CssDocumentFirst,
-  CssDocumentSecond,
-  CssDocumentТhird,
-  CssDocumentFourth,
-  CssDocumentFifth,
-  CssDocumentSixth,
-  CssDocumentSeventh,
-  CssDocumentEighth,
-  CssDocumentNinth,
-  CssDocumentTenth,
-  CssDocumentEleventh
-} from '../data/CssDocument';
+import { Outlet, NavLink} from 'react-router-dom';
+// import SearchResults from './SearchResults';
+// import { 
+//   CssDocumentFirst,
+//   CssDocumentSecond,
+//   CssDocumentТhird,
+//   CssDocumentFourth,
+//   CssDocumentFifth,
+//   CssDocumentSixth,
+//   CssDocumentSeventh,
+//   CssDocumentEighth,
+//   CssDocumentNinth,
+//   CssDocumentTenth,
+//   CssDocumentEleventh
+// } from '../data/CssDocument';
 
 function Css() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
-  const [searchTerm, setSearchTerm] = useState('');
-  const [results, setResults] = useState([]);
-  const [showResults, setShowResults] = useState(false);
-  const navigate = useNavigate();
+//   const [searchTerm, setSearchTerm] = useState('');
+//   const [results, setResults] = useState([]);
+//   const [showResults, setShowResults] = useState(false);
+//   const navigate = useNavigate();
 
   useEffect(() => {
     const handleOutsideClick = (event) => {
@@ -36,33 +36,33 @@ function Css() {
     };
   }, [isSidebarOpen]);
 
-  const handleSearch = (term) => {
-    setSearchTerm(term);
-    const filteredResults = [
-      ...CssDocumentFirst,
-      ...CssDocumentSecond,
-      ...CssDocumentТhird,
-      ...CssDocumentFourth,
-      ...CssDocumentFifth,
-      ...CssDocumentSixth,
-      ...CssDocumentSeventh,
-      ...CssDocumentEighth,
-      ...CssDocumentNinth,
-      ...CssDocumentTenth,
-      ...CssDocumentEleventh
-    ].filter(doc => 
-      doc.title?.toLowerCase().includes(term.toLowerCase()) || 
-      doc.content.some(item => item.value.toLowerCase().includes(term.toLowerCase()))
-    );
-    setResults(filteredResults);
-    setShowResults(term.length > 0 && filteredResults.length > 0);
-  };
+//   const handleSearch = (term) => {
+//     setSearchTerm(term);
+//     const filteredResults = [
+//       ...CssDocumentFirst,
+//       ...CssDocumentSecond,
+//       ...CssDocumentТhird,
+//       ...CssDocumentFourth,
+//       ...CssDocumentFifth,
+//       ...CssDocumentSixth,
+//       ...CssDocumentSeventh,
+//       ...CssDocumentEighth,
+//       ...CssDocumentNinth,
+//       ...CssDocumentTenth,
+//       ...CssDocumentEleventh
+//     ].filter(doc => 
+//       doc.title?.toLowerCase().includes(term.toLowerCase()) || 
+//       doc.content.some(item => item.value.toLowerCase().includes(term.toLowerCase()))
+//     );
+//     setResults(filteredResults);
+//     setShowResults(term.length > 0 && filteredResults.length > 0);
+//   };
 
-  const handleResultClick = (doc) => {
-    setSearchTerm('');
-    setShowResults(false);
-    navigate(doc.path);
-  };
+//   const handleResultClick = (doc) => {
+//     setSearchTerm('');
+//     setShowResults(false);
+//     navigate(doc.path);
+//   };
 
   const toggleSidebar = () => {
     setIsSidebarOpen(!isSidebarOpen);
