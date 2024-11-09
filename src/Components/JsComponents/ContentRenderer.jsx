@@ -53,7 +53,7 @@ const ContentRenderer = ({ content }) => {
                                         onClick={() => copyToClipboard(item.value)}
                                         className="bg-blue-500 text-white text-xs md:text-sm px-2 py-1 rounded flex items-center"
                                     >
-                                        {copyStatus || 'Копировать'}
+                                        {copyStatus || 'Nusxa olish'}
                                         {copyStatus && <span className="ml-1 md:ml-2 text-xs md:text-sm">✔️</span>} {/* Иконка при успешном копировании */}
                                     </button>
                                 </div>

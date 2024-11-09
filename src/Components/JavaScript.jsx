@@ -1,32 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { Outlet, NavLink} from 'react-router-dom';
-// import SearchResults from './SearchResults';
-// import { 
-//   JsDocumentFirst,
-//   JsDocumentSecond,
-//   JsDocumentТhird,
-//   JsDocumentFourth,
-//   JsDocumentFifth,
-//   JsDocumentSixth,
-//   JsDocumentSeventh,
-//   JsDocumentEighth,
-//   JsDocumentNinth,
-//   JsDocumentTenth,
-//   JsDocumentEleventh,
-//   JsDocumentTwelfth,
-//   JsDocumentThirteenth,
-//   JsDocumentFourteenth,
-//   JsDocumentFifteenth,
-//   JsDocumentSixteenth,
-//   JsDocumentSeventeenth
-// } from '../data/JsDocument';
+
 
 const Html = () => {
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
-    // const [searchTerm, setSearchTerm] = useState('');
-    // const [results, setResults] = useState([]);
-    // const [showResults, setShowResults] = useState(false);
-    // const navigate = useNavigate();
 
     useEffect(() => {
         const handleOutsideClick = (event) => {
@@ -42,21 +19,6 @@ const Html = () => {
         };
     }, [isSidebarOpen]);
 
-    // const handleSearch = (term) => {
-    //     setSearchTerm(term);
-    //     const filteredResults = [...JsDocumentFirst, ...JsDocumentSecond, ...JsDocumentТhird, ...JsDocumentFourth, ...JsDocumentFifth, ...JsDocumentSixth, ...JsDocumentSeventh, ...JsDocumentEighth, ...JsDocumentNinth, ...JsDocumentTenth, ...JsDocumentEleventh, ...JsDocumentTwelfth, ...JsDocumentThirteenth, ...JsDocumentFourteenth, ...JsDocumentFifteenth, ...JsDocumentSixteenth, ...JsDocumentSeventeenth].filter(doc => 
-    //         doc.title?.toLowerCase().includes(term.toLowerCase()) || 
-    //         doc.content.some(item => item.value.toLowerCase().includes(term.toLowerCase()))
-    //     );
-    //     setResults(filteredResults);
-    //     setShowResults(term.length > 0 && filteredResults.length > 0);
-    // };
-
-    // const handleResultClick = (doc) => {
-    //     setSearchTerm('');
-    //     setShowResults(false);
-    //     navigate(doc.path);
-    // };
 
     const toggleSidebar = () => {
         setIsSidebarOpen((prev) => !prev);
@@ -69,7 +31,7 @@ const Html = () => {
                 ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full'} 
                 md:translate-x-0 md:w-1/4 md:block fixed md:relative bg-neutral-900 z-20`}>
 
-                <h1 className='border bg-neutral-900 text-center rounded '>HTML</h1>
+                <h1 className='border bg-neutral-900 text-center rounded '>JavaScript</h1>
                 <nav>
                     <ul>
                         <li className='pt-3'>
@@ -77,7 +39,7 @@ const Html = () => {
                                 to="./" 
                                 className={({ isActive }) => (isActive ? 'text-blue-400 font-bold' : 'text-white')}
                             >
-                                переменные и типы данных
+                                Asoslar
                             </NavLink>
                         </li>
                         <li className='pt-3'>
@@ -85,7 +47,7 @@ const Html = () => {
                                 to="./js2" 
                                 className={({ isActive }) => (isActive ? 'text-blue-400 font-bold' : 'text-white')}
                             >
-                                Операторы
+                                Massivlar
                             </NavLink>
                         </li>
                         <li className='pt-3'>
@@ -93,7 +55,7 @@ const Html = () => {
                                 to="./js3" 
                                 className={({ isActive }) => (isActive ? 'text-blue-400 font-bold' : 'text-white')}
                             >
-                                3
+                                Ob'ektlar
                             </NavLink>
                         </li>
                         <li className='pt-3'>
@@ -101,7 +63,7 @@ const Html = () => {
                                 to="./js4" 
                                 className={({ isActive }) => (isActive ? 'text-blue-400 font-bold' : 'text-white')}
                             >
-                                4
+                                Shartlar
                             </NavLink>
                         </li>
                         <li className='pt-3'>
@@ -109,7 +71,7 @@ const Html = () => {
                                 to="./js5" 
                                 className={({ isActive }) => (isActive ? 'text-blue-400 font-bold' : 'text-white')}
                             >
-                                5
+                                Halqa
                             </NavLink>
                         </li>
                         <li className='pt-3'>
@@ -117,7 +79,7 @@ const Html = () => {
                                 to="./js6" 
                                 className={({ isActive }) => (isActive ? 'text-blue-400 font-bold' : 'text-white')}
                             >
-                                6
+                                Standart Metodlar
                             </NavLink>
                         </li>
                         <li className='pt-3'>
@@ -125,7 +87,7 @@ const Html = () => {
                                 to="./js7" 
                                 className={({ isActive }) => (isActive ? 'text-blue-400 font-bold' : 'text-white')}
                             >
-                                7
+                                Foydalanuvchi funktsiyalari
                             </NavLink>
                         </li>
                         <li className='pt-3'>
@@ -133,7 +95,7 @@ const Html = () => {
                                 to="./js8" 
                                 className={({ isActive }) => (isActive ? 'text-blue-400 font-bold' : 'text-white')}
                             >
-                                8
+                                O'zgaruvchan funktsiyalar
                             </NavLink>
                         </li>
                         <li className='pt-3'>
@@ -141,7 +103,7 @@ const Html = () => {
                                 to="./js9" 
                                 className={({ isActive }) => (isActive ? 'text-blue-400 font-bold' : 'text-white')}
                             >
-                                9
+                                Funktsiya turlari
                             </NavLink>
                         </li>
                         <li className='pt-3'>
@@ -149,7 +111,7 @@ const Html = () => {
                                 to="./js10" 
                                 className={({ isActive }) => (isActive ? 'text-blue-400 font-bold' : 'text-white')}
                             >
-                                10
+                                Ichki funktsiyalar
                             </NavLink>
                         </li>
                         <li className='pt-3'>
@@ -157,7 +119,7 @@ const Html = () => {
                                 to="./js11" 
                                 className={({ isActive }) => (isActive ? 'text-blue-400 font-bold' : 'text-white')}
                             >
-                                11
+                                Yopish 'closures'
                             </NavLink>
                         </li>
                         <li className='pt-3'>
@@ -165,7 +127,7 @@ const Html = () => {
                                 to="./js12" 
                                 className={({ isActive }) => (isActive ? 'text-blue-400 font-bold' : 'text-white')}
                             >
-                                12
+                                IIFE
                             </NavLink>
                         </li>
                         <li className='pt-3'>
@@ -173,7 +135,7 @@ const Html = () => {
                                 to="./js13" 
                                 className={({ isActive }) => (isActive ? 'text-blue-400 font-bold' : 'text-white')}
                             >
-                                13
+                                Rekursiya
                             </NavLink>
                         </li>
                         <li className='pt-3'>
@@ -181,7 +143,7 @@ const Html = () => {
                                 to="./js14" 
                                 className={({ isActive }) => (isActive ? 'text-blue-400 font-bold' : 'text-white')}
                             >
-                                14
+                                Tarjima usullari
                             </NavLink>
                         </li>
                         <li className='pt-3'>
@@ -189,7 +151,7 @@ const Html = () => {
                                 to="./js15" 
                                 className={({ isActive }) => (isActive ? 'text-blue-400 font-bold' : 'text-white')}
                             >
-                                15
+                                Spread operatori
                             </NavLink>
                         </li>
                         <li className='pt-3'>
@@ -197,7 +159,7 @@ const Html = () => {
                                 to="./js16" 
                                 className={({ isActive }) => (isActive ? 'text-blue-400 font-bold' : 'text-white')}
                             >
-                                16
+                                Rest operatori
                             </NavLink>
                         </li>
                         <li className='pt-3'>
@@ -205,34 +167,130 @@ const Html = () => {
                                 to="./js17" 
                                 className={({ isActive }) => (isActive ? 'text-blue-400 font-bold' : 'text-white')}
                             >
-                                17
+                                Destruktizatsiya
                             </NavLink>
                         </li>
+{/* 
+                        <li className='pt-3'>
+                            <NavLink 
+                                to="./js17" 
+                                className={({ isActive }) => (isActive ? 'text-blue-400 font-bold' : 'text-white')}
+                            >
+                                DOM
+                            </NavLink>
+                        </li>
+                        <li className='pt-3'>
+                            <NavLink 
+                                to="./js17" 
+                                className={({ isActive }) => (isActive ? 'text-blue-400 font-bold' : 'text-white')}
+                            >
+                                Atributlar
+                            </NavLink>
+                        </li>
+                        <li className='pt-3'>
+                            <NavLink 
+                                to="./js17" 
+                                className={({ isActive }) => (isActive ? 'text-blue-400 font-bold' : 'text-white')}
+                            >
+                                Stilizatsiya
+                            </NavLink>
+                        </li>
+                        <li className='pt-3'>
+                            <NavLink 
+                                to="./js17" 
+                                className={({ isActive }) => (isActive ? 'text-blue-400 font-bold' : 'text-white')}
+                            >
+                                Qidiruv
+                            </NavLink>
+                        </li>
+                        <li className='pt-3'>
+                            <NavLink 
+                                to="./js17" 
+                                className={({ isActive }) => (isActive ? 'text-blue-400 font-bold' : 'text-white')}
+                            >
+                                Tugunlar
+                            </NavLink>
+                        </li>
+                        <li className='pt-3'>
+                            <NavLink 
+                                to="./js17" 
+                                className={({ isActive }) => (isActive ? 'text-blue-400 font-bold' : 'text-white')}
+                            >
+                                Forma
+                            </NavLink>
+                        </li>
+                        <li className='pt-3'>
+                            <NavLink 
+                                to="./js17" 
+                                className={({ isActive }) => (isActive ? 'text-blue-400 font-bold' : 'text-white')}
+                            >
+                                Dropdown lists
+                            </NavLink>
+                        </li>
+                        <li className='pt-3'>
+                            <NavLink 
+                                to="./js17" 
+                                className={({ isActive }) => (isActive ? 'text-blue-400 font-bold' : 'text-white')}
+                            >
+                                Event Obyekti
+                            </NavLink>
+                        </li>
+                        <li className='pt-3'>
+                            <NavLink 
+                                to="./js17" 
+                                className={({ isActive }) => (isActive ? 'text-blue-400 font-bold' : 'text-white')}
+                            >
+                                Kontekst
+                            </NavLink>
+                        </li>
+                        <li className='pt-3'>
+                            <NavLink 
+                                to="./js17" 
+                                className={({ isActive }) => (isActive ? 'text-blue-400 font-bold' : 'text-white')}
+                            >
+                                Taymerlar
+                            </NavLink>
+                        </li>
+                        <li className='pt-3'>
+                            <NavLink 
+                                to="./js17" 
+                                className={({ isActive }) => (isActive ? 'text-blue-400 font-bold' : 'text-white')}
+                            >
+                                Elementlarni manipulyatsiya qilish
+                            </NavLink>
+                        </li>
+                        <li className='pt-3'>
+                            <NavLink 
+                                to="./js17" 
+                                className={({ isActive }) => (isActive ? 'text-blue-400 font-bold' : 'text-white')}
+                            >
+                                Amaliyot
+                            </NavLink>
+                        </li>
+                        <li className='pt-3'>
+                            <NavLink 
+                                to="./js17" 
+                                className={({ isActive }) => (isActive ? 'text-blue-400 font-bold' : 'text-white')}
+                            >
+                                Funktsiyalar va DOM
+                            </NavLink>
+                        </li>
+                        <li className='pt-3'>
+                            <NavLink 
+                                to="./js17" 
+                                className={({ isActive }) => (isActive ? 'text-blue-400 font-bold' : 'text-white')}
+                            >
+                                Clouser orqli modullar
+                            </NavLink>
+                        </li> */}
                     </ul>
+                    
                 </nav>
-                {/* <div className="absolute right-0 top-1/2 transform -translate-y-1/2 h-[759px] w-0.5 bg-neutral-700"></div> */}
             </div>
 
             {/* Main content */}
             <div className='content w-full md:w-3/4 p-4 h-full overflow-y-auto z-10 relative'>
-                {/* Search Field */}
-                {/* <div className="relative w-full mb-4">
-                    <input
-                        type="text"
-                        value={searchTerm}
-                        placeholder="Поиск..."
-                        onChange={(e) => handleSearch(e.target.value)}
-                        className="p-2 border text-white bg-neutral-800 border-gray-600 rounded w-full"
-                        onFocus={() => setShowResults(true)}
-                    />
-                    {showResults && (
-                        <SearchResults 
-                            results={results} 
-                            onClose={() => setShowResults(false)} 
-                            onResultClick={handleResultClick} 
-                        />
-                    )}
-                </div> */}
+
                 <Outlet />
             </div>
 

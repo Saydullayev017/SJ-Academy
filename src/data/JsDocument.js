@@ -6,68 +6,98 @@ export const JsDocumentFirst = [
         id: 1,
         path: "js1",
         content: [
-            { type: 'header', value: 'Переменные' },
-            { type: 'text', value: 'Переменные в JavaScript используются для хранения данных и могут быть объявлены с помощью трех ключевых слов: var, let и const.' },
-            { type: 'header', value: 'Способы объявления переменных'},
-            { type: 'text', value: '1. var (устаревший способ): Используется для объявления переменных, которые могут быть как локальными, так и глобальными.'},
-            { type: 'code', value: `var x = 5;` },
-            { type: 'text', value: '2. let (для переменных, значение которых может изменяться):'},
-            { type: 'code', value: `let y = 10; y = 20; // допустимо` },
-            { type: 'text', value: '3. const (для констант, значение которых не должно изменяться):'},
+            { type: 'header', value: 'Yangi boshlanuvchilar uchun JavaScript-ga kirish.' },
+            { type: 'text', value: "Javascript tili HTML va CSS bilan bir qatorda brauzerda ishlash uchun mo'ljallangan. Ammo, agar bu tillar sayt tuzilishini joylashtirish uchun mo'ljallangan bo'lsa, JavaScript veb-sahifalarni 'jonlantirish' imkonini beradi - ularni foydalanuvchi harakatlariga javob berish yoki ma'lum bir dinamizmni namoyish qilish (masalan, blokdagi rasmlarni o'zgartirish yoki chiroyli silliq ochiladigan menyular)." },
+            { type: 'header', value: 'Javascript-ni ishga tushiring'},
+            { type: 'text', value: "Javascript kodi to'g'ridan-to'g'ri HTML sahifasida skript yorlig'i ichida yozilgan. Ushbu teg sahifaning istalgan joyiga joylashtirilishi mumkin. Misolga qarang:"},
             { type: 'code', value: `
-                const PI = 3.14159;
-// PI = 3; // вызовет ошибку` },
-            { type: 'header', value: 'Правила именования переменных'},
-            { type: 'text', value: 'Идентификаторы должны начинаться с буквы, знака доллара ($) или нижнего подчеркивания (_).'},
-            { type: 'text', value: 'Они чувствительны к регистру.'},
-            { type: 'text',  value: 'Примеры корректных имен: myVar, _temp, $value.'},
-            { type: 'header', value: 'Типы данных'},
-            { type: 'text', value: 'JavaScript имеет восемь основных типов данных, которые делятся на примитивные и сложные.'},
-            { type: 'header', value: 'Примитивные типы данных'},
-            { type: 'text', value: '1. String: представляет строки текста.'},
-            { type: 'code', value: `let name = "John";`},
-        
-            { type: 'text', value: '2. Number: представляет числовые значения (как целые, так и дробные).'},
-            { type: 'code', value: `let age = 30;`},
-
-            { type: 'text', value: '3. BigInt: используется для представления больших целых чисел'},
-            { type: 'code', value: `let bigNumber = 1234567890123456789012345678901234567890n;`},
-
-            { type: 'text', value: '4. Boolean: логический тип, который может принимать значения true или false.'},
-            { type: 'code', value: `let isActive = true;`},
-
-            { type: 'text', value: '5. Undefined: указывает на то, что переменная была объявлена, но не инициализирована.'},
+<!DOCTYPE html>
+<html>
+        <head>
+        <meta charset="utf-8">
+        <title>Bu sarlavha title</title>
+        <script>bu erda biz JavaScript kodini yozamiz</script>
+        </head>
+        <body>
+                Bu sahifaning asosiy mazmuni.
+        </body>
+</html>
+                ` },
+            { type: 'header', value: "Javascript-dagi birinchi dastur"},
+            { type: 'text', value: "Keling, birinchi dasturimizni JavaScript-da yozamiz. Mana u:"},
             { type: 'code', value: `
-                let notAssigned;
-console.log(notAssigned); // undefined`},
-
-            { type: 'text', value: '6. Null: специальное значение, указывающее на отсутствие значения.'},
-            { type: 'code', value: `let emptyValue = null;`},
-
-            { type: 'text', value: '7. Symbol: уникальный и неизменяемый тип данных, часто используется для создания уникальных идентификаторов.'},
-            { type: 'code', value: `const uniqueId = Symbol('id');`},
-
-            { type: 'text', value: '8. Object: представляет комплексные структуры данных, которые могут содержать свойства и методы..'},
-            { type: 'code', value: `
-let person = {
-        name: "Alice",
-        age: 25,
-        greet: function() {
-                    console.log("Hello!");
-        }
-};
+                <!DOCTYPE html>
+<html>
+        <head>
+        <meta charset="utf-8">
+        <title> Mening birinchi dasturim</title>
+        <script>alert ('Salom, Dunyo!');</script>
+        </head>
+        <body>
+                mening birinchi dasturim
+        </body>
+</html>
                 `},
 
-                { type: 'header', value: 'Динамическая типизация'},
-                { type: 'text', value: 'JavaScript является динамически типизированным языком, что означает, что тип переменной может изменяться во время выполнения программы. Например:'},
+            { type: 'text', value: "Ushbu koddan nusxa oling va uni HTML fayliga joylashtiring. Keyin brauzeringizda ushbu faylni oching - va siz matn bilan dialog oynasini ko'rasiz."},
+
+            { type: 'header', value: "Keling, dastur kodini ko'rib chiqaylik"},
+            { type: 'text', value: "Keling, yuqorida yozgan dastur kodini ko'rib chiqaylik. Siz bilishingiz kerak bo'lgan birinchi tushuncha - bu xususiyatlar. Funktsiyalar sizga ba'zi harakatlarni bajarishga imkon beradi. Bizning misolimizda matnni dialog oynasi ko'rinishida ekranda ko'rsatadigan alert() funksiyasi mavjud. Funktsiya ism (bizning holimizda bu alert) va bu nomdan keyin yozilgan yumaloq qavslardan iborat. Funktsiya parametrlari ushbu qavs ichida yozilishi kerak. Bizning holatda, parametr ekranda ko'rsatiladigan matndir.Bizning holatda, funktsiya bitta parametrga ega, ammo bir nechta parametrlarni o'tkazish kerak bo'lgan funktsiyalar mavjud. Bunday holda, bu parametrlar vergul bilan yoziladi."},
+
+            { type: 'header', value: "JavaScript faylini ulash"},
+            { type: 'text', value: "Javascript kodi alohida faylda yozilishi mumkin, u HTML fayliga ulanadi. Keling, bu qanday amalga oshirilganini ko'rib chiqaylik.Birinchidan, skriptimiz bilan fayl yaratamiz. Ushbu fayl.js kengaytmasiga ega bo'lishi kerak. Misol tariqasida uni script.js deb ataymiz. Keling, unga ba'zi kodlarni joylashtiramiz:"},
+            { type: 'code', value: `alert('text');`},
+            { type: 'text', value: "Endi skript faylimizni HTML fayliga ulaymiz. Buning uchun src atributidagi skript tegida siz skriptli faylga yo'lni ko'rsatishingiz kerak:"},
+            { type: 'code', value: `
+<!DOCTYPE html>
+<html>
+        <head>
+                <meta charset="utf-8">
+                <title></title>
+                <script src="script.js"></script>
+        </head>
+        <body>
+            
+        </body>
+</html>
+                `},
+
+                { type: 'header', value: "Javascript skriptlari bilan bir nechta fayllar"},
+                { type: 'text', value: "Bir nechta skript teglari yordamida bir emas, bir nechta fayllarni ulashingiz mumkin:"},
                 { type: 'code', value: `
-                    let value = 42; // number
-value = "Hello"; // теперь строка
+<!DOCTYPE html>
+<html>
+        <head>
+                <meta charset="utf-8">
+                <title></title>
+                <script src="script1.js"></script>
+                <script src="script2.js"></script>
+        </head>
+        <body>
+            
+        </body>
+</html>
                     `},
 
-                { type: 'header', value: 'Проверка типов данных'},
-                { type: 'text', value: 'Для проверки типа переменной можно использовать оператор typeof. Например:'},
-                { type: 'code', value: 'console.log(typeof value); // "string"'},
+            { type: 'header', value: "Javascript-da qat'iy rejim"},
+            { type: 'text', value: "Zamonaviy JavaScript-da, birinchi qatorda kod yozishda siz qattiq rejim deb ataladigan narsani yoqishingiz kerak. Ushbu rejim brauzerni tilning barcha zamonaviy imkoniyatlaridan foydalanishga majbur qiladi. Qat'iy rejimni yoqish uchun skriptning birinchi qatoriga 'stritdan foydalanish' buyrug'ini qo'yish kerak. Keling, kodimizni qat'iy qayta yozamiz:"},
+            { type: 'code', value: `
+"use strict";
+alert('text!');
+                `},
+                
+            { type: 'header', value: "Javascript-da kommentariyalar"},
+            { type: 'text', value: "Html va CSS tillari singari, JavaScript-da siz kommmentariyalar qoldirishingiz mumkin. Ular bir qatorli va ko'p qatorli."},
+            { type: 'text', value: "Mana bir qatorli sharhning misoli:"},
+            { type: 'code', value: `alert('Salom, Dunyo!'); // Kommentariya`},
+            { type: 'text', value: "Mana ko'p qatorli sharhning misoli:"},
+            { type: 'code', value: `
+/*
+ko'p qatorlik kommentariya
+*/
+alert ('Salom, Dunyo!');
+                `},
+
         ],
     },
 ];

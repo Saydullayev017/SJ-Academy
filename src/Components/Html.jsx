@@ -1,24 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { Outlet, NavLink} from 'react-router-dom';
-// import SearchResults from './SearchResults';
-// import { 
-//   HtmlDocumentFirst,
-//   HtmlDocumentSecond,
-//   HtmlDocumenеТhird,
-//   HtmlDocumentFourth,
-//   HtmlDocumentFifth,
-//   HtmlDocumentSixth,
-//   HtmlDocumentSeventh,
-//   HtmlDocumentEighth,
-//   HtmlDocumentNinth,
-// } from '../data/HtmlDocument';
+
 
 const Html = () => {
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
-    // const [searchTerm, setSearchTerm] = useState('');
-    // const [results, setResults] = useState([]);
-    // const [showResults, setShowResults] = useState(false);
-    // const navigate = useNavigate();
+
 
     useEffect(() => {
         const handleOutsideClick = (event) => {
@@ -34,21 +20,7 @@ const Html = () => {
         };
     }, [isSidebarOpen]);
 
-    // const handleSearch = (term) => {
-    //     setSearchTerm(term);
-    //     const filteredResults = [...HtmlDocumentFirst, ...HtmlDocumentSecond, ...HtmlDocumenеТhird, ...HtmlDocumentFourth, ...HtmlDocumentFifth, ...HtmlDocumentSixth, ...HtmlDocumentSeventh, ...HtmlDocumentEighth, ...HtmlDocumentNinth].filter(doc => 
-    //         doc.title?.toLowerCase().includes(term.toLowerCase()) || 
-    //         doc.content.some(item => item.value.toLowerCase().includes(term.toLowerCase()))
-    //     );
-    //     setResults(filteredResults);
-    //     setShowResults(term.length > 0 && filteredResults.length > 0);
-    // };
 
-    // const handleResultClick = (doc) => {
-    //     setSearchTerm('');
-    //     setShowResults(false);
-    //     navigate(doc.path);
-    // };
 
     const toggleSidebar = () => {
         setIsSidebarOpen((prev) => !prev);
@@ -138,29 +110,10 @@ const Html = () => {
                         </li>
                     </ul>
                 </nav>
-                {/* <div className="absolute right-0 top-1/2 transform -translate-y-1/2 h-[759px] w-0.5 bg-neutral-700"></div> */}
             </div>
 
             {/* Main content */}
             <div className='content w-full md:w-3/4 p-4 h-full overflow-y-auto z-10 relative'>
-                {/* Search Field */}
-                {/* <div className="relative w-full mb-4">
-                    <input
-                        type="text"
-                        value={searchTerm}
-                        placeholder="Поиск..."
-                        onChange={(e) => handleSearch(e.target.value)}
-                        className="p-2 border text-white bg-neutral-800 border-gray-600 rounded w-full"
-                        onFocus={() => setShowResults(true)}
-                    />
-                    {showResults && (
-                        <SearchResults 
-                            results={results} 
-                            onClose={() => setShowResults(false)} 
-                            onResultClick={handleResultClick} 
-                        />
-                    )}
-                </div> */}
                 <Outlet />
             </div>
 
