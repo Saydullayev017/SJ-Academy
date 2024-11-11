@@ -1,71 +1,71 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import Html from "../Components/Html";
-import Css from "../Components/Css";
+// import Html from "../Components/Html";
+// import Css from "../Components/Css";
 import JavaScript from "../Components/JavaScript";
-import Algorithms from "../Components/algorithms";
+// import Algorithms from "../Components/algorithms";
 
-import Lesson1 from "../Components/HtmlComponents/LessonFirst";
-import Lesson2 from "../Components/HtmlComponents/LessonSecond";
-import Lesson3 from "../Components/HtmlComponents/LessonТhird";
-import Lesson4 from "../Components/HtmlComponents/LessonFourth";
-import Lesson5 from "../Components/HtmlComponents/LessonFifth";
-import Lesson6 from "../Components/HtmlComponents/LessonSixth";
-import Lesson7 from "../Components/HtmlComponents/LessonSeventh";
-import Lesson8 from "../Components/HtmlComponents/LessonEighth";
-import Lesson9 from "../Components/HtmlComponents/LessonNinth";
-
-
-import {
-  HtmlDocumentFirst,
-  HtmlDocumentSecond,
-  HtmlDocumenеТhird,
-  HtmlDocumentFourth,
-  HtmlDocumentFifth,
-  HtmlDocumentSixth,
-  HtmlDocumentSeventh,
-  HtmlDocumentEighth,
-  HtmlDocumentNinth,
-} from "../data/HtmlDocument";
-
-import Css2 from "../Components/CssComponents/LessonSecond";
-import Css3 from "../Components/CssComponents/LessonТhird";
-import Css4 from "../Components/CssComponents/LessonFourth";
-import Css5 from "../Components/CssComponents/LessonFifth";
-import Css6 from "../Components/CssComponents/LessonSixth";
-import Css7 from "../Components/CssComponents/LessonSeventh";
-import Css8 from "../Components/CssComponents/LessonEighth";
-import Css9 from "../Components/CssComponents/LessonNinth";
-import Css10 from "../Components/CssComponents/LessonTenth";
-import Css11 from "../Components/CssComponents/LessonEleventh";
-import Css12 from "../Components/CssComponents/LessonTwelfth";
-import Css13 from "../Components/CssComponents/LessonThirteenth";
-import Css14 from "../Components/CssComponents/LessonFourteenth";
-import Css15 from "../Components/CssComponents/LessonFifteenth";
-import Css16 from "../Components/CssComponents/LessonSixteenth";
-import Css17 from "../Components/CssComponents/LessonSeventeenth";
-import Css1 from "../Components/CssComponents/LessonFirst";
+// import Lesson1 from "../Components/HtmlComponents/LessonFirst";
+// import Lesson2 from "../Components/HtmlComponents/LessonSecond";
+// import Lesson3 from "../Components/HtmlComponents/LessonТhird";
+// import Lesson4 from "../Components/HtmlComponents/LessonFourth";
+// import Lesson5 from "../Components/HtmlComponents/LessonFifth";
+// import Lesson6 from "../Components/HtmlComponents/LessonSixth";
+// import Lesson7 from "../Components/HtmlComponents/LessonSeventh";
+// import Lesson8 from "../Components/HtmlComponents/LessonEighth";
+// import Lesson9 from "../Components/HtmlComponents/LessonNinth";
 
 
-import { 
-  CssDocumentFirst,
-  CssDocumentSecond,
-  CssDocumentТhird,
-  CssDocumentFourth,
-  CssDocumentFifth,
-  CssDocumentSixth,
-  CssDocumentSeventh,
-  CssDocumentEighth,
-  CssDocumentNinth,
-  CssDocumentTenth,
-  CssDocumentEleventh,
-  CssDocumentTwelfth,
-  CssDocumentThirteenth,
-  CssDocumentFourteenth,
-  CssDocumentFifteenth,
-  CssDocumentSixteenth,
-  CssDocumentSeventeenth,
-} from '../data/CssDocument'; 
+// import {
+//   HtmlDocumentFirst,
+//   HtmlDocumentSecond,
+//   HtmlDocumenеТhird,
+//   HtmlDocumentFourth,
+//   HtmlDocumentFifth,
+//   HtmlDocumentSixth,
+//   HtmlDocumentSeventh,
+//   HtmlDocumentEighth,
+//   HtmlDocumentNinth,
+// } from "../data/HtmlDocument";
+
+// import Css2 from "../Components/CssComponents/LessonSecond";
+// import Css3 from "../Components/CssComponents/LessonТhird";
+// import Css4 from "../Components/CssComponents/LessonFourth";
+// import Css5 from "../Components/CssComponents/LessonFifth";
+// import Css6 from "../Components/CssComponents/LessonSixth";
+// import Css7 from "../Components/CssComponents/LessonSeventh";
+// import Css8 from "../Components/CssComponents/LessonEighth";
+// import Css9 from "../Components/CssComponents/LessonNinth";
+// import Css10 from "../Components/CssComponents/LessonTenth";
+// import Css11 from "../Components/CssComponents/LessonEleventh";
+// import Css12 from "../Components/CssComponents/LessonTwelfth";
+// import Css13 from "../Components/CssComponents/LessonThirteenth";
+// import Css14 from "../Components/CssComponents/LessonFourteenth";
+// import Css15 from "../Components/CssComponents/LessonFifteenth";
+// import Css16 from "../Components/CssComponents/LessonSixteenth";
+// import Css17 from "../Components/CssComponents/LessonSeventeenth";
+// import Css1 from "../Components/CssComponents/LessonFirst";
+
+
+// import { 
+//   CssDocumentFirst,
+//   CssDocumentSecond,
+//   CssDocumentТhird,
+//   CssDocumentFourth,
+//   CssDocumentFifth,
+//   CssDocumentSixth,
+//   CssDocumentSeventh,
+//   CssDocumentEighth,
+//   CssDocumentNinth,
+//   CssDocumentTenth,
+//   CssDocumentEleventh,
+//   CssDocumentTwelfth,
+//   CssDocumentThirteenth,
+//   CssDocumentFourteenth,
+//   CssDocumentFifteenth,
+//   CssDocumentSixteenth,
+//   CssDocumentSeventeenth,
+// } from '../data/CssDocument'; 
 
 import { 
   JsDocumentFirst,
@@ -107,7 +107,7 @@ import Lessonjs17 from "../Components/JsComponents/Lessonjs17";
 const AppRoutes = () => {
   return (
     <Routes>
-      <Route path="/" element={<Html />}>
+      {/* <Route path="/" element={<Html />}>
         <Route
           index
           element={HtmlDocumentFirst.map((doc) => (
@@ -172,9 +172,9 @@ const AppRoutes = () => {
           ))}
         />
 
-      </Route>
+      </Route> */}
 {/* ------------------------------------------------------- */}
-      <Route path="/css" element={<Css />}>
+      {/* <Route path="/css" element={<Css />}>
         <Route index element={CssDocumentFirst.map((doc) => (
           <Css1 key={doc.id} title={doc.title} content={doc.content} />
         ))} />
@@ -236,7 +236,7 @@ const AppRoutes = () => {
         <Route path="css17" element={CssDocumentSeventeenth.map((doc) => (
           <Css17 key={doc.id} title={doc.title} content={doc.content} />
         ))} />
-      </Route>
+      </Route> */}
 {/* ------------------------------------------------------- */}
 <Route path="/js" element={<JavaScript />}>
     <Route index element={JsDocumentFirst.map((doc) => (
@@ -294,7 +294,7 @@ const AppRoutes = () => {
 
 </Route>
 
-      <Route path="/algo" element={<Algorithms />} />
+      {/* <Route path="/algo" element={<Algorithms />} /> */}
     </Routes>
   );
 };

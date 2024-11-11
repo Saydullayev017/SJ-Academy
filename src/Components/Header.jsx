@@ -44,7 +44,7 @@ const Header = () => {
 
         <nav className={`menu-container md:flex ${isOpen ? 'block' : 'hidden'}`}>
           <ul className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-4 text-lg md:text-xl font-serif">
-            <li>
+            {/* <li>
               <Link className="hover:text-lime-800" to="/" onClick={() => setIsOpen(false)}>
                 HTML
               </Link>
@@ -53,17 +53,17 @@ const Header = () => {
               <Link className="hover:text-lime-800" to="/css" onClick={() => setIsOpen(false)}>
                 CSS
               </Link>
-            </li>
+            </li> */}
             <li>
               <Link className="hover:text-lime-800" to="/js" onClick={() => setIsOpen(false)}>
                 JavaScript
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link className="hover:text-lime-800" to="/algo" onClick={() => setIsOpen(false)}>
                 Алгоритмы
               </Link>
-            </li>
+            </li> */}
           </ul>
         </nav>
       </div>

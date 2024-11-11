@@ -96,7 +96,40 @@ alert('text!');
 ko'p qatorlik kommentariya
 */
 alert ('Salom, Dunyo!');
+            `},
+            
+            { type: 'header', value: "Javascript-dagi o'zgaruvchilar"},
+            { type: 'text', value: "Har qanday dasturlash tilining asosiy tushunchasi o'zgaruvchidir. O'zgaruvchi - bu qatorlar yoki raqamlar kabi har qanday ma'lumotlarni saqlashimiz mumkin bo'lgan konteyner."},
+            { type: 'text', value: "Har bir o'zgaruvchining nomi bo'lishi kerak, u lotin harflari, raqamlari, $ belgilari va pastki chiziqlardan iborat bo'lishi mumkin. Bunday holda, o'zgaruvchi nomining birinchi belgisi raqam bo'lmasligi kerak. O'zgaruvchilar nomlariga misollar: str, my_str, myStr, a1, $, $a, $$a."},
+
+
+            { type: 'header', value: "O'zgaruvchilardan foydalanish"},
+            { type: 'text', value: "O'zgaruvchidan foydalanish uchun avval uni e'lon qilishingiz kerak: uning nomidan oldin let kalit so'zini yozing. Masalan, a: nomli o'zgaruvchini e'lon qilaylik"},
+            { type: 'code', value: `let a;`},
+            { type: 'text', value: "O'zgaruvchi e'lon qilingandan so'ng, siz unga ma'lum bir qiymatni, masalan, raqam yoki qatorni yozishingiz mumkin (unga belgilang)."},
+            { type: 'text', value: "O'zgaruvchiga ma'lumotlarni yozib olish = tayinlash operatsiyasi yordamida amalga oshiriladi. Masalan, a o'zgaruvchisiga 3 raqamini yozamiz:"},
+
+            { type: 'code', value: `let a = 3;`},
+            { type: 'text', value: "Endi alert funksiyasidan foydalanib, ushbu o'zgaruvchining mazmunini ekranda ko'rsatamiz:"},
+            { type: 'code', value: `
+let a = 3; //biz o'zgaruvchini e'lon qilamiz va unga qiymat beramiz
+alert(a); //chiqaradi 3
                 `},
+            { type: 'text', value: "E'londan so'ng darhol qiymatni o'zgaruvchiga yozish shart emas. Siz avval o'zgaruvchini e'lon qilishingiz va keyin unga qiymat berishingiz mumkin:"},
+            { type: 'code', value: `
+let a; //o'zgaruvchini e'lon qilish
+a = 3; //biz unga qiymat beramiz
+alert(a); //ekranda o'zgaruvchi qiymatini ko'rsatamiz
+                `},
+            { type: 'text', value: "Ko'rib turganingizdek, let o'zgaruvchi nomidan faqat bir marta yoziladi - bu o'zgaruvchi e'lon qilinganda. Keyin, o'zgaruvchidan foydalanish uchun siz shunchaki ushbu o'zgaruvchining nomini yozishingiz kerak."},
+
+            { type: 'header', value: "Mashq"},
+            { type: 'text', value: "Num o'zgaruvchisini yarating va unga 123 qiymatini belgilang. Alert funksiyasidan foydalanib, ushbu o'zgaruvchining qiymatini ekranda ko'rsating."},
+            { type: 'code', value: ``},
+
+            { type: 'header', value: ""},
+            { type: 'text', value: ""},
+            { type: 'code', value: ``},
 
         ],
     },
