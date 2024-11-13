@@ -112,14 +112,14 @@ alert ('Salom, Dunyo!');
             { type: 'code', value: `let a = 3;`},
             { type: 'text', value: "Endi alert funksiyasidan foydalanib, ushbu o'zgaruvchining mazmunini ekranda ko'rsatamiz:"},
             { type: 'code', value: `
-let a = 3; //biz o'zgaruvchini e'lon qilamiz va unga qiymat beramiz
-alert(a); //chiqaradi 3
+let a = 3; // biz o'zgaruvchini e'lon qilamiz va unga qiymat beramiz
+alert(a); // chiqaradi 3
                 `},
             { type: 'text', value: "E'londan so'ng darhol qiymatni o'zgaruvchiga yozish shart emas. Siz avval o'zgaruvchini e'lon qilishingiz va keyin unga qiymat berishingiz mumkin:"},
             { type: 'code', value: `
-let a; //o'zgaruvchini e'lon qilish
-a = 3; //biz unga qiymat beramiz
-alert(a); //ekranda o'zgaruvchi qiymatini ko'rsatamiz
+let a; // o'zgaruvchini e'lon qilish
+a = 3; // biz unga qiymat beramiz
+alert(a); // ekranda o'zgaruvchi qiymatini ko'rsatamiz
                 `},
             { type: 'text', value: "Ko'rib turganingizdek, let o'zgaruvchi nomidan faqat bir marta yoziladi - bu o'zgaruvchi e'lon qilinganda. Keyin, o'zgaruvchidan foydalanish uchun siz shunchaki ushbu o'zgaruvchining nomini yozishingiz kerak."},
 
@@ -138,8 +138,8 @@ let c = 3;
             { type: 'code', value: `let a = 1, b = 2, c = 3;`},
             { type: 'text', value: "Siz avval barcha o'zgaruvchilarni e'lon qilishingiz va keyin ularga qiymatlarni belgilashingiz mumkin:"},
             { type: 'code', value: `
-let a, b, c; //biz barcha 3 o'zgaruvchini e'lon qilamiz
-//o'zgaruvchilarga quyidagi qiymatlarni belgilang:
+let a, b, c; // biz barcha 3 o'zgaruvchini e'lon qilamiz
+// o'zgaruvchilarga quyidagi qiymatlarni belgilang:
 a = 1;
 b = 2;
 c = 3;
@@ -186,26 +186,180 @@ alert(a);
             { type: 'text', value: `Qo'shuv:`},
             { type: 'code', value: `
 let a = 1 + 2;
-alert(a); //3-sonni chiqaradi 
+alert(a); // 3-sonni chiqaradi 
                 `},
             { type: 'text', value: `Ayruv amali:`},
             { type: 'code', value: `
 let b = 3 - 2;
-alert(b); //1-sonni chiqaradi 
+alert(b); // 1-sonni chiqaradi 
                 `},
             { type: 'text', value: `Ko'paytiruv amali:`},
             { type: 'code', value: `
 let c = 3 * 2;
-alert(c); //6-sonni chiqaradi 
+alert(c); // 6-sonni chiqaradi 
                 `},
             { type: 'text', value: `Bo'luv amali:`},
             { type: 'code', value: `
 let d = 4 / 2;
-alert(d); //2-sonni chiqaradi 
+alert(d); // 2-sonni chiqaradi 
                 `},
             { type: 'header', value: `Mashq`},
             { type: 'text', value: `A o'zgaruvchisini yarating. Unga 1, 2 va 3 raqamlari yig'indisini yozing. Alert funksiyasidan foydalanib, a o'zgaruvchisi tarkibini ekranga olib chiqing.`},
 
+            { type: 'header', value: `Javascript-da o'zgaruvchilar bilan matematik operatsiyalar`},
+            { type: 'text', value: `Matematik amallar nafaqat raqamlar ustida, balki o'zgaruvchilar ustida ham bajarilishi mumkin. Masalan, ikkita o'zgaruvchining qiymatlarini qo'shamiz:`},
+            { type: 'code', value: `
+let a = 1;
+let b = 2;
+alert(a + b); // 3-sonni chiqaradi
+                `},
+            { type: 'text', value: `Operatsiya natijasini darhol chiqarish shart emas, siz avval uni biron bir o'zgaruvchiga yozishingiz va shundan keyingina ushbu o'zgaruvchining qiymatini olishingiz mumkin:`},
+            { type: 'code', value: `
+let a = 1;
+let b = 2;
+let c = a + b; // keling, miqdorni c o'zgaruvchisiga yozamiz
+alert(c);      // 3-sonni chiqaradi
+                `},
+            { type: 'header', value: `Mashq`},
+            { type: 'text', value: `1. Qiymati 10 bo'lgan a o'zgaruvchisini va qiymati 2 bo'lgan b o'zgaruvchisini yarating. Ekranda ularning yig'indisini, farqini, mahsulotini va shaxsiy qismini ko'rsating (bo'linish natijasi).`},
+            { type: 'text', value: `2. Qiymati 10 bo'lgan o'zgaruvchini va qiymati 5 bo'lgan d o'zgaruvchisini yarating. Ularni umumlashtiring va natijani natija o'zgaruvchisiga belgilang. Ekranda ijro o'zgaruvchisining qiymatini ko'rsating.`},
+            { type: 'text', value: `3. Qiymati 1 bo'lgan a o'zgaruvchisini, qiymati 2 bo'lgan b o'zgaruvchini va 3 qiymatiga ega o'zgaruvchini yarating. Ularning miqdorini ekranda ko'rsating.`},
+            { type: 'text', value: `4. Qiymati 10 bo'lgan a o'zgaruvchisini va qiymati 5 bo'lgan b o'zgaruvchisini yarating. B o'zgaruvchisini a dan olib tashlang va natijani c o'zgaruvchisiga belgilang. Keyin d o'zgaruvchisini yarating, unga 7 qiymatini belgilang. C va d o'zgaruvchilarni qo'shing va natijani natija o'zgaruvchisiga yozing. Ekranda ijro o'zgaruvchisining qiymatini ko'rsating.`},
+
+            { type: 'header', value: `Javascript-da matematik operatsiyalarning ustuvorligi`},
+            { type: 'text', value: `Javascript matematik operatsiyalari an'anaviy matematikadagi kabi ustunlikka ega. Ya'ni, boshida ko'paytirish va bo'lish amalga oshiriladi, so'ngra qo'shish va ayirish amalga oshiriladi.`},
+            { type: 'text', value: `Keyingi misolda birinchi 2 2 ga ko'paytiriladi va keyin natijaga 3 qo'shiladi:`},
+            { type: 'code', value: `
+let a = 2 * 2 + 3;
+alert(a); // 7 ko'rsatiladi (natija 4 + 3)
+                `},
+            { type: 'header', value: `JJavascript-dagi salbiy raqamlar`},
+            { type: 'text', value: `Raqamlar salbiy bo'lishi mumkin. Buning uchun raqamdan oldin minus belgisini qo'yishingiz kerak:`},
+            { type: 'code', value: `
+let a = -1;
+alert(a); // -1 chiqadi
+                `},
+            { type: 'text', value: `Minus belgisi ham raqamlarga, ham o'zgaruvchilarga yozilishi mumkin:`},
+            { type: 'code', value: `
+let a = 1;
+let b = -a; // biz b tarkibiga teskari belgi bilan a tarkibini yozdik
+alert(b);   // -1 chiqadi
+                `},
+            { type: 'header', value: `Javascript-da bo'linish qoldig'i`},
+            { type: 'text', value: `Maxsus % operatori mavjud bo'lib, uning yordamida siz bir sonni boshqasiga bo'lish qoldig'ini topishingiz mumkin:`},
+            { type: 'code', value: `alert(10 % 3); // 1 chiqadi`},
+            { type: 'text', value: `Agar bitta raqam ikkinchisiga bo'lingan bo'lsa, qoldiq nolga teng bo'ladi:`},
+            { type: 'code', value: `alert(10 % 2); // 0 chiqadi`},
+            { type: 'text', value: `% operatori, albatta, nafaqat raqamlarga, balki o'zgaruvchilarga ham qo'llanilishi mumkin:`},
+            { type: 'code', value: `
+let a = 10;
+let b = 3;
+alert(a % b); // 1 chiqadi
+                `},
+            { type: 'header', value: `Javascript darajasiga ko'tarilish`},
+            { type: 'text', value: `Raqamni darajaga ko'tarish uchun maxsus operator ham mavjud **. Keling, uning yordami bilan 10 raqamini uchinchi darajaga ko'taraylik:`},
+            { type: 'code', value: `alert(10 ** 3); // 1000 chiqadi`},
+            { type: 'text', value: `Raqam ham, daraja ham o'zgaruvchilarda bo'lishi mumkin:`},
+            { type: 'code', value: `
+let a = 10;
+let b = 3;
+alert(a ** b); // 1000 chiqadi
+
+                `},
+            
+            { type: 'header', value: `Javascript-dagi qatorlar / hariflar`},
+            { type: 'text', value: `Yuqorida aytib o'tilganidek, ma'lumotlar har xil turdagi bo'lishi mumkin. Turlardan biri raqamlar, biz allaqachon bir oz o'rganganmiz. Endi qatorlarga o'tamiz.`},
+            { type: 'text', value: `Hariflar tirnoqli qoshtirnoq yordamida yaratiladi:`},
+            { type: 'code', value: `
+let str = 'abc';
+alert(str); // abc chiqadi
+                `},
+            { type: 'text', value: `Qo'shtirnoq nafaqat bitta, balki ikkita bo'lishi mumkin:`},
+            { type: 'code', value: `
+let str = "abc";
+alert(str); // abc chiqadi
+                `},
+            { type: 'text', value: `Javascript-da bitta va ikkita tirnoq o'rtasida farq yo'q. Ulardan foydalanish sizning afzalliklaringizga bog'liq. Men bitta qo'shtirnoqdan foydalanishni afzal ko'raman, shuning uchun ular darslikning boshqa hamma joyida bo'ladi.`},
+            { type: 'text', value: `Bu erda va bundan keyin, agar xulosaning natijasi satr bo'lsa, men uni qo'shtirnoq ichiga qo'yaman, bu satr ekanligini ko'rsataman, bu shunday: u "abc" ni chiqaradi. Chiziqni alert orqali ko'rsatishda qo'shtirnoq ko'rinmaydi (ya'ni, qo'shtirnoq ichida yozilganlarim ekranda ko'rsatiladi).`},
+
+            { type: 'header', value: `Mashq`},
+            { type: 'text', value: `Hariflar yordamida o'zingizni ismingizni yozing. Ushbu ma'lumotlarni ekranga chiqaring.`},
+            { type: 'header', value: `Javascript-da qator qo'shish`},
+            { type: 'text', value: `Satrlarni qo'shish uchun, shuningdek, raqamlarni qo'shish uchun +: operatori ishlatiladi`},
+            { type: 'code', value: `
+let str = 'abc' + 'def'; // ikki qatorni katlaymiz
+alert(str); // 'abcdef' chiqadi
+                `},
+            { type: 'text', value: `hariflar o'zgaruvchilarda ham saqlanishi mumkin:`},
+            { type: 'code', value: `
+let str1 = 'abc';
+let str2 = 'def';
+alert(str1 + str2); // 'abcdef' chiqadi
+                `},
+            { type: 'text', value: `Shuningdek, siz o'zgaruvchilar va satrlarni qo'shishingiz mumkin:`},
+            { type: 'code', value: `
+let str1 = 'abc';
+let str2 = 'def';
+alert(str1 + '!!!' + str2); // 'abc!!!def' chiqadi
+                `},
+            { type: 'header', value: `Mashq`},
+            { type: 'text', value: `"java" matni bilan o'zgaruvchi va "skript" matni bilan o'zgaruvchi yarating. Ushbu o'zgaruvchilar va satrlarni qo'shish operatsiyasidan foydalanib, ekranda "javascript" qatorini ko'rsating.`},
+            { type: 'text', value: `"salom" matni bilan o'zgaruvchi va "dunyo" matni bilan o'zgaruvchi yarating. Ushbu o'zgaruvchilar va satrlarni qo'shish operatsiyasidan foydalanib, ekranda "salom dunyo" qatorini ko'rsating.`},
+            { type: 'header', value: `Javascript-da qator uzunligi`},
+            { type: 'text', value: `Qatordagi belgilar soni teng xususiyatda mavjud:`},
+            { type: 'code', value: `
+let str = 'abcde';
+alert(str.length); // 5 chiqadi
+                `},
+            { type: 'header', value: `Length xususiyati to'g'ridan-to'g'ri qatorga qo'llanilishi mumkin:`},
+            { type: 'code', value: `alert('abcde'.length); // 5 chiqadi`},
+            { type: 'text', value: `Bo'shliq ham ramzdir:`},
+            { type: 'code', value: `alert('ab de'.length); // 5 chiqadi`},
+            // { type: 'header', value: ``},
+            // { type: 'header', value: ``},
+            // { type: 'header', value: ``},
+            // { type: 'header', value: ``},
+            // { type: 'header', value: ``},
+            // { type: 'header', value: ``},
+            // { type: 'header', value: ``},
+            // { type: 'header', value: ``},
+            // { type: 'header', value: ``},
+            // { type: 'header', value: ``},
+            // { type: 'header', value: ``},
+            // { type: 'header', value: ``},
+            // { type: 'header', value: ``},
+            // { type: 'header', value: ``},
+            // { type: 'header', value: ``},
+            // { type: 'header', value: ``},
+            // { type: 'header', value: ``},
+            // { type: 'header', value: ``},
+            // { type: 'header', value: ``},
+            // { type: 'header', value: ``},
+            // { type: 'header', value: ``},
+            // { type: 'header', value: ``},
+            // { type: 'header', value: ``},
+            // { type: 'header', value: ``},
+            // { type: 'header', value: ``},
+            // { type: 'header', value: ``},
+            // { type: 'header', value: ``},
+            // { type: 'header', value: ``},
+            // { type: 'header', value: ``},
+            // { type: 'header', value: ``},
+            // { type: 'header', value: ``},
+            // { type: 'header', value: ``},
+            // { type: 'header', value: ``},
+            // { type: 'header', value: ``},
+            // { type: 'header', value: ``},
+            // { type: 'header', value: ``},
+            // { type: 'header', value: ``},
+            // { type: 'header', value: ``},
+            // { type: 'header', value: ``},
+            // { type: 'header', value: ``},
+            // { type: 'header', value: ``},
+            // { type: 'header', value: ``},
+            // { type: 'header', value: ``},
+            // { type: 'header', value: ``},
+            // { type: 'header', value: ``},
 
         
         
