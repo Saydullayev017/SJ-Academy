@@ -125,12 +125,92 @@ alert(a); //ekranda o'zgaruvchi qiymatini ko'rsatamiz
 
             { type: 'header', value: "Mashq"},
             { type: 'text', value: "Num o'zgaruvchisini yarating va unga 123 qiymatini belgilang. Alert funksiyasidan foydalanib, ushbu o'zgaruvchining qiymatini ekranda ko'rsating."},
-            { type: 'code', value: ``},
 
-            { type: 'header', value: ""},
-            { type: 'text', value: ""},
-            { type: 'code', value: ``},
 
+            { type: 'header', value: "Javascript-da bir nechta o'zgaruvchilarni e'lon qilish"},
+            { type: 'text', value: "Keling, bir nechta o'zgaruvchilarni e'lon qilaylik:"},
+            { type: 'code', value: `
+let a = 1;
+let b = 2;
+let c = 3;
+                `},
+            { type: 'text', value: "Yuqoridagi kodni bir marta xat yozish va undan keyin kerakli o'zgaruvchilarni ularning qiymatlari bilan ro'yxatga olish orqali soddalashtirish mumkin:"},
+            { type: 'code', value: `let a = 1, b = 2, c = 3;`},
+            { type: 'text', value: "Siz avval barcha o'zgaruvchilarni e'lon qilishingiz va keyin ularga qiymatlarni belgilashingiz mumkin:"},
+            { type: 'code', value: `
+let a, b, c; //biz barcha 3 o'zgaruvchini e'lon qilamiz
+//o'zgaruvchilarga quyidagi qiymatlarni belgilang:
+a = 1;
+b = 2;
+c = 3;
+                `},
+            { type: 'header', value: "O'zgaruvchan qiymatlarning o'zgarishi"},
+            { type: 'text', value: "Biz ma'lum bir qiymatni tayinlagan o'zgaruvchimiz bo'lsin. Keyin biz topshiriq operatsiyasini yana bajarishimiz va o'zgaruvchiga boshqa qiymat berishimiz mumkin:"},
+            { type: 'code', value: `
+let a;    // biz o'zgaruvchini e'lon qilamiz
+
+a = 1;    // unga 1 qiymatini yozing
+alert(a); // 1-sonni chiqaradi
+
+a = 2;    // endi 2 qiymatini yozib, o'chiring qiymat 1
+alert(a); // 2 ko'rsatiladi
+                `},
+            { type: 'text', value: "Ya'ni, o'zgaruvchining qiymati unga qattiq bog'langan narsa emas. Biz ba'zi ma'lumotlarni o'zgaruvchiga erkin yozishimiz, ularni o'qishimiz, keyin boshqa narsalarni yozishimiz mumkin - va hokazo."},
+            { type: 'header', value: "Mashq"},
+            { type: 'text', value: "A o'zgaruvchisini yarating. Unga 10 qiymatini yozing, uni ekranga ko'rsating. Keyin unga 20 qiymatini yozing va uni ekranga ko'rsating."},
+            { type: 'header', value: "Bitta o'zgaruvchi uchun bir nechta let"},
+            { type: 'text', value: "Xuddi shu o'zgaruvchini let orqali bir necha marta e'lon qilish mumkin emas. Masalan, quyidagi kod xatoga olib keladi:"},
+            { type: 'code', value: `
+let a = 1;
+alert(a);
+let a = 2;
+alert(a);
+                `},
+            { type: 'text', value: "Muammoni hal qilishning ikkita varianti mavjud. Siz shunchaki ikki xil o'zgaruvchini kiritishingiz mumkin:"},
+            { type: 'code', value: `
+let a = 1;
+alert(a);
+let b = 2;
+alert(b);
+                `},
+            
+            { type: 'text', value: "Yoki avval a o'zgaruvchisini e'lon qilishingiz va keyin u bilan operatsiyalarni bajarishingiz mumkin:"},
+            { type: 'code', value: `
+let a;
+a = 1;
+alert(a);
+a = 2;
+alert(a);
+                `},
+            { type: 'header', value: `Javascript-da raqamlar bilan matematik operatsiyalar`},
+            { type: 'text', value: `Qo'shuv:`},
+            { type: 'code', value: `
+let a = 1 + 2;
+alert(a); //3-sonni chiqaradi 
+                `},
+            { type: 'text', value: `Ayruv amali:`},
+            { type: 'code', value: `
+let b = 3 - 2;
+alert(b); //1-sonni chiqaradi 
+                `},
+            { type: 'text', value: `Ko'paytiruv amali:`},
+            { type: 'code', value: `
+let c = 3 * 2;
+alert(c); //6-sonni chiqaradi 
+                `},
+            { type: 'text', value: `Bo'luv amali:`},
+            { type: 'code', value: `
+let d = 4 / 2;
+alert(d); //2-sonni chiqaradi 
+                `},
+            { type: 'header', value: `Mashq`},
+            { type: 'text', value: `A o'zgaruvchisini yarating. Unga 1, 2 va 3 raqamlari yig'indisini yozing. Alert funksiyasidan foydalanib, a o'zgaruvchisi tarkibini ekranga olib chiqing.`},
+
+
+        
+        
+        
+        
         ],
     },
 ];

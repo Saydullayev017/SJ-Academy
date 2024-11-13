@@ -5,7 +5,7 @@ const ContentRenderer = ({ content }) => {
 
     const copyToClipboard = (code) => {
         navigator.clipboard.writeText(code).then(() => {
-            setCopyStatus('Копировано!');
+            setCopyStatus('Nusxa olindi!');
             setTimeout(() => setCopyStatus(''), 2000); // Сброс статуса через 2 секунды
         });
     };

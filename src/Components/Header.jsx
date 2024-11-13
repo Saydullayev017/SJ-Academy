@@ -55,7 +55,7 @@ const Header = () => {
               </Link>
             </li> */}
             <li>
-              <Link className="hover:text-lime-800" to="/js" onClick={() => setIsOpen(false)}>
+              <Link className="hover:text-lime-800" to="/" onClick={() => setIsOpen(false)}>
                 JavaScript
               </Link>
             </li>

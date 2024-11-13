@@ -238,61 +238,61 @@ const AppRoutes = () => {
         ))} />
       </Route> */}
 {/* ------------------------------------------------------- */}
-<Route path="/js" element={<JavaScript />}>
-    <Route index element={JsDocumentFirst.map((doc) => (
-        <Lessonjs1 key={doc.id} title={doc.title} content={doc.content} />
-    ))} />
-        <Route path="js2" element={JsDocumentSecond.map((doc) => (
-        <Lessonjs2 key={doc.id} title={doc.title} content={doc.content} />
-    ))} />
-            <Route path="js3" element={JsDocumentТhird.map((doc) => (
-        <Lessonjs3 key={doc.id} title={doc.title} content={doc.content} />
-    ))} />
-                <Route path="js4" element={JsDocumentFourth.map((doc) => (
-        <Lessonjs4 key={doc.id} title={doc.title} content={doc.content} />
-    ))} />
+      <Route path="/" element={<JavaScript />}>
+          <Route index element={JsDocumentFirst.map((doc) => (
+              <Lessonjs1 key={doc.id} title={doc.title} content={doc.content} />
+          ))} />
+              <Route path="js2" element={JsDocumentSecond.map((doc) => (
+              <Lessonjs2 key={doc.id} title={doc.title} content={doc.content} />
+          ))} />
+                  <Route path="js3" element={JsDocumentТhird.map((doc) => (
+              <Lessonjs3 key={doc.id} title={doc.title} content={doc.content} />
+          ))} />
+                      <Route path="js4" element={JsDocumentFourth.map((doc) => (
+              <Lessonjs4 key={doc.id} title={doc.title} content={doc.content} />
+          ))} />
 
-            <Route path="js5" element={JsDocumentFifth.map((doc) => (
-        <Lessonjs5 key={doc.id} title={doc.title} content={doc.content} />
-    ))} />
-            <Route path="js6" element={JsDocumentSixth.map((doc) => (
-        <Lessonjs6 key={doc.id} title={doc.title} content={doc.content} />
-    ))} />
-            <Route path="js7" element={JsDocumentSeventh.map((doc) => (
-        <Lessonjs7 key={doc.id} title={doc.title} content={doc.content} />
-    ))} />
-            <Route path="js8" element={JsDocumentEighth.map((doc) => (
-        <Lessonjs8 key={doc.id} title={doc.title} content={doc.content} />
-    ))} />
-            <Route path="js9" element={JsDocumentNinth.map((doc) => (
-        <Lessonjs9 key={doc.id} title={doc.title} content={doc.content} />
-    ))} />
-            <Route path="js10" element={JsDocumentTenth.map((doc) => (
-        <Lessonjs10 key={doc.id} title={doc.title} content={doc.content} />
-    ))} />
-            <Route path="js11" element={JsDocumentEleventh.map((doc) => (
-        <Lessonjs11 key={doc.id} title={doc.title} content={doc.content} />
-    ))} />
-            <Route path="js12" element={JsDocumentTwelfth.map((doc) => (
-        <Lessonjs12 key={doc.id} title={doc.title} content={doc.content} />
-    ))} />
-            <Route path="js13" element={JsDocumentThirteenth.map((doc) => (
-        <Lessonjs13 key={doc.id} title={doc.title} content={doc.content} />
-    ))} />
-            <Route path="js14" element={JsDocumentFourteenth.map((doc) => (
-        <Lessonjs14 key={doc.id} title={doc.title} content={doc.content} />
-    ))} />
-            <Route path="js15" element={JsDocumentFifteenth.map((doc) => (
-        <Lessonjs15 key={doc.id} title={doc.title} content={doc.content} />
-    ))} />
-            <Route path="js16" element={JsDocumentSixteenth.map((doc) => (
-        <Lessonjs16 key={doc.id} title={doc.title} content={doc.content} />
-    ))} />
-            <Route path="js17" element={JsDocumentSeventeenth.map((doc) => (
-        <Lessonjs17 key={doc.id} title={doc.title} content={doc.content} />
-    ))} />
+                  <Route path="js5" element={JsDocumentFifth.map((doc) => (
+              <Lessonjs5 key={doc.id} title={doc.title} content={doc.content} />
+          ))} />
+                  <Route path="js6" element={JsDocumentSixth.map((doc) => (
+              <Lessonjs6 key={doc.id} title={doc.title} content={doc.content} />
+          ))} />
+                  <Route path="js7" element={JsDocumentSeventh.map((doc) => (
+              <Lessonjs7 key={doc.id} title={doc.title} content={doc.content} />
+          ))} />
+                  <Route path="js8" element={JsDocumentEighth.map((doc) => (
+              <Lessonjs8 key={doc.id} title={doc.title} content={doc.content} />
+          ))} />
+                  <Route path="js9" element={JsDocumentNinth.map((doc) => (
+              <Lessonjs9 key={doc.id} title={doc.title} content={doc.content} />
+          ))} />
+                  <Route path="js10" element={JsDocumentTenth.map((doc) => (
+              <Lessonjs10 key={doc.id} title={doc.title} content={doc.content} />
+          ))} />
+                  <Route path="js11" element={JsDocumentEleventh.map((doc) => (
+              <Lessonjs11 key={doc.id} title={doc.title} content={doc.content} />
+          ))} />
+                  <Route path="js12" element={JsDocumentTwelfth.map((doc) => (
+              <Lessonjs12 key={doc.id} title={doc.title} content={doc.content} />
+          ))} />
+                  <Route path="js13" element={JsDocumentThirteenth.map((doc) => (
+              <Lessonjs13 key={doc.id} title={doc.title} content={doc.content} />
+          ))} />
+                  <Route path="js14" element={JsDocumentFourteenth.map((doc) => (
+              <Lessonjs14 key={doc.id} title={doc.title} content={doc.content} />
+          ))} />
+                  <Route path="js15" element={JsDocumentFifteenth.map((doc) => (
+              <Lessonjs15 key={doc.id} title={doc.title} content={doc.content} />
+          ))} />
+                  <Route path="js16" element={JsDocumentSixteenth.map((doc) => (
+              <Lessonjs16 key={doc.id} title={doc.title} content={doc.content} />
+          ))} />
+                  <Route path="js17" element={JsDocumentSeventeenth.map((doc) => (
+              <Lessonjs17 key={doc.id} title={doc.title} content={doc.content} />
+          ))} />
 
-</Route>
+      </Route>
 
       {/* <Route path="/algo" element={<Algorithms />} /> */}
     </Routes>
