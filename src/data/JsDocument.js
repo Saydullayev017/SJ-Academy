@@ -325,7 +325,7 @@ let str = 'xxx';
 let txt = 'aaa ' + str + ' bbb';
                 `},
             { type: 'text', value: `Ushbu kodni quyidagicha qayta yozish mumkin:`},
-            { type: 'code', value: "let txt = `aaa ${'xxx'} bbb`;"},
+            { type: 'code', value: "let txt = `aaa ${} bbb`;"},
             { type: 'header', value: `Javascript-da maxsus qiymatlar`},
             { type: 'text', value: `Javascript-da, boshqa dasturlash tillarida bo'lgani kabi, ba'zi maxsus qiymatlar uchun kalit so'zlar mavjud. Mana ular: aniqlanmagan, nol, rost, yolg'on, NaN, Infinity, -Infinity.`},
             { type: 'header', value: `undefined`},
@@ -757,46 +757,6 @@ export const JsDocumentSecond = [
             { type: 'header', value: 'Операторы' },
             { type: 'text', value: 'В JavaScript операторы играют важную роль в выполнении различных операций над данными. Они позволяют выполнять математические вычисления, сравнения, логические операции и многое другое. Рассмотрим основные типы операторов, их назначение и примеры использования.' },
         
-            { type: 'header', value: '1. Арифметические операторы' },
-            { type: 'text', value: 'Используются для выполнения математических операций.' },
-            { type: 'text', value: '1. + (сложение): 5 + 3 возвращает 8.' },
-            { type: 'text', value: '2. - (вычитание): 5 - 3 возвращает 2.' },
-            { type: 'text', value: '3. * (умножение): 5 * 3 возвращает 15.' },
-            { type: 'text', value: '4. / (деление): 6 / 3 возвращает 2.' },
-            { type: 'text', value: '5. % (остаток от деления): 7 % 3 возвращает 1.' },
-            { type: 'text', value: '6. ++ (инкремент): увеличивает значение на 1. Пример: let x = 5; x++; // x теперь 6.' },
-            { type: 'text', value: '7. -- (декремент): уменьшает значение на 1. Пример: let y = 5; y--; // y теперь 4.' },
-
-            { type: 'header', value: '2. Операторы присваивания' },
-            { type: 'text', value: '1. Используются для присвоения значений переменным.' },
-            { type: 'text', value: '2. =: простое присваивание, например, let a = 5;.' },
-            { type: 'text', value: '3. +=: сложение с присваиванием, например, a += 2; // эквивалентно a = a + 2;.' },
-            { type: 'text', value: '4. -=: вычитание с присваиванием, например, a -= 2;.' },
-            { type: 'text', value: '5. Другие операторы присваивания: *=, /=, %= и т.д.' },
-
-            { type: 'header', value: '3. Операторы сравнения' },
-            { type: 'text', value: 'Используются для сравнения значений и возвращают логическое значение (true или false).' },
-            { type: 'text', value: '1. ==: нестрогое равенство, например, 5 == "5" возвращает true.' },
-            { type: 'text', value: '2. ===: строгое равенство, например, 5 === "5" возвращает false.' },
-            { type: 'text', value: '3. !=: неравенство, например, 5 != "4" возвращает true.' },
-            { type: 'text', value: '4. <, >, <=, >=: сравнение чисел.' },
-
-            { type: 'header', value: '4. Логические операторы' },
-            { type: 'text', value: 'Используются для выполнения логических операций.' },
-            { type: 'text', value: '&&: логическое "И", возвращает true, если оба операнда истинны.' },
-            { type: 'code', value: 'let result = true && false; // result будет false' },
-            { type: 'text', value: '||: логическое "ИЛИ", возвращает true, если хотя бы один из операндов истинен.' },
-            { type: 'code', value: 'let a = (1, 2, 3); // a будет равно 3' },
-            { type: 'text', value: 'Операторы доступа к свойствам объектов' },
-            { type: 'text', value: 'Точка (.) и квадратные скобки ([]) используются для доступа к свойствам объектов.' },
-            { type: 'text', value: 'Специальные операторы' },
-            { type: 'text', value: 'Оператор типа (typeof) возвращает строку с типом переменной.' },
-            { type: 'code', value: 'console.log(typeof "Hello"); // "string"' },
-            { type: 'header', value: 'Приоритет операторов' },
-            
-            { type: 'text', value: 'Приоритет операторов определяет порядок их выполнения в выражениях. Например, арифметические операции выполняются до логических, а операции сравнения — до присваивания.Знание операторов и их особенностей поможет вам эффективно писать код на JavaScript и решать различные задачи программирования' },
-            
-
 
         ],
     },
