@@ -103,10 +103,12 @@ import Lessonjs14 from "../Components/JsComponents/Lessonjs14";
 import Lessonjs15 from "../Components/JsComponents/Lessonjs15";
 import Lessonjs16 from "../Components/JsComponents/Lessonjs16";
 import Lessonjs17 from "../Components/JsComponents/Lessonjs17";
+import Intro from "../Components/Intro";
 
 const AppRoutes = () => {
   return (
     <Routes>
+            <Route path="/" element={<Intro />}></Route>
       {/* <Route path="/" element={<Html />}>
         <Route
           index
@@ -238,7 +240,7 @@ const AppRoutes = () => {
         ))} />
       </Route> */}
 {/* ------------------------------------------------------- */}
-      <Route path="/" element={<JavaScript />}>
+      <Route path="/js" element={<JavaScript />}>
           <Route index element={JsDocumentFirst.map((doc) => (
               <Lessonjs1 key={doc.id} title={doc.title} content={doc.content} />
           ))} />
