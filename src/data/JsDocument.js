@@ -233,7 +233,7 @@ alert(c);      // 3-sonni chiqaradi
 let a = 2 * 2 + 3;
 alert(a); // 7 ko'rsatiladi (natija 4 + 3)
                 `},
-            { type: 'header', value: `JJavascript-dagi salbiy raqamlar`},
+            { type: 'header', value: `Javascript-dagi salbiy raqamlar`},
             { type: 'text', value: `Raqamlar salbiy bo'lishi mumkin. Buning uchun raqamdan oldin minus belgisini qo'yishingiz kerak:`},
             { type: 'code', value: `
 let a = -1;
@@ -637,7 +637,7 @@ num--;        // num o'zgaruvchisiga 1 raqamini ayring
 alert(num);   // -1 chiqadi
                 `},
             { type: 'header', value: `Mashq`},
-            { type: 'text', value: `Ushbu kodni o'sish va dekrement operatsiyalarini o'z ichiga olishi uchun qayta ishlang:`},
+            { type: 'text', value: `Ushbu kodni inkriment va dekrement operatsiyalarini o'z ichiga olishi uchun qayta ishlang:`},
             { type: 'code', value: `
 let num = 10;
 num = num + 1;
@@ -646,7 +646,7 @@ num = num - 1;
 alert(num);
                 `},
             { type: 'header', value: `Javascript-da prefiks va postfiks turi`},
-            { type: 'text', value: `Aslida, o'sish va dekrement operatsiyalari ikki usulda qayd etilishi mumkin. Keling, ushbu usullarni ++ misolida ko'rib chiqaylik, ammo - uchun - hammasi o'xshash bo'ladi.`},
+            { type: 'text', value: `Aslida, inkriment va dekrement operatsiyalari ikki usulda qayd etilishi mumkin. Keling, ushbu usullarni ++ misolida ko'rib chiqaylik, ammo - uchun - hammasi o'xshash bo'ladi.`},
             { type: 'text', value: `Birinchi usulda operatsiya o'zgaruvchining nomidan keyin shunday yoziladi: a++, ikkinchi usulda esa - o'zgaruvchining nomidan oldin, quyidagicha: ++a.`},
             { type: 'text', value: `Birinchi shakl postfiks, ikkinchisi esa prefiks deb ataladi. Keling, bu ikki shakl o'rtasidagi farq qanday hollarda paydo bo'lishini ko'rib chiqaylik.`},
             { type: 'text', value: `Bizda alert (a++) kodi va alert (++a) kodi bo'lsin.`},
@@ -700,17 +700,17 @@ alert(+a.toFixed(2)); // 0.3 chiqadi`},
             { type: 'header', value: `Javascript-da prompt funksiyasi`},
             { type: 'text', value: `Berilgan xabarni ekranda ko'rsatadigan alert funksiyasi mavjudligini allaqachon bilasiz. Bundan tashqari, foydalanuvchidan har qanday matnni olish imkonini beruvchi shunga o'xshash prompt funksiyasi mavjud.`},
             { type: 'text', value: `Misol tariqasida foydalanuvchi nomini so'raymiz:`},
-            { type: 'code', value: `prompt('Ваше имя?');`},
+            { type: 'code', value: `prompt('Sizni ismingiz ?');`},
             { type: 'text', value: `Prompt funksiyasi tomonidan chiqarilgan oynani ko'rish uchun yuqoridagi kodni ishga tushiring. Ismingizni kiriting va tugmani bosing. Agar siz yuqorida tavsiflangan barcha manipulyatsiyalarni bajargan bo'lsangiz, siz kiritgan nom bizning skriptimizga kiradi.`},
             { type: 'text', value: `Kiritilgan nomga kirish uchun prompt funktsiyasining natijasi ba'zi o'zgaruvchilarga tayinlanishi kerak, masalan:`},
-            { type: 'code', value: `let name = prompt('Ваше имя?');`},
+            { type: 'code', value: `let name = prompt('Sizni ismingiz ?');`},
             { type: 'text', value: `Kodning keyingi qatorida alert: funksiyasidan foydalanib, avval kiritilgan nomni ekranga chiqaramiz`},
             { type: 'code', value: `
 let name = prompt('Sizni ismiz ?');
 alert('Sizni ismiz: ' + name);`},
             { type: 'text', value: `Prompt funksiyasi chaqirilganda, tegishli ma'lumotlar kiritilgunga qadar skriptning keyingi bajarilishi bloklanishini tushunishingiz kerak. Umuman olganda, alert funksiyasi ham ishlaydi, faqat u tegishli tugmani bosishni kutadi.`},
             { type: 'text', value: `Aytgancha, o'zgaruvchidan foydalanish shart emas:`},
-            { type: 'code', value: `alert('Ваше имя: ' + prompt('Ваше имя?'));`},
+            { type: 'code', value: `alert('Sizni ismingiz: ' + prompt('Sizni ismingiz?'));`},
             { type: 'header', value: `Mashq`},
             { type: 'text', value: `Prompt funksiyasidan foydalanib foydalanuvchining yoshini so'rang. Alert yordamida foydalanuvchi kiritgan yoshni chop eting.`},
             { type: 'header', value: `Javascript-dagi hujjatga matn kiritish`},
@@ -754,10 +754,195 @@ export const JsDocumentSecond = [
         id: 2,
         path: "js2",
         content: [
-            { type: 'header', value: 'Операторы' },
-            { type: 'text', value: 'В JavaScript операторы играют важную роль в выполнении различных операций над данными. Они позволяют выполнять математические вычисления, сравнения, логические операции и многое другое. Рассмотрим основные типы операторов, их назначение и примеры использования.' },
-        
+            { type: 'header', value: 'Javascript-dagi massivlar' },
+            { type: 'text', value: `Endi biz massiv deb ataladigan maxsus ma'lumotlar turini o'rganishni boshlaymiz. Massiv - bu ba'zi qiymatlarning butun to'plamini tartibli saqlash mumkin bo'lgan o'zgaruvchi.` },
+            { type: 'text', value: `Massiv saqlaydigan qiymatlar elementlar deyiladi. Elementlar bir-biridan vergul bilan ajratiladi. Ushbu verguldan keyin bo'shliqlarni qo'yish odatiy holdir.` },
+            { type: 'text', value: `Massivni yaratish uchun kvadrat qavslar ishlatiladi:` },
+            { type: 'code', value: `let arr = [];` },
+            { type: 'text', value: `Keling, massivimizni qatorlar bilan to'ldiraylik:` },
+            { type: 'code', value: `let arr = ['a', 'b', 'c'];` },
+            { type: 'text', value: `Keling, massivimizni satrlar bilan to'ldiraylik: Endi massivni raqamlar bilan to'ldiramiz:` },
+            { type: 'code', value: `let arr = [1, 2, 3];` },
+            { type: 'text', value: `Massivdagi satrlar va raqamlarga qo'shimcha ravishda siz barcha ruxsat etilgan ma'lumotlar turlarini saqlashingiz, shuningdek ularni bir massivda bir-biri bilan aralashtirishingiz mumkin, misol:` },
+            { type: 'code', value: `let arr = [1, 2, 'a', 'b', null, true, false];` },
+            { type: 'header', value: `Mashq` },
+            { type: 'text', value: `1. Raqamlar bilan massiv yarating. Alert funksiyasi yordamida uni ekranga chiqaring va console.log yordamida konsolingizga chiqaring.    ` },
+            { type: 'text', value: `2. Chiziqlar bilan massiv yarating. Alert funksiyasi yordamida uni ekranga chiqaring va console.log yordamida konsolingizga chiqaring.` },
+            { type: 'header', value: `Javascript-da massiv elementlarini olish` },
+            { type: 'text', value: `Massiv elementlariga kirish satr belgilariga murojaat qilish kabi amalga oshiriladi. Massivning har bir elementi o'z raqamiga ega: birinchi element - 0 raqami, ikkinchisi - 1 raqami va boshqalar. Bu raqamlar massiv elementlarining kalitlari deb ataladi. Keling, bir misolni ko'rib chiqaylik. Bizga quyidagi massivni bersin:` },
+            { type: 'code', value: `let arr = ['a', 'b', 'c'];` },
+            { type: 'text', value: `Keling, uning elementlarini ko'rib chiqaylik:` },
+            { type: 'code', value: `
+console.log(arr[0]); // 'a' chiqadi
+console.log(arr[1]); // 'b' chiqadi
+console.log(arr[2]); // 'c' chiqadi
+                ` },
+            { type: 'header', value: `Mashq` },
+            { type: 'text', value: `1, 2, 3 elementlarga ega massiv yarating. Ushbu elementlarning har birini ekranga olib chiqing.` },
+            { type: 'text', value: `Keyingi massiv berilgan:` },
+            { type: 'code', value: `let arr = [1, 2, 3];` },
+            { type: 'text', value: `Uning har bir elementini ekranga olib chiqing.` },
+            { type: 'text', value: `Keyingi massiv berilgan:` },
+            { type: 'code', value: `let arr = [1, 2, 3];` },
+            { type: 'text', value: `Ekranda ushbu massiv elementlarining yig'indisini ko'rsating.` },
+            { type: 'text', value: `Keyingi massiv berilgan:` },
+            { type: 'code', value: `let arr = ['a', 'b', 'c', 'd'];` },
+            { type: 'text', value: `Ushbu massiv yordamida quyidagi qatorni chop eting:` },
+            { type: 'text', value: `'a+b+c+d'` },
+            { type: 'header', value: `Javascript-da massiv uzunligi` },
+            { type: 'text', value: `
+let arr = ['a', 'b', 'c'];
+console.log(arr.length) // 3 chiqadi
+                ` },
+            { type: 'text', value: `Massivning uzunligini bilib, siz uning oxirgi elementini olishingiz mumkin:` },
+            { type: 'code', value: `
+let arr = ['a', 'b', 'c'];
+console.log(arr[arr.length - 1]) // 'c' chiqadi` },
+            { type: 'header', value: `Mashq` },
+            { type: 'text', value: `1. Ixtiyoriy elementlar bilan massiv yarating. Ekranda ushbu massivdagi elementlar sonini ko'rsating.` },
+            { type: 'text', value: `2. Ixtiyoriy elementlar bilan massiv yarating. Ekranda ushbu massivning oxirgi elementini ko'rsating.` },
+            { type: 'header', value: `Javascript-da massiv elementlarini o'zgartirish` },
+            { type: 'text', value: `Massiv elementlarini o'zgartirish mumkin:` },
+            { type: 'code', value: `
+ let arr = ['a', 'b', 'c'];
 
+arr[0] = '!';
+console.log(arr); // ['!', 'b', 'c'] chiqadi
+                ` },
+            { type: 'header', value: `Mashq` },
+            { type: 'text', value: `"a", "b'", "c" elementlari bilan massiv yarating. Birinchi element o'rniga 1 raqamini yozing, ikkinchisi o'rniga - 2, uchinchisi o'rniga - 3.` },
+            { type: 'header', value: `Javascript-da massiv elementlarini qayta yozish` },
+            { type: 'text', value: `Shuningdek, siz elementning joriy qiymatini o'qishingiz, u bilan ba'zi operatsiyalarni bajarishingiz va o'zgartirilgan qiymatni ushbu elementga qayta yozishingiz mumkin:` },
+            { type: 'code', value: `
+let arr = ['a', 'b', 'c'];
+
+arr[0] = arr[0] + '!';
+arr[1] = arr[1] + '!';
+arr[2] = arr[2] + '!';
+
+console.log(arr); // ['a!', 'b!', 'c!'] chiqadi` },
+            { type: 'text', value: `Oldingi kodni +=: operatori orqali qayta yozish mumkin` },
+            { type: 'code', value: `
+let arr = ['a', 'b', 'c'];
+
+arr[0] += '!';
+arr[1] += '!';
+arr[2] += '!';
+
+console.log(arr); // выведет ['a!', 'b!', 'c!']
+                ` },
+            { type: 'header', value: `Mashq` },
+            { type: 'text', value: `Raqamlar bilan massiv yarating. Massivning har bir elementiga 3 raqamini qo'shing. Ekranda o'zgartirilgan massivni ko'rsating.` },
+            { type: 'header', value: `Javascript-da massiv elementlarining inkriment va dekrementi` },
+            { type: 'text', value: `Shuningdek, siz inkriment va dekretning operatsiyalaridan foydalanishingiz mumkin:` },
+            { type: 'code', value: `
+let arr = [1, 2, 3, 4];
+
+arr[0]++;
+++arr[1];
+arr[2]--;
+--arr[3];
+
+console.log(arr); // [2, 3, 2, 3] chiqadi
+                ` },
+            { type: 'header', value: `Mashq` },
+            { type: 'text', value: `1, 2 va 3 elementlarga ega massiv yarating. ++ operatoridan foydalanib, massivning har bir elementini bittaga oshiring.` },
+            { type: 'header', value: `Javascript kalitlariga elementlar qo'shish` },
+            { type: 'text', value: `Ushbu massiv e'lon qilingan paytda massivga elementlarni darhol qo'shish shart emas. Siz avval ushbu massivni e'lon qilishingiz va keyin unga kerakli elementlarni qo'shishingiz mumkin:` },
+            { type: 'code', value: `
+let arr = [];
+
+arr[0] = 'a';
+arr[1] = 'b';
+arr[2] = 'c';
+
+console.log(arr); // ['a', 'b', 'c'] chiqadi` },
+            { type: 'text', value: `Bundan tashqari, ma'lumotlar bilan to'ldirilgan massivga elementlarni qo'shishingiz mumkin:` },
+            { type: 'code', value: `
+let arr = ['a', 'b', 'c'];
+
+arr[3] = 'd';
+console.log(arr); //  ['a', 'b', 'c', 'd'] chiqadi` },
+            { type: 'header', value: `Mashq` },
+            { type: 'text', value: `1. Ta'riflangan texnikadan foydalanib, 1, 2 va 3 elementlarga ega massiv yarating.` },
+            { type: 'text', value: `2. Bunday massiv berilsin:` },
+            { type: 'code', value: `let arr = [1, 2, 3];` },
+            { type: 'text', value: `Uning oxiriga 4 va 5 elementlarni qo'shing.` },
+            { type: 'header', value: `Javascript-da siyrak massivlar` },
+            { type: 'text', value: `Agar massivda o'tkazib yuborilgan kalitlar bo'lsa, unda siz siyrak massivni olishingiz mumkin. Keling, u qanday ko'rinishini ko'rib chiqaylik. Bizda qandaydir massiv bo'lsin:` },
+            { type: 'code', value: `let arr = ['a', 'b', 'c'];` },
+            { type: 'text', value: `Keling, ushbu massivga yana bir element qo'shamiz, shunda kalitlarda kamchiliklar mavjud:` },
+            { type: 'code', value: `arr[4] = '!';` },
+            { type: 'text', value: `Natijada, massivda teshik hosil bo'ladi, bu aniqlanmagan:` },
+            { type: 'code', value: `console.log(arr); // ['a', 'b', 'c', undefined, '!'] chiqadi ` },
+            { type: 'text', value: `Massivning uzunligi barcha teshiklarni o'z ichiga oladi. Ya'ni, bizning holatlarimizda u 4 emas, 5 bo'ladi:` },
+            { type: 'code', value: `console.log(arr.length); // 5 chiqadi` },
+            { type: 'header', value: `Mashq` },
+            { type: 'text', value: `Quyidagi massivning uzunligini toping:` },
+            { type: 'code', value: `
+let arr = [];
+
+arr[3] = 'a';
+arr[8] = 'b';
+                ` },
+            { type: 'header', value: `Javascript-ga push orqali elementlarni qo'shish` },
+            { type: 'text', value: `Maxsus push usulidan foydalanib, siz massivning oxiriga elementlarni qo'shishingiz mumkin. Keling, bu qanday amalga oshirilganini ko'rib chiqaylik. Bizda quyidagi massiv bo'lsin:` },
+            { type: 'code', value: `let arr = [];` },
+            { type: 'text', value: `Keling, uning oxiriga uchta element qo'shamiz:` },
+            { type: 'code', value: `
+arr.push('a');
+arr.push('b');
+arr.push('c');` },
+            { type: 'text', value: `Keling, nima bo'lganini ko'rib chiqaylik:` },
+            { type: 'code', value: `console.log(arr); // ['a', 'b', 'c'] chiqadi` },
+            { type: 'header', value: `Mashq` },
+            { type: 'text', value: `1. Massivni 1, 2 va 3 raqamlari bilan to'ldiring.` },
+            { type: 'text', value: `2. Bunday massiv berilsin:` },
+            { type: 'code', value: `let arr = [1, 2, 3];` },
+            { type: 'text', value: `Добавьте ему в конец элементы 4 и 5.` },
+            { type: 'header', value: `Javascript-dagi o'zgaruvchilardan massiv kalitlari` },
+            { type: 'text', value: `Bizga shunday massiv bersin:` },
+            { type: 'code', value: `let arr = ['a', 'b', 'c'];` },
+            { type: 'text', value: `Выведем на экран элемент с ключом 0:` },
+            { type: 'code', value: `
+let arr = ['a', 'b', 'c'];
+console.log(arr[0]); // 'a' chiqadi
+                ` },
+            { type: 'text', value: `Endi ko'rsatilgan elementning kalitini to'g'ridan-to'g'ri kvadrat qavs ichida yozmay, uni o'zgaruvchiga yozamiz:` },
+            { type: 'code', value: `
+let arr = ['a', 'b', 'c'];
+let key = 0; // keling, kalitni o'zgaruvchiga yozamiz` },
+            { type: 'text', value: `Endi tegishli elementni chiqarish uchun o'zgaruvchimizdan foydalanamiz:` },
+            { type: 'code', value: `
+let arr = ['a', 'b', 'c'];
+let key = 0; // keling, kalitni o'zgaruvchiga yozamiz
+
+console.log(arr[key]); // 'a' chiqadi
+                ` },
+            { type: 'header', value: `Mashq` },
+            { type: 'text', value: `1. Keyingi massiv berilgan:` },
+            { type: 'code', value: `let arr = ['a', 'b', 'c'];` },
+            { type: 'text', value: `Shuningdek, o'zgaruvchi berilgan:` },
+            { type: 'code', value: `let key = 2;` },
+            { type: 'text', value: `Kalit kalit kalit o'zgaruvchisida saqlanadigan elementni ekranga chiqaring.` },
+            { type: 'text', value: `2. Keyingi massiv berilgan:` },
+            { type: 'code', value: `let arr = [1, 2, 3, 4, 5];` },
+            { type: 'text', value: `O'zgaruvchilar ham berilgan:` },
+            { type: 'code', value: `
+let key1 = 1;
+let key2 = 2;` },
+            { type: 'text', value: `Kalitlari bizning o'zgaruvchilarimizda saqlanadigan elementlar yig'indisini toping.` },
+            { type: 'header', value: `Javascript-da massivlarni o'chirish operatori` },
+            { type: 'text', value: `Massiv elementlarini o'chirish operatori yordamida olib tashlashingiz mumkin. Keling, misollarni ko'rib chiqaylik. Bizga shunday massiv bersin:` },
+            { type: 'code', value: `let arr = ['a', 'b', 'c'];` },
+            { type: 'text', value: `Keling, massivimizning elementlaridan birini olib tashlaylik:` },
+            { type: 'code', value: `delete arr[1];` },
+            { type: 'text', value: `Natijada, element olib tashlanadi, lekin massiv siyrak bo'ladi:` },
+            { type: 'code', value: `console.log(arr); // ['a',, 'c'] chiqadi` },
+            { type: 'header', value: `Mashq` },
+            { type: 'text', value: `Massiv berilgan:` },
+            { type: 'code', value: `let arr = ['a', 'b', 'c', 'd', 'e'];` },
+            { type: 'text', value: `Undan ikkita elementni olib tashlang. Shundan so'ng length xossasining qiymati qanday bo'lishini tekshiring.` },
         ],
     },
 ];
