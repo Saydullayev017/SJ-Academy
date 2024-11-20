@@ -82,7 +82,7 @@ const Header = () => {
             <li>
               <Link
                 className="hover:text-lime-800"
-                to="/js"
+                to="/js/js1"
                 onClick={() => setIsOpen(false)}
               >
                 JavaScript

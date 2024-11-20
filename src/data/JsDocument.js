@@ -2706,3 +2706,157 @@ export const JsDocumentSeventeenth = [
     ],
   },
 ];
+
+export const JsDocumentEighteenth = [
+  {
+    id: 18,
+    path: "js18",
+    content: [
+      { type: "header", value: "Что такое HTML ?" },
+      { type: "text", value: "" },
+    ],
+  },
+];
+
+export const JsDocumentNineteenth = [
+  {
+    id: 19,
+    path: "js19",
+    content: [
+      { type: "header", value: "Что такое HTML ?" },
+      { type: "text", value: "" },
+    ],
+  },
+];
+
+export const JsDocumentTwentieth= [
+  {
+    id: 20,
+    path: "js20",
+    content: [
+      { type: "header", value: "Что такое HTML ?" },
+      { type: "text", value: "" },
+    ],
+  },
+];
+
+export const JsDocumentTwentyFirst= [
+  {
+    id: 21,
+    path: "js21",
+    content: [
+      { type: "header", value: "Что такое HTML ?" },
+      { type: "text", value: "" },
+    ],
+  },
+];
+
+export const JsDocumentTwentySecond = [
+  {
+    id: 22,
+    path: "js22",
+    content: [
+      { type: "header", value: "Что такое HTML ?" },
+      { type: "text", value: "" },
+    ],
+  },
+];
+
+export const JsDocumentTwentyThird = [
+  {
+    id: 23,
+    path: "js23",
+    content: [
+      { type: "header", value: "Что такое HTML ?" },
+      { type: "text", value: "" },
+    ],
+  },
+];
+
+export const JsDocumentTwentyFourth = [
+  {
+    id: 24,
+    path: "js24",
+    content: [
+      { type: "header", value: "Что такое HTML ?" },
+      { type: "text", value: "" },
+    ],
+  },
+];
+
+export const JsDocumentTwentyFifth = [
+  {
+    id: 25,
+    path: "js25",
+    content: [
+      { type: "header", value: "Что такое HTML ?" },
+      { type: "text", value: "" },
+    ],
+  },
+];
+
+export const JsDocumentTwentySixth = [
+  {
+    id: 26,
+    path: "js26",
+    content: [
+      { type: "header", value: "Что такое HTML ?" },
+      { type: "text", value: "" },
+    ],
+  },
+];
+
+export const JsDocumentTwentySeventh = [
+  {
+    id: 27,
+    path: "js27",
+    content: [
+      { type: "header", value: "Что такое HTML ?" },
+      { type: "text", value: "" },
+    ],
+  },
+];
+
+export const JsDocumentTwentyEighth = [
+  {
+    id: 28,
+    path: "js28",
+    content: [
+      { type: "header", value: "Что такое HTML ?" },
+      { type: "text", value: "" },
+    ],
+  },
+];
+
+export const JsDocumentTwentyNinth = [
+  {
+    id: 29,
+    path: "js29",
+    content: [
+      { type: "header", value: "Что такое HTML ?" },
+      { type: "text", value: "" },
+    ],
+  },
+];
+
+export const JsDocumentThirtieth= [
+  {
+    id: 30,
+    path: "js30",
+    content: [
+      { type: "header", value: "Что такое HTML ?" },
+      { type: "text", value: "" },
+    ],
+  },
+];
+
+export const JsDocumentThirtyFirst= [
+  {
+    id: 31,
+    path: "js31",
+    content: [
+      { type: "header", value: "Что такое HTML ?" },
+      { type: "text", value: "" },
+    ],
+  },
+];

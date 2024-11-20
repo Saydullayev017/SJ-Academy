@@ -84,7 +84,21 @@ import {
   JsDocumentFourteenth,
   JsDocumentFifteenth,
   JsDocumentSixteenth,
-  JsDocumentSeventeenth
+  JsDocumentSeventeenth,
+  JsDocumentEighteenth,
+  JsDocumentNineteenth,
+  JsDocumentTwentieth,
+  JsDocumentTwentyFirst,
+  JsDocumentTwentySecond,
+  JsDocumentTwentyThird,
+  JsDocumentTwentyFourth,
+  JsDocumentTwentyFifth,
+  JsDocumentTwentySixth,
+  JsDocumentTwentySeventh,
+  JsDocumentTwentyEighth,
+  JsDocumentTwentyNinth,
+  JsDocumentThirtieth,
+  JsDocumentThirtyFirst
 } from '../data/JsDocument';
 import Lessonjs1 from "../Components/JsComponents/Lessonjs1";
 import Lessonjs2 from "../Components/JsComponents/Lessonjs2";
@@ -104,6 +118,20 @@ import Lessonjs15 from "../Components/JsComponents/Lessonjs15";
 import Lessonjs16 from "../Components/JsComponents/Lessonjs16";
 import Lessonjs17 from "../Components/JsComponents/Lessonjs17";
 import Intro from "../Components/Intro";
+import Lessonjs18 from "../Components/JsComponents/Lessonjs18";
+import Lessonjs19 from "../Components/JsComponents/Lessonjs19";
+import Lessonjs20 from "../Components/JsComponents/Lessonjs20";
+import Lessonjs21 from "../Components/JsComponents/Lessonjs21";
+import Lessonjs22 from "../Components/JsComponents/Lessonjs22";
+import Lessonjs23 from "../Components/JsComponents/Lessonjs23";
+import Lessonjs24 from "../Components/JsComponents/Lessonjs24";
+import Lessonjs25 from "../Components/JsComponents/Lessonjs25";
+import Lessonjs26 from "../Components/JsComponents/Lessonjs26";
+import Lessonjs27 from "../Components/JsComponents/Lessonjs27";
+import Lessonjs28 from "../Components/JsComponents/Lessonjs28";
+import Lessonjs29 from "../Components/JsComponents/Lessonjs29";
+import Lessonjs30 from "../Components/JsComponents/Lessonjs30";
+import Lessonjs31 from "../Components/JsComponents/Lessonjs31";
 
 const AppRoutes = () => {
   return (
@@ -241,7 +269,7 @@ const AppRoutes = () => {
       </Route> */}
 {/* ------------------------------------------------------- */}
       <Route path="/js" element={<JavaScript />}>
-          <Route index element={JsDocumentFirst.map((doc) => (
+          <Route path="js1" element={JsDocumentFirst.map((doc) => (
               <Lessonjs1 key={doc.id} title={doc.title} content={doc.content} />
           ))} />
               <Route path="js2" element={JsDocumentSecond.map((doc) => (
@@ -293,7 +321,48 @@ const AppRoutes = () => {
                   <Route path="js17" element={JsDocumentSeventeenth.map((doc) => (
               <Lessonjs17 key={doc.id} title={doc.title} content={doc.content} />
           ))} />
-
+                  <Route path="js18" element={JsDocumentEighteenth.map((doc) => (
+              <Lessonjs18 key={doc.id} title={doc.title} content={doc.content} />
+          ))} />
+                            <Route path="js19" element={JsDocumentNineteenth.map((doc) => (
+              <Lessonjs19 key={doc.id} title={doc.title} content={doc.content} />
+          ))} />
+                            <Route path="js20" element={JsDocumentTwentieth.map((doc) => (
+              <Lessonjs20 key={doc.id} title={doc.title} content={doc.content} />
+          ))} />
+                            <Route path="js21" element={JsDocumentTwentyFirst.map((doc) => (
+              <Lessonjs21 key={doc.id} title={doc.title} content={doc.content} />
+          ))} />
+                            <Route path="js22" element={JsDocumentTwentySecond.map((doc) => (
+              <Lessonjs22 key={doc.id} title={doc.title} content={doc.content} />
+          ))} />
+                            <Route path="js23" element={JsDocumentTwentyThird.map((doc) => (
+              <Lessonjs23 key={doc.id} title={doc.title} content={doc.content} />
+          ))} />
+                            <Route path="js24" element={JsDocumentTwentyFourth.map((doc) => (
+              <Lessonjs24 key={doc.id} title={doc.title} content={doc.content} />
+          ))} />
+                            <Route path="js25" element={JsDocumentTwentyFifth.map((doc) => (
+              <Lessonjs25 key={doc.id} title={doc.title} content={doc.content} />
+          ))} />
+                            <Route path="js26" element={JsDocumentTwentySixth.map((doc) => (
+              <Lessonjs26 key={doc.id} title={doc.title} content={doc.content} />
+          ))} />
+                            <Route path="js27" element={JsDocumentTwentySeventh.map((doc) => (
+              <Lessonjs27 key={doc.id} title={doc.title} content={doc.content} />
+          ))} />
+                            <Route path="js28" element={JsDocumentTwentyEighth.map((doc) => (
+              <Lessonjs28 key={doc.id} title={doc.title} content={doc.content} />
+          ))} />
+                            <Route path="js29" element={JsDocumentTwentyNinth.map((doc) => (
+              <Lessonjs29 key={doc.id} title={doc.title} content={doc.content} />
+          ))} />
+                            <Route path="js30" element={JsDocumentThirtieth.map((doc) => (
+              <Lessonjs30 key={doc.id} title={doc.title} content={doc.content} />
+          ))} />
+                            <Route path="js31" element={JsDocumentThirtyFirst.map((doc) => (
+              <Lessonjs31 key={doc.id} title={doc.title} content={doc.content} />
+          ))} />
       </Route>
 
       {/* <Route path="/algo" element={<Algorithms />} /> */}
