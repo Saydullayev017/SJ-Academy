@@ -2571,8 +2571,234 @@ export const JsDocumentFourth = [
     id: 4,
     path: "js4",
     content: [
-      { type: "header", value: "Что такое HTML ?" },
-      { type: "text", value: "" },
+      { type: "header", value: "Javascript-da if-else" },
+      { type: "text", value: `Endi biz har qanday shartning bajarilishiga qarab ba'zi kodlarni bajarishga imkon beruvchi maxsus if-else dizaynini o'rganamiz.` },
+      { type: "text", value: `If-else dizaynidan foydalanib, biz dasturga, masalan, "a o'zgaruvchisi b o'zgaruvchisidan kattaroqmi" degan savolni berishimiz mumkin va javobga qarab, bitta kodni yoki boshqasini bajaramiz.` },
+      { type: "text", value: `sintaksisi quyidagicha ko'rinadi:` },
+      { type: "code", value: `
+        if (taqqoslash operatsiyasi) {
+/*
+bu erda joylashgan bajariladigan kod
+agar taqqoslash operatsiyasi natijasi to'g'ri bo'lsa
+*/
+} else {
+/*
+bu erda joylashgan bajariladigan kod
+agar taqqoslash operatsiyasining natijasi noto'g'ri bo'lsa
+*/
+}
+        ` },
+      { type: "text", value: `Javascript-da taqqoslash operatsiyalari uchun ko'plab operatorlar mavjud. Keling, ularni o'rganishni boshlaylik.` },
+      { type: "header", value: `Javascript-da kattaroq va kichikroq operatorlar` },
+      { type: "text", value: `Qaysi qiymat kattaroq va qaysi biri kichikroq ekanligini tekshirish uchun operatorlar > dan katta, >= dan katta yoki teng, < dan kichik, <= dan kichik yoki unga teng.` },
+      { type: "text", value: `Keling, ularning ishini amaliy misol bilan o'rganamiz. Bizda ma'lum bir ma'noga ega o'zgaruvchan test bo'lsin:` },
+      { type: "code", value: `let test = 1;` },
+      { type: "text", value: `Keling, ushbu o'zgaruvchining qiymati noldan katta yoki yo'qligini tekshiramiz:` },
+      { type: "code", value: `
+        let test = 1;
+
+if (test > 0) {
+	console.log('+++'); // bu ishlaydi
+} else {
+	console.log('---');
+}
+        ` },
+      { type: "text", value: `А теперь поменяем значение переменной на отрицательное:` },
+      { type: "code", value: `
+        let test = -1;
+
+if (test > 0) {
+	console.log('+++');
+} else {
+	console.log('---'); // bu ishlaydi
+}
+        ` },
+      { type: "text", value: `Endi o'zgaruvchining qiymati 0 bo'lsin. Bunday holda, biz else blokiga kiramiz, chunki bizning shartimiz test o'zgaruvchisi noldan qat'iy kattaroq bo'lishi kerakligini aytadi:` },
+      { type: "code", value: `
+        let test = 0;
+
+if (test > 0) {
+	console.log('+++');
+} else {
+	console.log('---'); // bu ishlaydi
+}
+
+        ` },
+      { type: "text", value: `Keling, shartni ko'proq yoki teng ravishda o'zgartiraylik:` },
+      { type: "code", value: `
+        let test = 0;
+
+if (test >= 0) {
+	console.log('+++'); // bu ishlaydi
+} else {
+	console.log('---');
+}
+        ` },
+      { type: "text", value: `Va endi kamroq:` },
+      { type: "code", value: `
+        let test = 0;
+
+if (test < 0) {
+	console.log('+++');
+} else {
+	console.log('---'); // bu ishlaydi
+}
+        ` },
+      { type: "text", value: `Va endi kamroq yoki teng:` },
+      { type: "code", value: `
+        let test = 0;
+
+if (test <= 0) {
+	console.log('+++'); // bu ishlaydi
+} else {
+	console.log('---');
+}
+        ` },
+      { type: "header", value: `Mashq` },
+      { type: "text", value: `1. test o'zgaruvchisi 10 dan katta ekanligini tekshiring.` },
+      { type: "text", value: `2. test o'zgaruvchisi 10 dan kam ekanligini tekshiring.` },
+      { type: "text", value: `3. test o'zgaruvchisi 10 dan katta yoki teng ekanligini tekshiring.` },
+      { type: "text", value: `4. test o'zgaruvchisi 10 dan kichik yoki teng ekanligini tekshiring.` },
+      { type: "header", value: `Javascript-da tenglikni tekshirish` },
+      { type: "text", value: `Ikki qiymatni tenglik uchun tekshirish uchun == operatori ishlatiladi. Misol tariqasida test o'zgaruvchisi 0: ekanligini tekshiramiz` },
+      { type: "code", value: `
+        let test = 0;
+
+if (test == 0) {
+	console.log('+++'); // bu ishlaydi
+} else {
+	console.log('---');
+}
+        ` },
+      { type: "text", value: `Shart bajarilmasligi uchun o'zgaruvchining qiymatini o'zgartiring:` },
+      { type: "code", value: `
+        let test = 1;
+
+if (test == 0) {
+	console.log('+++');
+} else {
+	console.log('---'); // bu ishlaydi
+}
+        ` },
+      { type: "header", value: `Mashq` },
+      { type: "text", value: `test o'zgaruvchisi 10 ekanligini tekshiring.` },
+      { type: "header", value: `Javascript-da tengsizlikni tekshirish` },
+      { type: "code", value: `
+        let test = 1;
+
+if (test != 0) {
+	console.log('+++'); // bu ishlaydi
+} else {
+	console.log('---');
+}
+        ` },
+      { type: "text", value: `O'zgaruvchining qiymatini o'zgartiring:` },
+      { type: "code", value: `
+        let test = 0;
+
+if (test != 0) {
+	console.log('+++');
+} else {
+	console.log('---'); // bu ishlaydi
+}
+        ` },
+      { type: "header", value: `Mashq` },
+      { type: "text", value: `test o'zgaruvchisi 10 emasligini tekshiring.` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+
     ],
   },
 ];
