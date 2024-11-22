@@ -2704,101 +2704,359 @@ if (test != 0) {
         ` },
       { type: "header", value: `Mashq` },
       { type: "text", value: `test o'zgaruvchisi 10 emasligini tekshiring.` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
+      { type: "header", value: `Javascript-da o'zgaruvchilarni taqqoslash` },
+      { type: "text", value: `Yuqoridagi misollarda biz o'zgaruvchini ma'lum bir raqam bilan taqqosladik. Ammo hech kim bizga ikkita o'zgaruvchini solishtirishni taqiqlamaydi. Misolga qarang:` },
+      { type: "code", value: `
+let test1 = 1;
+let test2 = 2;
 
+if (test2 > test1) {
+	console.log('+++'); // bu ishlaydi
+} else {
+	console.log('---');
+}
+        ` },
+      { type: "header", value: `Mashq` },
+      { type: "text", value: `1. Test1 va test2 o'zgaruvchilari berilgan. Ushbu o'zgaruvchilardan qaysi biri kattaroq ekanligini tekshiring va tegishli xabarni chop eting.` },
+      { type: "text", value: `2. Test1 va test2 o'zgaruvchilari berilgan. Ularning qiymatlari teng yoki yo'qligini tekshiring va tegishli xabarni chop eting.` },
+      { type: "header", value: `Javascript-da satr tengligi` },
+      { type: "text", value: `Agar siz if dizaynidan foydalansangiz, satrlarni solishtirishingiz mumkin. Misol uchun, test o'zgaruvchisi qandaydir qatorni saqlasin, masalan, "abc":` },
+      { type: "code", value: `let test = 'abc';` },
+      { type: "text", value: `Keling, o'zgaruvchining mazmuni "abc" test satriga teng yoki yo'qligini tekshiramiz:` },
+      { type: "code", value: `
+let test = 'abc';
+
+if (test == 'abc') {
+	console.log('+++'); // bu ishlaydi
+} else {
+	console.log('---');
+}
+        ` },
+      { type: "header", value: `Mashq` },
+      { type: "text", value: `Satrlarni o'z ichiga olgan test1 va test2 o'zgaruvchilari berilgan. Ularning qiymatlari teng yoki yo'qligini tekshiring va tegishli xabarni chop eting.` },
+      { type: "header", value: `Javascript-da qatorlar va raqamlar tengligi` },
+      { type: "text", value: `Ma'lumki, tirnoqlardagi raqam qatordir. Masalan, "3" - bu qator. Biroq, bunday satrlarni haqiqiy raqamlar bilan solishtirganda, JavaScript tirnoqlardagi chiziq bir xil raqamga teng deb hisoblaydi.` },
+      { type: "text", value: `Misol tariqasida "3" qatorini va 3 raqamini solishtiramiz:` },
+      { type: "code", value: `
+if ('3' == 3) {
+	console.log('+++'); // bu ishlaydi
+} else {
+	console.log('---');
+}
+        ` },
+      { type: "header", value: `Javascript-da qiymat va turdagi tenglik` },
+      { type: "text", value: `Qo'shtirnoq ichidagi raqam qo'shtirnoqsiz bir xil raqamga teng bo'lmasligi uchun solishtirmoqchi bo'ling. Boshqacha qilib aytganda, taqqoslash nafaqat ma'no, balki ma'lumotlar turi bo'yicha ham bo'lishi uchun taqqoslashni xohlaysiz.` },
+      { type: "text", value: `Buning uchun == operatori o'rniga === operatoridan foydalanish kerak. Keyingi misolda, "3" qatori va 3 raqamini solishtirganda, shart noto'g'ri bo'ladi, chunki o'zgaruvchilar qiymati teng bo'lsa-da, turi bo'yicha teng emas:` },
+      { type: "code", value: `
+if ('3' === 3) {
+	console.log('+++');
+} else {
+	console.log('---'); // bu ishlaydi
+}
+        ` },
+      { type: "text", value: `Ammo "3" ikki qatorni solishtirganda, shart to'g'ri bo'ladi:` },
+      { type: "code", value: `
+if ('3' === '3') {
+	console.log('+++'); // bu ishlaydi
+}
+} else {
+	console.log('---');
+}
+        ` },
+      { type: "text", value: `Xuddi raqamlarni solishtirganda:` },
+      { type: "code", value: `
+        if (3 === 3) {
+	console.log('+++'); // bu ishlaydi
+} else {
+	console.log('---');
+}
+        ` },
+      { type: "text", value: `Operator == va operator === o'rtasidagi farq qiymatlar bir xil, ammo har xil turdagi ma'lumotlar bo'lganda aniq namoyon bo'ladi. Boshqa hollarda, bu operatorlar bir xil ishlaydi. Masalan, turli raqamlarni solishtirganda, albatta, '--': olinadi` },
+      { type: "code", value: `
+if (2 === 3) {
+	console.log('+++');
+} else {
+	console.log('---'); // bu ishlaydi
+}
+        ` },
+      { type: "header", value: `Mashq` },
+      { type: "text", value: `1. Kodni ishga tushirmasdan, konsolda nima ko'rsatilishini aniqlang:` },
+      { type: "code", value: `
+let test1 = '3';
+let test2 = '3';
+		
+if (test1 == test2) {
+	console.log('+++');
+} else {
+	console.log('---');
+}
+        ` },
+      { type: "text", value: `2. Kodni ishga tushirmasdan, konsolda nima ko'rsatilishini aniqlang:` },
+      { type: "code", value: `
+let test1 = '3';
+let test2 = '3';
+		
+if (test1 === test2) {
+	console.log('+++');
+} else {
+	console.log('---');
+}
+        ` },
+      { type: "header", value: `Javascript-da qiymat va turdagi tengsizlik` },
+      { type: "text", value: `Operatordan tashqari!= ham operator bor!==, taqqoslashda turni hisobga oladi. Keling, misollar yordamida ular orasidagi farqlarni ko'rib chiqaylik.` },
+      { type: "text", value: `Operator yordamida bo'lsin!= ikkita raqamni solishtiradi 3. Ushbu operator qiymatlarni teng emasligi bilan taqqoslaydi. Bizning qiymatlarimiz teng bo'lganligi sababli, shart noto'g'ri bo'ladi:` },
+      { type: "code", value: `
+if (3 != 3) {
+	console.log('+++');
+} else {
+	console.log('---'); // bu ishlaydi
+}` },
+      { type: "text", value: `Endi bizning ma'nolarimizdan biri tirnoq ichida bo'lsin. Bunday holda, operator (!= hali ham ularni teng deb hisoblaydi (chunki qiymat mos keladi va bu operator uchun tur muhim emas) va yana shart noto'g'ri bo'ladi:` },
+      { type: "code", value: `
+if ('3' != 3) {
+	console.log('+++');
+} else {
+	console.log('---'); // bu ishlaydi
+}
+        ` },
+      { type: "text", value: `Keling, ikkita 3 raqamni operator yordamida taqqoslaylik!==. U ham ularni teng deb hisoblaydi:` },
+      { type: "code", value: `
+if (3 !== 3) {
+	console.log('+++');
+} else {
+	console.log('---'); // bu ishlaydi
+        ` },
+      { type: "text", value: `Ammo endi uchlikdan birini qo'shtirnoq ichiga olsak, operator (!== bizning uchliklarimizni teng emas deb hisoblaydi, chunki ularning qiymatlari bir xil bo'lsa-da, ular turli xil turlarga ega:` },
+      { type: "code", value: `
+if ('3' !== 3) {
+	console.log('+++'); // bu ishlaydi
+} else {
+	console.log('---');
+}
+        ` },
+      { type: "header", value: `Mantiqiy '&& / va'` },
+      { type: "text", value: `Mantiqiy I bo'lgan &&& operatori yordamida taqqoslash operatsiyalarini guruhlash mumkin. Keyingi misolda, agar num o'zgaruvchisi noldan katta bo'lsa va bir vaqtning o'zida 10 dan kam bo'lsa, shundan keyingina "+++'" olinadi:` },
+      { type: "code", value: `
+let num = 3;
+
+if (num > 0 && num < 10) {
+	console.log('+++');
+} else {
+	console.log('---');
+}
+        ` },
+      { type: "text", value: `Shartlar bitta o'zgaruvchiga emas, balki turli o'zgaruvchilarga qo'llanilishi mumkin. Keyingi misolda, agar num1 o'zgaruvchisi 2 ga teng bo'lsa va bir vaqtning o'zida num2 o'zgaruvchisi 3 ga teng bo'lsa, faqat shart to'g'ri bo'ladi:` },
+      { type: "code", value: `
+let num1 = 2;
+let num2 = 3;
+
+if (num1 == 2 && num2 == 3) {
+	console.log('+++');
+} else {
+	console.log('---');
+}
+        ` },
+      { type: "header", value: `Mashq` },
+      { type: "text", value: `1. Num o'zgaruvchisi noldan katta va 5 dan kichik ekanligini tekshiring.` },
+      { type: "text", value: `2. Num o'zgaruvchisi 10 dan katta yoki teng, 20 dan kichik yoki teng ekanligini tekshiring.` },
+      { type: "text", value: `3. Num1 o'zgaruvchisi 1 ga teng yoki undan kichik, num2 o'zgaruvchisi esa 3 dan katta yoki teng ekanligini tekshiring.` },
+      { type: "header", value: `Mantiqiy ' || / YOKI 'JavaScript-da` },
+      { type: "text", value: `Operator || mantiqiy OR bo'lib, kamida bitta shart bajarilishini talab qiladi.Keyingi misolda, agar num1 o'zgaruvchisi 0 dan katta bo'lsa yoki num2 o'zgaruvchisi 0 dan katta bo'lsa, shart to'g'ri bo'ladi (shartlardan kamida bittasini bajarish kifoya):` },
+      { type: "code", value: `
+let num1 = 10;
+let num2 = -5;
+
+if (num1 > 0 || num2 > 0) {
+	console.log('+++'); // bu ishlaydi
+} else {
+	console.log('---');
+}
+        ` },
+      { type: "header", value: `Mashq` },
+      { type: "text", value: `Kodni ishga tushirmasdan, konsolda nima ko'rsatilishini aniqlang:` },
+      { type: "code", value: `
+let num1 = -10;
+let num2 = -10;
+
+if (num1 >= 0 || num2 >= 0) {
+	console.log('+++');
+} else {
+	console.log('---');
+}
+
+        ` },
+      { type: "text", value: `Kodni ishga tushirmasdan, konsolda nima ko'rsatilishini aniqlang:` },
+      { type: "code", value: `
+let num1 = 0;
+let num2 = 0;
+
+if (num1 >= 0 || num2 >= 0) {
+	console.log('+++');
+} else {
+	console.log('---');
+}
+        ` },
+      { type: "header", value: `Javascript-da mantiqiy operatorlarning ustuvorligi` },
+      { type: "text", value: `Operatsiya va va || dan ustun turadi. Quyidagi misolda, agar num o'zgaruvchisi 0 dan 5 OR gacha 10 dan 20 gacha bo'lsa, shart to'g'ri bo'ladi:` },
+      { type: "code", value: `
+let num = 3;
+
+if (num > 0 && num < 5 || num > 10 && num < 20) {
+	console.log('+++');
+} else {
+	console.log('---');
+}
+        ` },
+      { type: "header", value: `Javascript-da shartlarni guruhlash` },
+      { type: "text", value: `Operatsiya && || dan ustun bo'lsa-da, operatsiyalarning ustuvorligini aniq ko'rsatish uchun ko'pincha guruhlash qavslaridan foydalanish qulayroqdir:` },
+      { type: "code", value: `
+let num = 3;
+
+if ( (num > 0 && num < 5) || (num > 10 && num < 20) ) {
+	console.log('+++');
+} else {
+	console.log('---');
+}
+        ` },
+      { type: "text", value: `Albatta, guruhlash sukut bo'yicha emas, balki operatsiya ustuvorligingiz kerak bo'lganda ham ishlatilishi mumkin:` },
+      { type: "code", value: `
+let num1 = 3;
+let num2 = 5;
+
+if ( num1 > 0 && (num2 == 3 || num2 == 5) ) {
+	console.log('+++');
+} else {
+	console.log('---');
+}
+        ` },
+      { type: "header", value: `Mantiqiy ifodalarni JavaScript-ga aylantirish` },
+      { type: "text", value: `Quyidagi kodni ko'rib chiqing:` },
+      { type: "code", value: `
+if (num > 0 && num < 5) {
+	console.log('+++');
+} else {
+	console.log('---');
+}
+
+        ` },
+      { type: "text", value: `Endi bizning shartimiz shunday: raqam 0 dan 5 gacha bo'lishi kerak. Keling, bu shartni o'zgartiraylik, ya'ni uni teskarisiga aylantiraylik. Qarama-qarshi shart quyidagicha bo'ladi: num 0 dan kam yoki unga teng yoki 5 dan katta yoki teng bo'lishi kerak:` },
+      { type: "code", value: `
+if (num <= 0 || num >= 5) {
+	console.log('+++');
+} else {
+	console.log('---');
+}
+        ` },
+      { type: "text", value: `Ko'rib turganingizdek, shartni o'zgartirish uchun siz biroz o'ylashingiz kerak. Mantiqiy EMAS bo'lgan ! operatoridan foydalanish ancha oson bo'ladi. Ushbu operator yordamida biz faqat 1-belgini qo'yishimiz kerak! dastlabki holatdan oldin - va u o'z-o'zidan teskari bo'ladi:` },
+      { type: "code", value: `
+if ( !(num > 0 && num < 5) ) {
+	console.log('+++');
+} else {
+	console.log('---');
+}
+        ` },
+      { type: "header", value: `Mashq` },
+      { type: "text", value: `Quyidagi kod berilgan:` },
+      { type: "code", value: `
+if (num1 >= 0 || num2 <= 10) {
+	console.log('+++');
+} else {
+	console.log('---');
+}
+        ` },
+      { type: "text", value: `Operatordan foydalanish ! berilgan shartni teskari aylantiring.` },
+      { type: "header", value: `Javascript-da mantiqiy qiymatlarga ega shartlar` },
+      { type: "text", value: `Bizda true yoki false qiymatlarni qabul qila oladigan o'zgaruvchiga ega bo'lsin:` },
+      { type: "code", value: `let test = true;` },
+      { type: "text", value: `Keling, o'zgaruvchimizni true qiymatga tekshiradigan if yozaylik:` },
+      { type: "code", value: `
+let test = true;
+
+if (test === true) {
+	console.log('+++');
+} else {
+	console.log('---');
+}
+        ` },
+      { type: "header", value: `Mashq` },
+      { type: "text", value: `1. test o'zgaruvchisi true ekanligini tekshiring.` },
+      { type: "text", value: `2. Sinov o'zgaruvchisi false ekanligini tekshiring.` },
+      { type: "header", value: `Javascript-da qiymatlarni mantiqiy turi bilan taqqoslash` },
+      { type: "text", value: `Oldingi misolda biz taqqoslash uchun === operatoridan foydalanganmiz. Bunday holda, bizning o'zgaruvchimiz ham qiymat, ham tur bo'yicha haqiqiy tenglik bilan taqqoslandi.` },
+      { type: "text", value: `Bunday taqqoslash uchun siz == operatoridan ham foydalanishingiz mumkin. Agar test o'zgaruvchisi har doim haqiqiy yoki noto'g'ri qiymatlardan biriga ega bo'lsa, unda hech narsa o'zgarmaydi:` },
+      { type: "code", value: `
+let test = true; // bu yerda true yoki false yozamiz
+
+if (test == true) {
+	console.log('+++');
+} else {
+	console.log('---');
+}
+        ` },
+      { type: "text", value: `Ammo agar test o'zgaruvchisi har qanday qiymatni o'z ichiga olishi mumkin bo'lsa, unda hamma narsa ancha murakkablashadi.` },
+      { type: "text", value: `Bunday holda, agar o'zgaruvchan testda mantiqiy qiymat bo'lmasa, u holda bu qiymat birinchi navbatda mantiqiy qiymatga aylantiriladi va shundan keyingina taqqoslanadi.` },
+      { type: "text", value: `Masalan, test o'zgaruvchisida 1 raqami bo'lsin. Bunday holda, u birinchi navbatda mantiqiy turga, ya'ni haqiqiy turga aylanadi. Va keyin taqqoslash amalga oshiriladi:` },
+      { type: "code", value: `
+let test = 1;
+
+if (test == true) {
+	console.log('+++'); // bu ishlaydi
+} else {
+	console.log('---');
+}
+        ` },
+      { type: "text", value: `Ammo, masalan, 0 raqami yolg'onga aylanadi. Va bizning shartimiz oxir-oqibat "noto'g'ri" degan xulosaga keladi:` },
+      { type: "code", value: `
+let test = 0;
+
+if (test == true) {
+	console.log('+++');
+} else {
+	console.log('---'); // bu ishlaydi
+        ` },
+      { type: "text", value: `Aslida, bunday taqqoslashni quyidagi shaklda aniq qayta yozish mumkin:` },
+      { type: "code", value: `
+let test = 1;
+
+if (Boolean(test) == true) {
+	console.log('+++');
+} else {
+	console.log('---');
+}
+        ` },
+      { type: "header", value: `Mashq` },
+      { type: "text", value: `Kodni ishga tushirmasdan, konsolda nima ko'rsatilishini aniqlang:` },
+      { type: "code", value: `
+let test = 1;
+		
+if (test == true) {
+	console.log('+++');
+} else {
+	console.log('---');
+}
+        ` },
+      { type: "text", value: `Kodni ishga tushirmasdan, konsolda nima ko'rsatilishini aniqlang:` },
+      { type: "code", value: `
+let test = 0;
+		
+if (test == true) {
+	console.log('+++');
+} else {
+	console.log('---');
+}
+        ` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
     ],
   },
 ];
