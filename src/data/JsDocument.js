@@ -3045,6 +3045,194 @@ if (test == true) {
 	console.log('---');
 }
         ` },
+      { type: "header", value: `Javascript-da haqiqatni tekshirishning qisqartirilgan shakli` },
+      { type: "text", value: `Sinov o'zgaruvchisi haqiqiy qiymatga teng yoki yo'qligini bilmoqchimiz. Bunday holda, if dizayni quyidagicha yozilishi mumkin:` },
+      { type: "code", value: `
+let test = true;
+
+if (test == true) {
+	console.log('+++');
+} else {
+	console.log('---');
+}
+        ` },
+      { type: "text", value: `Dasturlashda bunday tekshiruvlar juda tez-tez talab qilinadi, shuning uchun ular uchun yanada oqlangan qisqartirilgan shakl mavjud: agar (test == true) o'rniga siz shunchaki agar (test) yozishingiz mumkin.` },
+      { type: "text", value: `Keling, kodimizni qisqartirilgan shaklda qayta yozamiz:` },
+      { type: "code", value: `
+let test = true;
+
+if (test) {
+	console.log('+++');
+} else {
+	console.log('---');
+}` },
+      { type: "header", value: `Mashq` },
+      { type: "text", value: `Qisqartirilgan shakl yordamida quyidagi kodni qayta yozing:` },
+      { type: "code", value: `
+let test = true;
+
+if (test === true) {
+	console.log('+++');
+} else {
+	console.log('---');
+}
+        ` },
+      { type: "header", value: `Javascript-da yolg'onni tekshirishning qisqartirilgan shakli` },
+      { type: "text", value: `Endi biz o'zgaruvchining qiymatini yolg'on uchun tekshirmoqchimiz. Buni quyidagicha qilish mumkin:` },
+      { type: "code", value: `
+        let test = true;
+
+if (test === false) {
+	console.log('+++');
+} else {
+	console.log('---');
+}
+        ` },
+      { type: "text", value: `Bundan tashqari, ekvivalent inkor kodini yozishingiz mumkin:` },
+      { type: "code", value: `
+        let test = true;
+
+if (test !== true) {
+	console.log('+++');
+} else {
+	console.log('---');
+}
+        ` },
+      { type: "text", value: `Berilgan kodni quyidagi qisqartirilgan shaklda qayta yozish mumkin:` },
+      { type: "code", value: `
+        let test = true;
+
+if (!test) {
+	console.log('+++');
+} else {
+	console.log('---');
+}
+        ` },
+      { type: "header", value: `Qisqartirilgan shakl yordamida quyidagi kodni qayta yozing:` },
+      { type: "code", value: `
+        let test = true;
+
+if (test == false) {
+	console.log('+++');
+} else {
+	console.log('---');
+}
+        ` },
+      { type: "text", value: `Qisqartirilgan shakl yordamida quyidagi kodni qayta yozing:` },
+      { type: "code", value: `
+        let test = true;
+
+if (test != true) {
+	console.log('+++');
+} else {
+	console.log('---');
+}
+        ` },
+      { type: "header", value: `Javascript-da tekshirishning umumiy qisqartirilgan shakli` },
+      { type: "text", value: `Qisqartirilgan tekshirish shakli boshqa ma'lumotlar turlari uchun ham ishlaydi. Bunday holda, bu ma'lumotlar birinchi navbatda mantiqiy turga aylantiriladi va keyin haqiqiy bilan taqqoslanadi. Misolga qarang:` },
+      { type: "code", value: `
+        let test = 3;
+
+if (test) {
+	console.log('+++'); // bu ishlaydi
+} else {
+	console.log('---');
+}
+        ` },
+      { type: "text", value: `Aslida, berilgan kod quyidagilarga ekvivalentdir:` },
+      { type: "code", value: `
+let test = 3;
+
+if (Boolean(test) === true) {
+	console.log('+++');
+} else {
+	console.log('---');
+}
+        ` },
+      { type: "header", value: `Javascript-da qisqartirilgan shakldagi qiyin shartlar` },
+      { type: "text", value: `Qisqartirilgan shaklda siz &&& va || operatorlaridan foydalanishingiz mumkin. Misolga qarang:` },
+      { type: "code", value: `
+let test1 = true;
+let test2 = true;
+
+if (test1 && test2) {
+	console.log('+++');
+} else {
+	console.log('---');
+}` },
+      { type: "text", value: `Yana bir misol:` },
+      { type: "code", value: `
+        let test1 = true;
+let test2 = true;
+
+if (test1 || test2) {
+	console.log('+++');
+} else {
+	console.log('---');
+
+        ` },
+      { type: "header", value: `Mashq` },
+      { type: "text", value: `Quyidagi kodni qisqartirilgan shaklda qayta yozing:` },
+      { type: "code", value: `
+        let test1 = true;
+let test2 = true;
+
+if (test1 === true && test2 === true) {
+	console.log('+++');
+} else {
+	console.log('---');
+}
+        ` },
+      { type: "text", value: `Quyidagi kodni qisqartirilgan shaklda qayta yozing:` },
+      { type: "code", value: `
+        let test1 = true;
+let test2 = true;
+
+if (test1 === true && test2 !== true) {
+	console.log('+++');
+} else {
+	console.log('---');
+}
+        ` },
+      { type: "text", value: `Quyidagi kodni qisqartirilgan shaklda qayta yozing:` },
+      { type: "code", value: `
+        let test1 = true;
+let test2 = true;
+
+if (test1 !== true && test2 !== true) {
+	console.log('+++');
+} else {
+	console.log('---');
+}
+        ` },
+      { type: "text", value: `Quyidagi kodni qisqartirilgan shaklda qayta yozing:` },
+      { type: "code", value: `
+        let test1 = true;
+let test2 = true;
+
+if (test1 !== false && test2 === true) {
+	console.log('+++');
+} else {
+	console.log('---');
+}
+        ` },
+      { type: "header", value: `Javascript-da ixtiyoriy jingalak qavslar` },
+      { type: "text", value: `Agar if yoki else qavslarida faqat bitta ifoda bo'lsa, bu jingalak qavslarni yozmaslik mumkin. Masalan, ushbu kod barcha qavslar bilan berilsin:` },
+      { type: "code", value: `
+if (test === 0) {
+	console.log('+++');
+} else {
+	console.log('---');
+}
+        ` },
+      { type: "text", value: `Siz uni shunday qisqartirishingiz mumkin:` },
+      { type: "code", value: `if (test === 0) console.log('+++'); else console.log('---');` },
+      { type: "text", value: `Yoki bunday: ` },
+      { type: "code", value: `
+if (test === 0) {
+	console.log('+++');
+} else console.log('---');
+        ` },
       { type: "text", value: `` },
       { type: "text", value: `` },
       { type: "text", value: `` },
@@ -3057,6 +3245,91 @@ if (test == true) {
       { type: "text", value: `` },
       { type: "text", value: `` },
       { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+      { type: "text", value: `` },
+
     ],
   },
 ];
