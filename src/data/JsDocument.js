@@ -3080,7 +3080,7 @@ if (test === true) {
       { type: "header", value: `Javascript-da yolg'onni tekshirishning qisqartirilgan shakli` },
       { type: "text", value: `Endi biz o'zgaruvchining qiymatini yolg'on uchun tekshirmoqchimiz. Buni quyidagicha qilish mumkin:` },
       { type: "code", value: `
-        let test = true;
+let test = true;
 
 if (test === false) {
 	console.log('+++');
@@ -3090,7 +3090,7 @@ if (test === false) {
         ` },
       { type: "text", value: `Bundan tashqari, ekvivalent inkor kodini yozishingiz mumkin:` },
       { type: "code", value: `
-        let test = true;
+let test = true;
 
 if (test !== true) {
 	console.log('+++');
@@ -3100,7 +3100,7 @@ if (test !== true) {
         ` },
       { type: "text", value: `Berilgan kodni quyidagi qisqartirilgan shaklda qayta yozish mumkin:` },
       { type: "code", value: `
-        let test = true;
+let test = true;
 
 if (!test) {
 	console.log('+++');
@@ -3110,7 +3110,7 @@ if (!test) {
         ` },
       { type: "header", value: `Qisqartirilgan shakl yordamida quyidagi kodni qayta yozing:` },
       { type: "code", value: `
-        let test = true;
+let test = true;
 
 if (test == false) {
 	console.log('+++');
@@ -3120,7 +3120,7 @@ if (test == false) {
         ` },
       { type: "text", value: `Qisqartirilgan shakl yordamida quyidagi kodni qayta yozing:` },
       { type: "code", value: `
-        let test = true;
+let test = true;
 
 if (test != true) {
 	console.log('+++');
@@ -3131,7 +3131,7 @@ if (test != true) {
       { type: "header", value: `Javascript-da tekshirishning umumiy qisqartirilgan shakli` },
       { type: "text", value: `Qisqartirilgan tekshirish shakli boshqa ma'lumotlar turlari uchun ham ishlaydi. Bunday holda, bu ma'lumotlar birinchi navbatda mantiqiy turga aylantiriladi va keyin haqiqiy bilan taqqoslanadi. Misolga qarang:` },
       { type: "code", value: `
-        let test = 3;
+let test = 3;
 
 if (test) {
 	console.log('+++'); // bu ishlaydi
@@ -3233,102 +3233,488 @@ if (test === 0) {
 	console.log('+++');
 } else console.log('---');
         ` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
+      { type: "text", value: `Bundan tashqari, barcha qavslarni olib tashlashingiz mumkin, lekin hamma narsani chiziqqa qo'ymang, lekin bu erda:` },
+      { type: "code", value: `
+if (test === 0)
+	console.log('+++');
+else
+	console.log('--');
+        ` },
+      { type: "header", value: `Mashq` },
+      { type: "text", value: `Quyidagi kodni qisqartirilgan shaklda qayta yozing:` },
+      { type: "code", value: `
+if (test > 0) {
+	console.log('+++');
+} else {
+	console.log('---');
+}
+        ` },
+      { type: "text", value: `Quyidagi kodni qisqartirilgan shaklda qayta yozing:` },
+      { type: "code", value: `
+if (test > 0) {
+	console.log('+++');
+}
+        ` },
+      { type: "header", value: `If-else-da jingalak qavslarning ixtiyoriyligi muammosi` },
+      { type: "text", value: `Javascript yuqorida ko'rsatilgan shaklli qavslarni qisqartirishga ruxsat berishiga qaramay, men buni umuman tavsiya etmayman, chunki bu qiyin xatolar uchun zamin. Masalan, quyidagi kod bo'lsin:` },
+      { type: "code", value: `
+let test = 3;
+
+if (test > 0)
+	console.log(test);` },
+      { type: "text", value: `Endi shart bajarilsa, '+++' matni bilan ikkinchi xabarni ham ko'rsatishga qaror qilaylik:` },
+      { type: "code", value: `
+let test = 3;
+
+if (test > 0)
+	console.log(test);
+	console.log('+++');
+        ` },
+      { type: "text", value: `Biroq, faqat birinchi xabar shart ichida jingalak qavslarsiz joylashgan. Birinchi qator to'g'ri shartda ishlaydi, ikkinchisi esa har doim ishlaydi.` },
+      { type: "text", value: `Biroq, faqat birinchi xabar shart ichida jingalak qavslarsiz joylashgan. Birinchi qator to'g'ri shartda ishlaydi, ikkinchisi esa har doim ishlaydi.` },
+      { type: "code", value: `
+let test = 3;
+
+if (test > 0) {
+	console.log(test);
+}
+
+console.log('+++'); // bu chiziq shartdan tashqarida bo'lib chiqdi
+        ` },
+      { type: "text", value: `Va biz quyidagi kodni xohlaymiz:` },
+      { type: "code", value: `
+let test = 3;
+
+if (test > 0) {
+	console.log(test);
+	console.log('+++'); // bu chiziq shart ichida=8
+}
+        ` },
+      { type: "text", value: `Shuning uchun bunday xatoga yo'l qo'ymaslik uchun har doim jingalak qavslarni joylashtirish tavsiya etiladi.` },
+      { type: "header", value: `Javascript-da else if Konstruksyasi` },
+      { type: "text", value: `Else if dizayni else blokida shartlarni belgilash imkonini beradi. Keling, misolni ko'rib chiqaylik:` },
+      { type: "code", value: `
+let num = 1;
+
+if (num == 1) {
+	console.log('value1');
+} else if (num == 2) {
+	console.log('value2');
+} else if (num == 3) {
+	console.log('value3');
+}
+        ` },
+      { type: "text", value: `Bir nechta iflar o'rniga else if dan foydalanishning afzalligi - num o'zgaruvchisining qiymati hech qanday shartga mos kelmaydigan vaziyatni ushlash qobiliyati:` },
+      { type: "code", value: `
+let num = 1;
+
+if (num == 1) {
+	console.log('value1');
+} else if (num == 2) {
+	console.log('value2');
+} else if (num == 3) {
+	console.log('value3');
+} else {
+	console.log('num o'zgaruvchisining qiymati noto'g'ri');
+}
+        ` },
+      { type: "header", value: `Mashq` },
+      { type: "text", value: `1. O'zgaruvchan kun 1 dan 31 gacha bo'lgan oraliqning ma'lum sonini o'z ichiga oladi. Bu raqam oyning qaysi o'n kunligiga to'g'ri kelishini aniqlang (birinchi, ikkinchi yoki uchinchi).` },
+      { type: "text", value: `2. Oldingi vazifani o'zgartiring, shunda o'zgaruvchan kunda 1 dan 31 gacha raqam bo'lmasa, xato xabari beriladi.` },
+      { type: "header", value: `Javascript-ga o'rnatilgan if-else konstruksiyalari` },
+      { type: "text", value: `Agar siz bir-biringizga o'zboshimchalik bilan sarmoya kiritishingiz mumkin. Misolga qarang:` },
+      { type: "code", value: `
+let num = 3;
+
+if (num >= 0) {
+	if (num <= 5) {
+		console.log('katta yoki kichik 5');
+	} else {
+		console.log('katta 5');
+	}
+} else {
+	console.log('no'ldan kichik');
+}
+        ` },
+      { type: "header", value: `Javascript-da switch-case konstruksiyasi` },
+      { type: "text", value: `Switch-case konstruksiyasi yordamida siz o'zgaruvchining qiymatiga qarab turli xil kodlarni bajarishingiz mumkin. Mana bu dizaynning sintaksisi:` },
+      { type: "code", value: `
+switch (o'zgaruvchi) {
+	case 'qiymat1':
+		/*
+      bu erda bajariladigan kod
+      agar o'zgaruvchi 1 qiymatiga ega bo'lsa
+		*/
+	break;
+	case 'qiymat2':
+		/*
+      bu erda bajariladigan kod
+      agar o'zgaruvchi 2 ga teng bo'lsa
+		*/
+	break;
+	case 'qiymat3':
+		/*
+      bu erda bajariladigan kod
+      agar o'zgaruvchi 3 ga teng bo'lsa
+		*/
+	break;
+	default:
+		/*
+      bu erda bajariladigan kod
+      agar biron bir ma'noga to'g'ri kelmasa
+		*/
+	break;
+}
+        ` },
+      { type: "text", value: `Switch-case konstruksiyasi bilan misol kodini yozamiz:` },
+      { type: "code", value: `
+let num = 1;
+
+switch (num) {
+	case 1:
+		console.log('value1');
+	break;
+	case 2:
+		console.log('value2');
+	break;
+	case 3:
+		console.log('value3');
+	break;
+	default:
+		console.log('incorrect value');
+	break;
+}` },
+      { type: "header", value: `Mashq` },
+      { type: "text", value: `Quyidagi kodni switch-case orqali qayta yozing:` },
+      { type: "code", value: `
+let lang = 'uz';
+
+if (lang == 'uz') {
+	console.log('uzb');
+} else if (lang == 'en') {
+	console.log('eng');
+} else if (lang == 'de') {
+	console.log('nem');
+} else {
+	console.log('bunday til mavjud emas');
+}
+        ` },
+      { type: "header", value: `Javascript-da kalit taslim konstruksiyasi ixtiyoriy tanaffus` },
+      { type: "text", value: `Switch-case konstruksiyasida break buyrug'i talab qilinmaydi. Agar rejalashtirilgan ishni bajarganingizdan so'ng tanaffus bo'lmasa, undan past bo'lgan barcha holatlar ham bajariladi.
+
+Keling, misolni ko'rib chiqaylik:` },
+      { type: "code", value: `
+let num = 1; //bu erda 1 raqami bo'lsin
+
+switch (num) {
+1-savol:
+console.log(1); //bu ishlaydi
+2-savol:
+console.log(2); //ishlaydi va bu
+3-savol:
+console.log(3); //ishlaydi va bu
+}
+        ` },
+      { type: "text", value: `O'zgaruvchining qiymatini o'zgartiring:` },
+      { type: "code", value: `
+let num = 2;
+
+switch (num) {
+	case 1:
+		console.log(1);
+	case 2:
+		console.log(2); // bu ishlaydi
+	case 3:
+		console.log(3); // bu ham ishlaydi
+        ` },
+      { type: "text", value: `O'zgaruvchining qiymatini o'zgartiring:` },
+      { type: "code", value: `
+let num = 3; 
+
+switch (num) {
+	case 1:
+		console.log(1);
+	case 2:
+		console.log(2);
+	case 3:
+		console.log(3); // bu ishlaydi
+        ` },
+      { type: "text", value: `Ba'zida bu xususiyat muammolarni hal qilishda qo'llaniladi. Misolga qarang:` },
+      { type: "code", value: `
+let num = 1;
+let res;
+
+switch (num) {
+	case 1:
+	case 2:
+		res = 'a';
+	break;
+	case 3:
+		res = 'b';
+	break;
+}
+
+console.log(res);` },
+      { type: "text", value: `Biroq, bunday muammoni if orqali hal qilish aniqroq:` },
+      { type: "code", value: `
+let num = 1;
+let res;
+
+if (num == 1 || num == 2) {
+	res = 'a';
+}
+
+if (num == 3) {
+	res = 'b';
+}
+
+console.log(res);
+        ` },
+      { type: "header", value: `Javascript-da uchlik operator` },
+      { type: "text", value: `Ushbu qo'llanmada biz if-else dizaynining qisqartirilgan versiyasi bo'lgan maxsus uchlik operatorni ko'rib chiqamiz. Uning sintaksisi quyidagicha:` },
+      { type: "code", value: `let o'zgaruvchisi = sharti ? qiymat1 : qiymat2;` },
+      { type: "text", value: `Operator shunday ishlaydi: agar shart to'g'ri bo'lsa, u holda qiymat1, aks holda qiymat2 qaytariladi. Keling, ushbu operator yordamida kod misolini keltiraylik:` },
+      { type: "code", value: `
+let age = 17;
+let adult = age >= 18 ? true: false;
+console.log(adult);
+        ` },
+      { type: "text", value: `Ushbu to'liq kodni quyidagicha qayta yozish mumkin:` },
+      { type: "code", value: `
+let age = 17;
+let adult;
+
+if (age >= 18) {
+	adult = true;
+} else {
+	adult = false;
+}
+
+console.log(adult);
+        ` },
+      { type: "text", value: `Uchlik operatordan faqat eng oddiy holatlarda foydalanish kerak, chunki undan foydalanish kodni tushunishni qiyinlashtiradi.` },
+      { type: "header", value: `Mashq` },
+      { type: "text", value: `Quyidagi kodni uchlik operator orqali qayta yozing:` },
+      { type: "code", value: `
+let num = 1;
+let res;
+
+if (num >= 0) {
+	res = '1';
+} else {
+	res = '2';
+}
+
+console.log(res);
+        ` },
+      { type: "header", value: `Javascript-da mantiqiy operatsiyalar` },
+      { type: "text", value: `Taqqoslash operatorlari if konstruksiyalaridan tashqarida ishlatilishi mumkin. Misolga qarang:` },
+      { type: "code", value: `
+console.log(1 == 1); // true
+console.log(1 == 2); // false
+        ` },
+      { type: "text", value: `O'zgaruvchilarni solishtirish mumkin:` },
+      { type: "code", value: `
+let a = 1;
+let b = 2;
+
+console.log(a == b);
+        ` },
+      { type: "text", value: `Natijani to'g'ridan-to'g'ri konsolga olib tashlashingiz shart emas, balki uni qandaydir o'zgaruvchiga tayinlang:` },
+      { type: "text", value: `
+let a = 1;
+let b = 2;
+
+let result = a == b;
+console.log(result);
+        ` },
+      { type: "header", value: `Javascript-da confirm funktsiyasi` },
+      { type: "text", value: `confirm funksiyasi foydalanuvchi javob berishi kerak bo'lgan savol va javob berish uchun ikkita tugma bilan oynani chaqiradi: "OK" tugmasi va "Bekor qilish" tugmasi bilan. Agar foydalanuvchi "OK" tugmasini bossa, funksiya haqiqatni qaytaradi, agar "Bekor qilish" bo'lsa, u noto'g'rilikni qaytaradi.` },
+      { type: "text", value: `Quyidagi misolda confirm funksiyasi savol bilan dialog oynasini ko'rsatadi. Agar siz "Ok" tugmasini bossangiz, ok o'zgaruvchisiga rost yoziladi va agar siz "Bekor qilish" tugmasini bossangiz, noto'g'ri:` },
+      { type: "code", value: `
+let ok = confirm('Savol');
+console.log(ok);
+        ` },
+      { type: "text", value: `Foydalanuvchi javobini qayta ishlash uchun if dizaynidan foydalanamiz:` },
+      { type: "code", value: `
+let ok = confirm('Savol texti');
+
+if (ok) {
+	console.log('siz xa jabini berdingiz');
+} else {
+	console.log('siz yo'q jabini berdingiz');
+}
+        ` },
+      { type: "header", value: `Mashq` },
+      { type: "text", value: `Foydalanuvchidan u allaqachon 18 yoshdami yoki yo'qligini so'rang. Agar mavjud bo'lsa, kattalar matni bilan ekranni ko'rsating va agar bo'lmasa, foydalanuvchiga kirish taqiqlanganligi haqida xabar qoldiring.` },
+      { type: "header", value: `Javascript-da if-else orqali soat qismlarini tekshirish` },
+      { type: "text", value: `Bizda min o'zgaruvchisi bo'lsin, unda 1 dan 60 gacha bo'lgan daqiqalar soni saqlanadi:` },
+      { type: "code", value: `let min = 10;` },
+      { type: "text", value: `Keling, belgilangan daqiqalar soni soat nechada ekanligini aniqlaylik:` },
+      { type: "code", value: `
+let min = 10;
+
+if (min >= 0 && min <= 14) {
+	console.log('1 chorak');
+}
+
+if (min >= 15 && min <= 29) {
+	console.log('2 chorak');
+}
+
+if (min >= 30 && min <= 44) {
+	console.log('3 chorak');
+}
+
+if (min >= 45 && min <= 59) {
+	console.log('4 chorak');
+}
+        ` },
+      { type: "header", value: `Mashq` },
+      { type: "text", value: `Shunga o'xshash muammoni hal qiling, faqat belgilangan daqiqalar soni soatning uchdan biriga to'g'ri kelishini aniqlang.` },
+      { type: "header", value: `Javascript-da qatorlar va massivlar uzunligini tekshiring` },
+      { type: "text", value: `Bizda ba'zi ixtiyoriy qatorni saqlaydigan str o'zgaruvchisi bo'lsin:` },
+      { type: "code", value: `let str = '12345';` },
+      { type: "text", value: `Agar satr uzunligi uchta belgiga teng yoki undan ko'p bo'lsa, xabarni konsolga chiqaradigan shartni yozamiz:` },
+      { type: "code", value: `
+let str = '12345';
+
+if (str.length >= 3) {
+	console.log('!');
+}
+        ` },
+      { type: "header", value: `Mashq` },
+      { type: "text", value: `Arr o'zgaruvchisi raqamlar bilan ma'lum bir massivni o'z ichiga oladi. 3-massivdagi elementni tekshiradigan shartni yozing. Agar shunday bo'lsa, ekranda massiv elementlarining yig'indisini ko'rsating.` },
+      { type: "header", value: `Javascript-da qator belgilarini tekshirish` },
+      { type: "text", value: `Raqamlardan iborat qator berilsin:` },
+      { type: "code", value: `let str = '12345';` },
+      { type: "text", value: `Keling, ushbu qatorning birinchi belgisi 1 raqamiga teng yoki yo'qligini tekshiramiz:` },
+      { type: "code", value: `
+let str = '12345';
+
+if (str[0] == 1) {
+	console.log('!');
+}
+        ` },
+      { type: "text", value: `Keling, oxirgi belgini 5 raqamiga teng deb tekshiramiz:` },
+      { type: "code", value: `
+let str = '12345';
+let last = str[str.length - 1];
+
+if (last == 5) {
+	console.log('!');
+}
+        ` },
+      { type: "header", value: `Mashq` },
+      { type: "text", value: `1. Muayyan qatorni o'z ichiga olgan o'zgaruvchi berilgan. Ushbu satr "a" belgisi bilan boshlanishini tekshiring.` },
+      { type: "text", value: `2. Muayyan qatorni o'z ichiga olgan o'zgaruvchi berilgan. Ushbu satr "x" belgisi bilan tugashini tekshiring.` },
+      { type: "text", value: `3. Muayyan qatorni o'z ichiga olgan o'zgaruvchi berilgan. Ushbu satr "a" belgisi yoki "b" belgisi bilan boshlanishini tekshiring.` },
+      { type: "header", value: `Javascript-da raqam raqamlarini tekshirish` },
+      { type: "text", value: `Bizga raqam bersin:` },
+      { type: "code", value: `let num = 12345;` },
+      { type: "text", value: `Raqamning birinchi belgisiga murojaat qilishga urinish kutilmagan xatti-harakatlarga olib keladi:` },
+      { type: "code", value: `
+let num = 12345;
+
+if (num[0] == 1) {
+	console.log('+++');
+} else {
+	console.log('---'); // bu ishlaydi
+}
+        ` },
+      { type: "text", value: `Siz allaqachon bilishingiz kerak bo'lganidek, muammo shundaki, siz satr belgilariga murojaat qilishingiz mumkin, lekin siz qila olmaysiz - raqam raqamlariga:` },
+      { type: "code", value: `
+let num = 12345;
+console.log(num[0]); // undefined chiqadi
+        ` },
+      { type: "text", value: `Muammoni hal qilish uchun biz raqamimizni qatorga aylantiramiz:` },
+      { type: "code", value: `
+let num = 12345;
+let str = String(num);
+
+if (str[0] == 1) {
+	console.log('+++'); // bu ishlaydi
+} else {
+	console.log('---');
+}
+        ` },
+      { type: "text", value: `Yangi oʻzgaruvchini kiritish shart emas, [0] toʻgʻridan-toʻgʻri String: funksiyasi natijasiga qoʻllanilishi mumkin` },
+      { type: "code", value: `
+let num = 12345;
+
+if (String(num)[0] == 1) {
+	console.log('to'g'ri'); // bu ishlaydi
+} else {
+	console.log('no to'g'ri');
+}
+        ` },
+      { type: "text", value: `Endi biz birinchi raqamni 1 yoki 2 ekanligini tekshirmoqchimiz. Tegishli kodni yozamiz:` },
+      { type: "code", value: `
+let num = 12345;
+
+if (String(num)[0] == 1 || String(num)[0] == 2) {
+	console.log('+++');
+} else {
+	console.log('---');
+}
+        ` },
+      { type: "text", value: `Bunday holda, String(num)[0] dizayni ikki marta takrorlanadi. Bu, birinchidan, uzoq, ikkinchidan, optimal emas, chunki biz raqamni ikki marta qatorga aylantiramiz - ikkinchi marta ortiqcha bo'lib chiqadi va dastur resurslari bunga sarflanadi.` },
+      { type: "text", value: `Muammoni tuzatamiz:` },
+      { type: "code", value: `
+let num = 12345;
+let first = String(num)[0];
+
+if (first == 1 || first == 2) {
+	console.log('+++');
+} else {
+	console.log('---');
+}
+        ` },
+      { type: "header", value: `Javascript shartlari bilan koddagi xatolarni qidiring` },
+      { type: "text", value: `Keyingi vazifalarda ba'zi dasturchi kod yozgan va unda xatolarga yo'l qo'ygan bo'lishi mumkin. Kod tavsiflangan narsani qiladimi yoki yo'qligini tekshirishingiz kerak. Agar kod to'g'ri ishlamasa, xatolarni tuzatishingiz kerak.` },
+      { type: "text", value: `1. Kod raqamlar yig'indisini tekshirishi kerak:` },
+      { type: "code", value: `
+let num1 = 1;
+let num2 = 2;
+
+if (num1 + num2 === 3) {
+	console.log('+++');
+} else {
+	console.log('---');
+}` },
+      { type: "text", value: `2. Kod raqamlar yig'indisini tekshirishi kerak:` },
+      { type: "code", value: `
+let num1 = '1';
+let num2 = '2';
+
+if (num1 + num2 === 3) {
+	console.log('+++');
+} else {
+	console.log('---');
+}
+        ` },
+      { type: "text", value: `3. Kod raqamlar yig'indisini tekshirishi kerak:` },
+      { type: "code", value: `
+let num1 = '1';
+let num2 = '2';
+
+if (Number(num1 + num2) === 3) {
+	console.log('+++');
+} else {
+	console.log('---');
+}
+        ` },
+      { type: "text", value: `4. Kod raqamning birinchi raqamini tekshirishi kerak:` },
+      { type: "code", value: `
+let num = 123;
+
+if (num[0] === 1) {
+	console.log('+++');
+} else {
+	console.log('---');
+}
+        ` },
+
 
     ],
   },
