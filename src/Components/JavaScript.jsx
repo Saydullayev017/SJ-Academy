@@ -32,15 +32,15 @@ const Html = () => {
                 <h1 className='border bg-neutral-900 text-center rounded '>JavaScript</h1>
                 <nav>
                     <ul>
-                        {['Asoslar', 'Massivlar', "Ob'ektlar", 'Shartlar', 'Halqa', 'Standart Metodlar', 
-                          'Foydalanuvchi funktsiyalari', "O'zgaruvchan funktsiyalar", 'Funktsiya turlari', 
-                          'Ichki funktsiyalar', "Yopish 'closures'", 'IIFE', 'Rekursiya', 
-                          'Tarjima usullari', 'Spread operatori', 'Rest operatori', 
-                          'Destruktizatsiya', 'DOM', 'Atributlar', 'Stilizatsiya', 
-                          'Qidiruv', 'Tugunlar', 'Forma', 'Dropdown lists', 
-                          'Event Obyekti', 'Kontekst', 'Taymerlar', 
-                          'Elementlarni manipulyatsiya qilish', 'Amaliyot', 
-                          'Funktsiyalar va DOM', 'Clouser orqli modullar']
+                        {['Asoslar', 'Array', "Object", 'Conditions', 'Loop', 'Standart Metodlar']
+                        // 'Foydalanuvchi funktsiyalari', "O'zgaruvchan funktsiyalar", 'Funktsiya turlari', 
+                        // 'Ichki funktsiyalar', "Yopish 'closures'", 'IIFE', 'Rekursiya', 
+                        // 'Tarjima usullari', 'Spread operatori', 'Rest operatori', 
+                        // 'Destruktizatsiya', 'DOM', 'Atributlar', 'Stilizatsiya', 
+                        // 'Qidiruv', 'Tugunlar', 'Forma', 'Dropdown lists', 
+                        // 'Event Obyekti', 'Kontekst', 'Taymerlar', 
+                        // 'Elementlarni manipulyatsiya qilish', 'Amaliyot', 
+                        // 'Funktsiyalar va DOM', 'Clouser orqli modullar'
                         .map((item, index) => (
                             <li key={index} className='pt-3'>
                                 <NavLink 

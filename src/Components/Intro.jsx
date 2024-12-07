@@ -21,6 +21,8 @@ const Intro = () => {
     return (
         <main className='container mx-auto flex h-screen pt-20'>
             {/* Здесь можно добавить контент для страницы Intro */}
+             
+            <h1>Assalomu Alekum !</h1>
         </main>
     );
 };
