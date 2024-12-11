@@ -3811,75 +3811,168 @@ console.log(num); // Javobi
       { type: "text", value: `2. Konsolga 11 dan 33 gacha raqamlarni kiriting.` },
       { type: "text", value: `3. Muayyan boshlang'ich qiymatga ega num raqami berilgan. Ko'paytirish natijasi 1000 dan oshguncha uni 3 marta ko'paytiring. Qaysi raqam olinadi? Buning uchun zarur bo'lgan iteratsiyalar sonini hisoblang.` },
       { type: "header", value: `Javascript-da for Loop` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
+      { type: "text", value: `for Loop ma'lum bir kodni ma'lum bir necha marta takrorlash imkonini beradi. Mana uning sintaksisi:` },
+      { type: "code", value: `
+for (boshlang'ich buyruqlar; tugatish sharti; o'tishdan keyingi buyruqlar) {
+  for loop tanasi
+}
+        ` },
+      { type: "text", value: `Dastlabki buyruqlar loop boshlanishidan oldin bajariladigan narsadir. Ular faqat bir marta amalga oshiriladi. Odatda u erda boshlang'ich hisoblagich qiymatlari joylashtiriladi, masalan: i = 0.` },
+      { type: "text", value: `loop-ning tugash sharti - bu loop to'g'ri bo'lganda aylanadigan shart, masalan: i <= 10.` },
+      { type: "text", value: `loop-ni tugatgandan so'ng buyruqlar - bu loop oxirida har safar bajariladigan buyruqlar. Odatda u erda hisoblagichlar ko'paytiriladi, masalan: i++.` },
+      { type: "text", value: `For loop-dan foydalanib, 1 dan 9 gacha raqamlarni ketma-ket chiqaramiz:` },
+      { type: "code", value: `
+for (let i = 1; i <= 9; i++) {
+	console.log(i); // 1, 2... 9 chiqadi
+}
+        ` },
+      { type: "text", value: `Endi hisoblagichni 1 ga emas, 2 ga oshiramiz` },
+      { type: "code", value: `
+for (let i = 1; i <= 9; i += 2) {
+	console.log(i); // 1, 3, 5... chiqadi
+}
+        ` },
+      { type: "text", value: `Ortga hisoblash mumkin:` },
+      { type: "code", value: `
+for (let i = 10; i > 0; i--) {
+	console.log(i); // 10, 9, 8... chiqadi
+}
+        ` },
+      { type: "header", value: `Mashq` },
+      { type: "text", value: `1. For loop-dan foydalanib, konsolga 1 dan 100 gacha raqamlarni kiriting.` },
+      { type: "text", value: `2. For loop-dan foydalanib, konsolga 11 dan 33 gacha raqamlarni kiriting.` },
+      { type: "text", value: `3. For loop-dan foydalanib, konsolingizga 0 dan 100 gacha bo'lgan juft raqamlarni kiriting.` },
+      { type: "text", value: `4. For loop-dan foydalanib, konsolga 1 dan 99 gacha bo'lgan toq raqamlarni kiriting.` },
+      { type: "text", value: `5. For loop-dan foydalanib, konsolga 100 dan 0 gacha raqamlarni kiriting.` },
+      { type: "header", value: `Javascript-da Array uchun loop` },
+      { type: "text", value: `Array-larni for loop-da ham saralash mumkin. Keling, bu qanday amalga oshirilganini ko'rib chiqaylik. Bizga shunday array bersin` },
+      { type: "code", value: `let arr = [1, 2, 3, 4, 5];` },
+      { type: "text", value: `Keling, ushbu array-ning elementlarini loop-da ko'rsatamiz:` },
+      { type: "code", value: `
+for (let i = 0; i <= arr.length - 1; i++) {
+	console.log(arr[i]);
+}
+        ` },
+      { type: "text", value: `Siz array uzunligidan birlikni olib tashlashingiz shart emas, lekin qat'iy taqqoslashdan foydalaning:` },
+      { type: "code", value: `
+for (let i = 0; i < arr.length; i++) {
+	console.log(arr[i]);
+}
+        ` },
+      { type: "text", value: `Array-ni loop bilan haddan tashqari oshirib yuborish nima sodir bo'layotganini ko'proq nazorat qilish imkonini beradi. Misol uchun, siz elementlarni noldan emas, balki birinchisidan olishingiz mumkin:` },
+      { type: "code", value: `
+for (let i = 1; i < arr.length; i++) {
+	console.log(arr[i]);
+}
+        ` },
+      { type: "text", value: `Elementlarni teskari tartibda ko'rsatish mumkin:` },
+      { type: "code", value: `
+for (let i = arr.length - 1; i >= 0; i--) {
+	console.log(arr[i]);
+}
+        ` },
+      { type: "header", value: `Mashq` },
+      { type: "text", value: `1. Quyidagi array-ning barcha elementlarini konsolga chiqaring:` },
+      { type: "code", value: `let arr = ['a', 'b', 'c', 'd', 'e'];` },
+      { type: "text", value: `2. Nol va oxirgidan tashqari quyidagi array-ning barcha elementlarini konsolga chiqaring:` },
+      { type: "code", value: `let arr = ['a', 'b', 'c', 'd', 'e'];` },
+      { type: "text", value: `3. Konsoldagi quyidagi massivning elementlarini teskari tartibda chop eting:` },
+      { type: "code", value: `let arr = ['a', 'b', 'c', 'd', 'e'];` },
+      { type: "text", value: `4. Quyidagi kodda yo'l qo'yilgan xatoni tuzating:` },
+      { type: "code", value: `
+let arr = ['a', 'b', 'c', 'd', 'e'];
+		
+for (let i = 0; i <= arr.length; i++) {
+	console.log(arr[i]);
+}
+        ` },
+      { type: "header", value: `Javascript-dagi loop-dagi Condition (Shartlar)` },
+      { type: "text", value: `Shartlar loop-da qo'llanilishi mumkin. Keling, misolni ko'rib chiqaylik. Bizda quyidagi array bo'lsin:` },
+      { type: "code", value: `let arr = [1, 2, 3, 4, 5];` },
+      { type: "text", value: `Keling, ushbu array-ning barcha elementlarini konsolga chiqaramiz:` },
+      { type: "code", value: `
+for (let elem of arr) {
+	console.log(elem);
+}
+        ` },
+      { type: "text", value: `Endi shart qo'yamiz va faqat juft sonlar bo'lgan elementlarni chiqaramiz:` },
+      { type: "code", value: `
+for (let elem of arr) {
+	if (elem % 2 === 0) {
+		console.log(elem);
+	}
+}
+        ` },
+      { type: "header", value: `Mashq` },
+      { type: "text", value: `1. Array berilgan:` },
+      { type: "code", value: `let arr = [2, 5, 9, 15, 1, 4];` },
+      { type: "text", value: `Konsolga 3 dan katta, lekin 10 dan kam bo'lgan array elementlarini chiqaring.` },
+      { type: "text", value: `2. ob'ekt berilgan:` },
+      { type: "code", value: `let obj = {a: 1, b: 2, c: 3, d: 4, e: 5};` },
+      { type: "text", value: `Qiymatlari toq raqamlar bo'lgan ob'ektning elementlarini konsolga chiqaring.` },
+      { type: "header", value: `Javascript loop-da raqamlarni to'plash` },
+      { type: "text", value: `Keling, loop-dan foydalanib, 1 dan 100 gacha bo'lgan butun sonlar yig'indisini topamiz. Bunday muammoni hal qilish uchun raqamlar loop-da ko'chiriladi va ularning yig'indisi ketma-ket qandaydir o'zgaruvchiga yoziladi:` },
+      { type: "code", value: `
+let res = 0;
+
+for (let i = 1; i <= 100; i++) {
+	res = res + i;
+}
+
+console.log(res); // istalgan miqdor
+        ` },
+      { type: "text", value: `+=: operatori orqali yechimni soddalashtirishingiz mumkin` },
+      { type: "code", value: `
+let res = 0;
+
+for (let i = 1; i <= 100; i++) {
+	res += i;
+}
+
+console.log(res);
+        ` },
+      { type: "header", value: `Mashq` },
+      { type: "text", value: `1. 2 dan 100 gacha bo'lgan juft sonlar yig'indisini toping.` },
+      { type: "text", value: `2. 1 dan 99 gacha bo'lgan toq sonlar yig'indisini toping.` },
+      { type: "text", value: `3. 1 dan 20 gacha bo'lgan butun sonlar mahsulotini toping.` },
+      { type: "header", value: `Javascript loop-da array elementlarini to'plash` },
+      { type: "text", value: `Keling, loop-dan foydalanib, array elementlarining yig'indisini topamiz.` },
+      { type: "code", value: `
+let arr = [1, 2, 3, 4, 5];
+let res = 0;
+
+for (let elem of arr) {
+	res += elem;
+}
+
+console.log(res); // istalgan miqdor
+        ` },
+      { type: "header", value: `Javascript-da loop-lar orqali string-larni shakllantirish` },
+      { type: "text", value: `Loop-lar yordamida siz string-larni yaratishingiz mumkin. Misol tariqasida o'nta "x" harfi bilan to'ldirilgan qatorni olaylik:` },
+      { type: "code", value: `
+let str = '';
+
+for (let i = 0; i < 10; i++) {
+	str += 'x';
+}
+
+console.log(str); // 'xxxxxxxxxx' chiqadi
+        ` },
+      { type: "text", value: `Endi biz "12345" qatorini qilamiz. Buning uchun biz o'zgaruvchimizga loop hisoblagichini qo'shamiz:` },
+      { type: "code", value: `
+let str = '';
+
+for (let i = 1; i <= 5; i++) {
+	str += i;
+}
+
+console.log(str); // '12345' chiqadi
+        ` },
+      { type: "header", value: `Mashq` },
+      { type: "text", value: `1. Loop-dan foydalanib, 5 ta chiziq bilan to'ldirilgan qator hosil qiling.` },
+      { type: "text", value: `2. Loop-dan foydalanib, "123456789" qatorini yarating.` },
+      { type: "text", value: `3. Loop-dan foydalanib, "987654321" qatorini yarating.` },
+      { type: "text", value: `4. Loop-dan foydalanib, "-1-2-3-4-5-6-7-8-9-" qatorini yarating.` },
       { type: "text", value: `` },
       { type: "text", value: `` },
       { type: "text", value: `` },
