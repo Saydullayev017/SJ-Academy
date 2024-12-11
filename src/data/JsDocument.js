@@ -3973,135 +3973,328 @@ console.log(str); // '12345' chiqadi
       { type: "text", value: `2. Loop-dan foydalanib, "123456789" qatorini yarating.` },
       { type: "text", value: `3. Loop-dan foydalanib, "987654321" qatorini yarating.` },
       { type: "text", value: `4. Loop-dan foydalanib, "-1-2-3-4-5-6-7-8-9-" qatorini yarating.` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
-      { type: "text", value: `` },
+      { type: "header", value: `Javascript-da break bo'yicha ko'rsatmalar` },
+      { type: "text", value: `Break ko'rsatmalari loop-ni erta yakunlash imkonini beradi. Keling, bu qachon foydali bo'lishi mumkinligini ko'rib chiqaylik. Bizda array elementlarini konsolga chiqaradigan loop bo'lsin:` },
+      { type: "code", value: `
+let arr = [1, 2, 3, 4, 5];
 
+for (let elem of arr) {
+	console.log(elem);
+}
+        ` },
+      { type: "text", value: `Bizning vazifamiz array-da 3 raqami bor yoki yo'qligini aniqlash bo'lsin. Agar mavjud bo'lsa, biz konsolga "bor" so'zini chiqaramiz (va agar bo'lmasa, biz hech narsa qilmaymiz).` },
+      { type: "text", value: `Keling, muammomizni hal qilaylik:` },
+      { type: "code", value: `
+let arr = [1, 2, 3, 4, 5];
+
+for (let elem of arr) {
+	if (elem === 3) {
+		console.log('есть');
+	}
+}
+        ` },
+      { type: "text", value: `Muammo hal qilindi, ammo muammo bor: 3 raqami allaqachon topilgandan so'ng, array hali ham ma'nosiz harakat qilishda davom etadi, qimmatli protsessor resurslarini sarflaydi va skriptimizni sekinlashtiradi.` },
+      { type: "text", value: `Raqam topilgandan so'ng darhol loop-larimizni yakunlash maqbulroq bo'ladi. Buni loopni muddatidan oldin yakunlash imkonini beruvchi maxsus break ko'rsatmalari yordamida amalga oshirish mumkin.` },
+      { type: "text", value: `Shunday qilib, keling, 3: raqamiga duch kelishimiz bilan loop-ni yakunlaylik` },
+      { type: "code", value: `
+let arr = [1, 2, 3, 4, 5];
+
+for (let elem of arr) {
+	if (elem == 3) {
+		console.log('есть');
+		break; // loop dan chiqamiz
+	}
+}
+        ` },
+      { type: "header", value: `Mashq` },
+      { type: "text", value: `1. Raqamlar bilan array berilgan. 0 qiymatiga ega element topilmaguncha, ushbu array-ni elementlarini konsolga navbatma-navbat chiqaradigan loop-ni ishga tushiring. Shundan so'ng, loop o'z ishini yakunlashi kerak.` },
+      { type: "text", value: `2. Raqamlar bilan array berilgan. Array-ning boshidan birinchi manfiy songacha joylashgan elementlar yig'indisini toping.` },
+      { type: "text", value: `3. Raqamlar bilan array berilgan. Ushbu array-dagi birinchi 3 raqamining o'rnini toping (biz bu raqam array-da bo'lishi kerak deb hisoblaymiz).` },
+      { type: "header", value: `Javascript-da continue bo'yicha ko'rsatmalar` },
+      { type: "text", value: `Bundan tashqari, loop-ning yangi iteratsiyasini ishga tushiradigan kontent ko'rsatmalari mavjud. Ushbu ko'rsatma ba'zan kodni soddalashtirish uchun foydali bo'lishi mumkin, garchi deyarli har doim muammoni usiz hal qilish mumkin. Keling, amaliy misolni ko'rib chiqaylik.` },
+      { type: "text", value: `Bizga raqamlar bilan array bersin. Keling, uni loop bilan ko'rib chiqaylik va 2 ga bo'lingan raqamlarni kvadratga aylantiramiz va uni konsolga chiqaramiz va 3 ga bo'lingan raqamlarni kubga joylashtiramiz va ularni konsolga chiqaramiz. Bu erda tasvirlangan muammoning yechimi:` },
+      { type: "code", value: `
+let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+for (let elem of arr) {
+	let result;
+	
+	if (elem % 2 === 0) {
+		result = elem * elem;
+		console.log(result);
+		
+	} else if (elem % 3 === 0) {
+		result = elem * elem * elem;
+		console.log(result);
+		
+	}
+}
+        ` },
+      { type: "text", value: `Ko'rib turganingizdek, console.log (natija) qatori ikki marta takrorlanadi. Keling, uni shunday deb qabul qilaylik:` },
+      { type: "code", value: `
+let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+for (let elem of arr) {
+	let result;
+	
+	if (elem % 2 === 0) {
+		result = elem * elem;
+	} else if (elem % 3 === 0) {
+		result = elem * elem * elem;
+	}
+	
+	console.log(result); // biz shart bo'yicha xulosa chiqardik
+}
+        ` },
+      { type: "text", value: `Endi bizning skriptimiz biroz boshqacha ishlaydi: ma'lum bo'lishicha, bizning if orqali qayta ishlanmagan oddiy elementlar uchun result o'zgaruvchisi konsolga chiqariladi, bu bizning vazifamizga ko'ra kerak emas.` },
+      { type: "text", value: `Keling, 2 va 3 ga bo'linmaydigan elementlar uchun ishlaydigan boshqa else shartini qo'shish orqali muammoni tuzatamiz va u erda bizni darhol loop-ning yangi iteratsiyasiga o'tkazadigan continue ko'rsatmasini chaqiramiz:` },
+      { type: "code", value: `
+let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+for (let elem of arr) {
+	let result;
+	
+	if (elem % 2 == 0) {
+		result = elem * elem;
+	} else if (elem % 3 == 0) {
+		result = elem * elem * elem;
+	} else {
+		continue;
+	}
+	
+	console.log(result); // 2 yoki 3 ga bo'lingan bo'lsa amalga oshiriladi
+}
+        ` },
+      { type: "header", value: `Javascript Nested Loop` },
+      { type: "text", value: `Siz allaqachon bilgan loop-lar bir-biriga nesting qilinishi mumkin. Misol uchun, keling, quyidagi muammoni hal qilaylik: ekranda qatorni ko'rsatamiz:` },
+      { type: "code", value: `1112223344555667788999` },
+      { type: "text", value: `Bu erda bir loop bilan qilish mumkin emas - siz bir-biriga o'rnatilgan ikkita loop-ni ishga tushirishingiz kerak: birinchi loop raqamlarni saralaydi, ikkinchi loop esa bu raqamlarni uch marta takrorlaydi. Keling, buni amalga oshiraylik:` },
+      { type: "code", value: `
+for (let i = 1; i <= 9; i++) {
+	for (let j = 1; j <= 3; j++) {
+		document.write(i);
+	}
+}
+        ` },
+      { type: "text", value: `E'tibor bering: birinchi loop-da i, ikkinchi j hisoblagich mavjud va agar uchinchi loop ham bo'lsa, u holda hisoblagich k o'zgaruvchiga ega bo'ladi. Bu standart umumiy qabul qilingan nomlar va ulardan foydalanish kerak.` },
+      { type: "header", value: `Javascript-da array to'ldirish` },
+      { type: "text", value: `Tsiklda siz array-larni ma'lumotlar bilan to'ldirishingiz mumkin. Buning uchun push method-dan foydalanish kerak:` },
+      { type: "code", value: `
+let arr = [];
+
+for (let i = 1; i <= 5; i++) {
+	arr.push(i);
+}
+
+console.log(arr); // [1, 2, 3, 4, 5] chiqadi
+        ` },
+      { type: "header", value: `Mashq` },
+      { type: "text", value: `1. loop va push usulidan foydalanib, array-ni 1 dan 10 gacha raqamlar bilan to'ldiring.` },
+      { type: "text", value: `2. loop va push usulidan foydalanib, array-ni 10 ta "x" harfi bilan to'ldiring.` },
+      { type: "text", value: `3. Raqamlar bilan array berilgan. Uni loop bilan qayta yozing va yangi array-ga faqat ijobiy raqamlarni yozing.` },
+      { type: "header", value: `Javascript loop-da array-ni o'zgartirish` },
+      { type: "text", value: `Array elementlari loop-larda o'zgartirilishi mumkin. Buning uchun siz array-larni oddiy for loop bilan saralashingiz kerak. Misol tariqasida massiv elementlarini 2 ga ko'paytiramiz:` },
+      { type: "code", value: `
+let arr = [1, 2, 3, 4, 5];
+
+for (let i = 0; i < arr.length; i++) {
+	arr[i] = arr[i] * 2;
+}
+
+console.log(arr); // [2, 4, 6, 8, 10] chiqadi
+        ` },
+      { type: "text", value: `Endi array-ning har bir elementini bittaga oshiramiz:` },
+      { type: "code", value: `
+let arr = [1, 2, 3, 4, 5];
+
+for (let i = 0; i < arr.length; i++) {
+	arr[i]++;
+}
+
+console.log(arr); // [2, 3, 4, 5, 6] chiqadi
+        ` },
+      { type: "text", value: `Endi array-ning har bir elementini 5 ga oshiramiz:` },
+      { type: "code", value: `
+let arr = [1, 2, 3, 4, 5];
+
+for (let i = 0; i < arr.length; i++) {
+	arr[i] += 5;
+}
+
+console.log(arr); // [6, 7, 8, 9, 10] chiqadi
+        ` },
+      { type: "header", value: `Mashq` },
+      { type: "text", value: `1. Raqamlar bilan array berilgan. Ushbu array-ni loop bilan aylantiring va ushbu array-ning har bir elementini kvadratga oshiring.` },
+      { type: "text", value: `2. Raqamlar bilan array berilgan. Ushbu massivni loop bilan qayta joylashtiring va har bir elementdan bittasini olib tashlang.` },
+      { type: "header", value: `Javascript-da ob'ektlarni loop orqali to'ldirish` },
+      { type: "text", value: `Ob'ektlarni loop-dagi ma'lumotlar bilan ham to'ldirish mumkin. Keling, bir misolni ko'rib chiqaylik. Bizda ikkita array bo'lsin:` },
+      { type: "code", value: `
+let keys = ['a', 'b', 'c', 'd', 'e'];
+let values = [1, 2, 3, 4, 5];
+        ` },
+      { type: "text", value: `Keling, ulardan birinchi array-dan ushbu ob'ekt uchun kalitlarni, ikkinchi massivdan esa qiymatlarni olib, ob'ektni yaratish uchun foydalanamiz. Buning uchun biz loop-ni ishga tushiramiz va loop-da ob'ektimizni shakllantiramiz: ` },
+      { type: "code", value: `
+let obj = {};
+
+for (let i = 0; i <= 4; i++) {
+	let key = keys[i];
+	let value = values[i];
+	
+	obj[key] = value;
+}
+
+console.log(obj);
+        ` },
+      { type: "text", value: `Kalit va qiymat uchun o'zgaruvchilarni kiritish shart emas, siz shunchaki shunday qilishingiz mumkin:` },
+      { type: "code", value: `
+let obj = {};
+
+for (let i = 0; i <= 4; i++) {
+	obj[keys[i]] = values[i];
+}
+
+console.log(obj);
+        ` },
+      { type: "header", value: `Mashq` },
+      { type: "text", value: `1. Ikkita array berilgan: birinchisi hafta kunlarining nomlari bilan, ikkinchisi esa ularning seriya raqamlari bilan:` },
+      { type: "code", value: `
+let arr1 = ['пн', 'вт', 'ср', 'чт', 'пт', 'сб', 'вс'];
+let arr2 = [1, 2, 3, 4, 5, 6, 7];
+        ` },
+      { type: "text", value: `Loop-dan foydalanib, kalitlari kunlarning nomlari va qiymatlari ularning raqamlari bo'ladigan ob'ektni yarating.` },
+      { type: "text", value: `2. Ob'ekt berilgan :` },
+      { type: "code", value: `let obj = {a: 1, b: 2, c: 3, d: 4, e: 5};` },
+      { type: "text", value: `Ushbu ob'ektni loop bilan qayta tartiblang va juft raqamlar bo'lgan elementlarni yangi ob'ektga yozing.` },
+      { type: "header", value: `Javascript-da bayroqlar bilan ishlash` },
+      { type: "text", value: `Endi siz va men bayroqlar bilan ishlashni o'rganamiz. Bayroq - bu faqat ikkita qiymatni qabul qila oladigan maxsus o'zgaruvchi: true va false. Bayroqlardan foydalanib, siz biror narsa yo'qligini tekshiradigan muammolarni hal qilishingiz mumkin: masalan, arrayda ma'lum bir qiymatga ega element yo'qligini tekshirishingiz mumkin. Qani boshladik.` },
+      { type: "text", value: `Keling, quyidagi muammoni hal qilaylik: raqamlar bilan massiv berilgan, unda 3 qiymatiga ega element bor yoki yo'qligini tekshirishimiz kerak. Agar mavjud bo'lsa, "+++" ni chiqaramiz, agar bo'lmasa, '--' ni chiqaramiz.` },
+      { type: "text", value: `Birinchidan, "+++" ni chiqarishga harakat qilaylik. Buning uchun biz massivimizning barcha elementlarini ko'rib chiqamiz va joriy element 3 qiymatiga teng yoki yo'qligini so'raymiz. Agar teng bo'lsa, "+++" ni chiqaramiz:` },
+      { type: "code", value: `
+let arr = [1, 2, 3, 4, 5];
+
+for (let elem of arr) {
+	if (elem == 3) {
+		console.log('+++');
+	}
+}
+        ` },
+      { type: "text", value: `Ammo bizning qarorimiz unchalik yaxshi emas: axir, agar arrayda bitta emas, balki bir nechta qiymat bo'lsa, "+++" bir necha marta chiqariladi. Keling, array-mizni tuzatamiz (3 qiymatiga ega ikkita elementni bajaramiz) va bunga ishonch hosil qilaylik:` },
+      { type: "code", value: `
+let arr = [1, 2, 3, 4, 3, 5];
+
+for (let elem of arr) {
+	if (elem == 3) {
+		console.log('+++'); // bir necha marta chiqadi
+	}
+}
+        ` },
+      { type: "text", value: `Muammoni to'g'rilaylik: agar element allaqachon topilgan bo'lsa, biz loop-ni tanaffus bilan yakunlaymiz:` },
+      { type: "code", value: `
+let arr = [1, 2, 3, 4, 3, 5];
+
+for (let elem of arr) {
+	if (elem == 3) {
+		console.log('+++');
+		break;  // loop-ni to'xtatamiz
+	}
+}
+        ` },
+      { type: "text", value: `Keling, array-da 3-qiymatli elementlar umuman bo'lmasa, '--' chiqishi uchun harakat qilaylik. Keng tarqalgan noto'g'ri tushuncha bizning ifuga else qo'shish bo'ladi - bu holda '--' 3 bo'lmagan barcha elementlarga chiqariladi:` },
+      { type: "code", value: `
+let arr = [1, 2, 3, 4, 5];
+
+for (let elem of arr) {
+	if (elem == 3) {
+		console.log('+++'); 
+	} else {
+		console.log('---'); 
+	}
+}
+        ` },
+      { type: "text", value: `Shunday qilib, else qo'shish g'oyasi ishlamaydigan yomon fikrdir. Ushbu turdagi muammolarni hal qilish uchun (bunday muammolar juda keng tarqalgan) va bayroqlar deb ataladigan narsalar qo'llaniladi.` },
+      { type: "text", value: `Yuqorida aytib o'tilganidek, bayroq ikkita qiymatni olishi mumkin bo'lgan o'zgaruvchidir: haqiqiy yoki noto'g'ri.` },
+      { type: "text", value: `Shunday qilib, keling, bayroq o'zgaruvchisini quyidagi qiymat bilan yarataylik: agar u rost bo'lsa, u holda arrayda 3-element mavjud va agar u noto'g'ri bo'lsa, unda bunday element yo'q.` },
+      { type: "text", value: `Dastlab, bayroq o'zgaruvchisini noto'g'ri qiymatga qo'yamiz - ya'ni massivda 3-element yo'q deb faraz qilamiz:` },
+      { type: "code", value: `
+let arr = [1, 2, 3, 4, 5];
+let flag = false; ` },
+      { type: "text", value: `Keyin biz ilgari qilganimizdek, if bilan loop-ni boshlaymiz. Agar loop massivda 3-element mavjudligini aniqlasa, biz bayroq o'zgaruvchisini haqiqiy qiymatga joylashtiramiz va break yordamida loop-dan chiqamiz:` },
+      { type: "code", value: `
+let arr = [1, 2, 3, 4, 5];
+let flag = false; 
+
+for (let elem of arr) {
+	if (elem == 3) {
+		flag = true; 
+		break; // loop-dan chiqamiz
+	}
+}  
+      ` },
+      { type: "text", value: `Savolga javob, agar array 3 bo'lsa yoki yo'q bo'lsa, biz faqat loopdan keyin berishimiz mumkin. Va bizda bu javob allaqachon mavjud: loopdan keyin bayroq o'zgaruvchisi noto'g'ri bo'lib qolishi yoki loop 3: array-da topilgan bo'lsa, uning qiymatini haqiqiyga o'zgartirishi mumkin` },
+      { type: "code", value: `
+let arr = [1, 2, 3, 4, 5];
+let flag = false;
+
+for (let elem of arr) {
+	if (elem == 3) {
+		flag = true;
+		break;
+	}
+}
+        ` },
+      { type: "text", value: `Endi, loop-dan so'ng, biz bayroq o'zgaruvchisiga qaraydigan va "+++" yoki '--': ni ko'rsatadigan if qilishimiz mumkin` },
+      { type: "code", value: `
+let arr = [1, 2, 3, 4, 5];
+let flag = false;
+
+for (let elem of arr) {
+	if (elem == 3) {
+		flag = true;
+		break;
+	}
+}
+
+if (flag === true) {
+	console.log('+++');
+} else {
+	console.log('---');
+}
+        ` },
+      { type: "header", value: `Mashq` },
+      { type: "text", value: `Array berilgan :` },
+      { type: "code", value: `let arr = ['a', 'b', 'c', 'd', 'e'];` },
+      { type: "text", value: `Ushbu array-da "c" elementi borligini tekshiring. Agar mavjud bo'lsa, "+++'" ni chiqaring, agar bo'lmasa, "---'" ni chiqaring.` },
+      { type: "header", value: `Loop ustida ishlash` },
+      { type: "text", value: `1. Loop yordamida 1 dan 100 gacha raqamlar ustunini chiqaring.` },
+      { type: "text", value: `2. Loop yordamida 100 dan 1 gacha raqamlar ustunini chiqaring.` },
+      { type: "text", value: `3. Loop yordamida 1 dan 100 gacha juft sonlar ustunini chiqaring.` },
+      { type: "text", value: `4. Loop yordamida array-ni 10 ta x bilan to'ldiring.` },
+      { type: "text", value: `5. Loop yordamida array-ni 1 dan 10 gacha raqamlar bilan to'ldiring.` },
+      { type: "text", value: `6. Raqamlar bilan array berilgan. Loop-dan foydalanib, faqat noldan katta va 10 dan kichik bo'lgan array elementlarini chop eting.` },
+      { type: "text", value: `7. Raqamlar bilan array berilgan. Loop-dan foydalanib, uning qiymati 5 bo'lgan element borligini tekshiring.` },
+      { type: "text", value: `8. Raqamlar bilan array berilgan. Loop-dan foydalanib, ushbu array elementlarining yig'indisini toping.` },
+      { type: "text", value: `9. Raqamlar bilan array berilgan. Loop-dan foydalanib, ushbu array elementlarining kvadratlari yig'indisini toping.` },
+      { type: "text", value: `10. Raqamlar bilan array berilgan. Uning elementlarining o'rtacha arifmetik qiymatini toping.` },
+      { type: "text", value: `11. Xodimlar va ularning maoshlari bilan quyidagi ob'ekt berilgan:` },
+      { type: "code", value: `
+let obj = {
+	employee1: 100,
+	employee2: 200,
+	employee3: 300,
+	employee4: 400,
+	employee5: 500,
+	employee6: 600,
+	employee7: 700,
+};
+        ` },
+      { type: "text", value: `Har bir xodimning ish haqini 10% ga oshiring.` },
+      { type: "text", value: `12. Oldingi vazifani o'zgartiring, shunda ish haqi faqat 400 dan kam yoki unga teng bo'lgan ishchilar uchun oshiriladi.` },
+      { type: "text", value: `13. Quyidagi array berilgan:` },
+      { type: "code", value: `
+let arr1 = [1, 2, 3, 4, 5];
+let arr2 = [6, 7, 8, 9, 10];
+        ` },
+      { type: "text", value: `Ushbu array-lardan foydalanib, yangi ob'ektni yarating, uni kalitlarga birinchi array-ning elementlarini, qiymatlarga esa ikkinchisining elementlarini aylantiring.` },
     ],
   },
 ];
